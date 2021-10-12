@@ -1,18 +1,5 @@
 .goout {font-family: "Kristina";}
-@font-face {
-  font-family: "Kristina";
-  src: url("/map/fonts/file.woff2") format("woff2"),
-    url("/map/fonts/file.woff") format("woff"),
-    url("/map/fonts/file.ttf") format("ttf");
-}
-
 .relax {font-family: "DiaPro";}
-@font-face {
-  font-family: "DiaPro";
-  src: url("/map/fonts/DiaPro-Regular.eot"),
-       url("/map/fonts/DiaPro-Regular.otf"),
-       url("/map/fonts/DiaPro-Regular.woff");
-}
 
 .sports {
   font-weight:500;
