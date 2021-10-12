@@ -1,0 +1,99 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <style type="text/css">
+.none {display:none;}
+
+    .center {
+      position:absolute;
+      top:50%; left:50%;
+      transform:translate(-50%,-50%);
+      -webkit-transform:translate(-50%,-50%);
+      margin:0; padding:0;
+    }
+    #cover #copy {
+      z-index:10;
+      text-align:center;
+    }
+    #cover #copy a {
+      text-decoration:none;
+      color:#000;
+      font-size:2rem;
+      display:inline-block;
+      border:1px solid;
+      padding:0.25rem 1rem;
+      border-radius:50%;
+      background:#fff;
+    }
+    #cover #copy a {
+      animation:2s linear infinite alternate link;
+    }
+
+        .cover {
+          font-family: "Yu Gothic UI";
+        }
+        .cover h1 {
+          font-size: 3vw;
+        }
+        .cover h1,
+        .shadow {
+          text-shadow:0 0 0.5vw #fff;
+          color:#000;
+        }
+
+    .cover {background-image:url(img/cover.jpg);}
+    .tate1 {background-image:url(img/tate1.jpg);}
+    .tate2 {background-image:url(img/tate2.jpg);}
+    .yoko1 {background-image:url(img/yoko1.jpg);}
+    .yoko2 {background-image:url(img/yoko2.jpg);}
+    .yoko3 {background-image:url(img/yoko3.jpg);}
+
+    #infomation {
+      position: relative;
+      height:100vh;
+    }
+
+iframe {
+  position: absolute;
+  z-index: 0;
+  border:none;
+  top:0; left:0;
+  width:100%;
+  height:100%;
+}
+  </style>
+  <link rel="stylesheet" href="/goout/style.css" />
+  <link rel="stylesheet" type="text/css" href="http://goout.pe.hu/map/style.css" />
+  <title> Go Out | Osaka Map </title>
+  </head>
+  <body>
+  <div class="cover">
+    <h1><u>Area | Tag</u><br/>
+    Osaka Map</h1>
+  </div>
+  <div class="">
+  <div class="height">
+    <span class="double tate1"></span>
+    <span class="double tate2"></span>
+  </div>
+  <div class="height">
+    <span class="triple yoko1"></span>
+    <span class="triple yoko2"></span>
+    <span class="triple yoko3"></span>
+  </div>
+</div>
+  <div class="wide tate3">
+    <h1 class="shadow">Name</h1>
+    <p class="shadow">tate3</p>
+      <div class="info">
+        <p>Infomation<p>
+        <p><a href="___" target="_blank" rel="noopener noreferrer">Link</a><p>
+      </div>
+      <p class="back"><a href="#" onclick="history.back(-1);return false;" style="font-size:10vw; color:#000; border:none;">↩︎</a></p>
+  </div>
+
+  <div id="infomation" class="wide">
+    <iframe src=""></iframe>
+  </div>
+  </body>

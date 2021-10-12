@@ -1,0 +1,78 @@
+
+.center {
+  position:absolute;
+  top:50%; left:50%;
+  transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+  margin:0; padding:0;
+}
+
+.click {
+  position:relative;
+  width:100%;
+  clear: both;
+}
+.click h1 {
+  display:inline-block;
+  width:10%;
+  font-size:1.5rem;
+  padding:1.5vh 2.5%;
+  font-weight:500;
+}
+.click .right {
+  float:right;
+}
+.click .btn {
+  padding:0 2.5%;
+  width:55%;
+  text-align: center;
+}
+.click .btn a {
+  display:block;
+  color:#000;
+  text-decoration:none;
+  padding:0.5vw 2.5vw;
+  border:0.1vw solid;
+  border-radius:2.5rem;
+  font-size:1.5rem;
+  text-align: center;
+}
+.click .relax {
+  font-size:200%;
+}
+.sports h1 {
+  font-weight:500;
+}
+
+@media screen and (max-width: 550px){
+#cover #title {font-size:25vw;}
+@keyframes play {
+  from {
+    letter-spacing:1vh;
+  }
+  to {
+    letter-spacing:0.5vh;
+  }
+}
+@-webkit-keyframes play {
+  from {
+    letter-spacing:1vh;
+  }
+  to {
+    letter-spacing:0.5vh;
+  }
+}
+
+.click h1 {width:45%; font-size:1.25rem;}
+.click .right {text-align:right;}
+.click .center {position:relative;}
+.click .btn {width:95%;}
+.click .btn a {
+  display:block;
+  color:#000;
+  text-decoration:none;
+  padding:0.5rem 1rem;
+  font-size:1rem;
+  border-radius:2.5rem;
+}
+}
