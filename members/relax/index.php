@@ -131,8 +131,8 @@
 <script src="http://creative-community.space/coding/js/org.js"></script>
 <script type="text/javascript">
 $(function(){
-$("#review").load("/members/relax/review.php");
-$("#dance").load("/members/relax/image.html");
+$("#review").load("review.php");
+$("#dance").load("image.html");
 })
 </script>
 <script>
