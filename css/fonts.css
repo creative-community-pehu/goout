@@ -1,5 +1,18 @@
 .goout {font-family: "Kristina";}
+@font-face {
+  font-family: "Kristina";
+  src: url("https://creative-community.space/coding/fontbook/family/Kristina.Bold.otf"),
+       url("https://creative-community.space/coding/fontbook/family/Kristina.Fine.otf");
+}
+
 .relax {font-family: "DiaPro";}
+@font-face {
+  font-family: "DiaPro";
+  src: url("https://creative-community.space/coding/fontbook/family/DiaPro/DiaPro-Regular.eot"),
+       url("https://creative-community.space/coding/fontbook/family/DiaPro/DiaPro-Regular.otf"),
+       url("https://creative-community.space/coding/fontbook/family/DiaPro/DiaPro-Regular.woff");
+}
+
 
 .sports {
   font-weight:500;
