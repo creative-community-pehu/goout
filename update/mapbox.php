@@ -34,8 +34,8 @@ fclose($fp);
 <link rel="icon" href="/map/logo.png">
 <link rel="stylesheet" href="/map/css/update.css"/>
 <style>
-    body { margin: 0; padding: 0; background-color:lemonchiffon;}
-    #main {width:75%; margin:auto;}
+    body {margin: 0; padding: 0; background-color:lemonchiffon;}
+    #main {width:75%; margin:2vw auto;}
     
 </style>
 </head>
