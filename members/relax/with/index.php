@@ -40,6 +40,21 @@ fclose($fp);
 <style>
 body { margin: 0; padding: 0;  background:#ebd809;}
 #links {width:95%; margin:auto;}
+
+.about {
+  top:0;
+  font-size:1rem;
+	padding:0 2.5% 0.5rem;
+	position:relative;
+  z-index:50;
+  background:#000;
+  width:95%;
+}
+.inside {
+  width:95%;
+  max-width:75rem;
+  margin:auto;
+}
 </style>
 </head>
 
