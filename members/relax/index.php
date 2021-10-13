@@ -62,6 +62,7 @@
 #date_list li {
   width:100%;
 }
+#dance {transform:scale(0.75);}
 }
 
 
