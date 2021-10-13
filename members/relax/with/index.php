@@ -39,7 +39,7 @@ fclose($fp);
 <link rel="stylesheet" href="https://creative-community.space/coding/fontbook/css/font-family.css"/>
 <style>
 body { margin: 0; padding: 0; }
-#links {width:90%; margin:auto;}
+#links {width:95%; margin:auto;}
 </style>
 </head>
 
