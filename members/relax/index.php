@@ -105,7 +105,7 @@
 <a id="link" class="tag" onclick="obj=document.getElementById('with').style; obj.display=(obj.display=='none')?'block':'none';"></a>
 </div>
 </div>
-
+<hr/>
 <div id="dance"></div>
 
 <div class="no_print">
