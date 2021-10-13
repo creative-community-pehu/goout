@@ -58,16 +58,12 @@ fclose($fp);
     height: 4.5vw;
     line-height: 4.5vw;
     color: #000;
-    border: solid 0.25vw #000;
-    border-radius: 50%;
     cursor: pointer;
     text-decoration: none;
     transition: all 1000ms ease;
 }
 #top_btn a:hover {
-    color:#fff;
-    background-color:blue;
-    border: solid 0.25vw blue;
+    color: lightskyblue;
     cursor: pointer;
     transition: all 1000ms ease;
 }
@@ -76,7 +72,7 @@ fclose($fp);
 </head>
 
 <body>
-<p id="top_btn"><a class="cc" href="#" onclick="history.back(-1);return false;">CC</a></p>
+<p id="top_btn"><a class="cc" href="#" onclick="history.back(-1);return false;">↵</a></p>
 
 <div id="main">
 <ul id="update_log">
