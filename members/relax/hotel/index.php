@@ -30,18 +30,18 @@ fclose($fp);
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title> Fancy Hotel Tour | Fancy and Relaxin' </title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="http://creative-community.pe.hu/coding/js/org.js"></script>
-<script src="http://creative-community.pe.hu/coding/js/smoothscroll.js"></script>
+<script src="https://creative-community.space/coding/js/org.js"></script>
+<script src="https://creative-community.space/coding/js/smoothscroll.js"></script>
 <script type="text/javascript">
 $(function(){
 })
 </script>
-<link rel="stylesheet" href="http://creative-community.pe.hu/coding/submit/org/book.css"/>
-<link rel="stylesheet" href="http://creative-community.pe.hu/coding/css/radius.css"/>
-<link rel="stylesheet" href="http://goout.pe.hu/map/style.css" />
-<link rel="stylesheet" href="http://goout.pe.hu/style.css" />
-<link rel="stylesheet" href="http://goout.pe.hu/about.css" />
-<link rel="stylesheet" href="/goout/style.css" />
+<link rel="stylesheet" href="https://creative-community.space/coding/submit/org/book.css"/>
+<link rel="stylesheet" href="https://creative-community.space/coding/css/radius.css"/>
+<link rel="stylesheet" href="https://creative-community.space/coding/fontbook/css/font-family.css" />
+<link rel="stylesheet" href="/map/css/font.css" />
+<link rel="stylesheet" href="/map/css/info.css" />
+<link rel="stylesheet" href="/map/css/top.css" />
 <style type="text/css">
 
 body {
