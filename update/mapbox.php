@@ -40,11 +40,44 @@ fclose($fp);
 <style>
     body {margin: 0; padding: 0; background-color:lemonchiffon;}
     #main {width:75%; margin:2vw auto;}
+.cc {
+    font-family: "ipag", monospace;
+    transform:scale(1, 1.25);
+}
+#top_btn {
+    position: fixed;
+    bottom:0; left:0;
+    z-index: 1000;
+    margin:2.5vw;
+    font-size:2.5vw;
+}
+#top_btn a {
+    display: block;
+    text-align: center;
+    width: 5.5vw;
+    height: 4.5vw;
+    line-height: 4.5vw;
+    color: #000;
+    border: solid 0.25vw #000;
+    border-radius: 50%;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 1000ms ease;
+}
+#top_btn a:hover {
+    color:#fff;
+    background-color:blue;
+    border: solid 0.25vw blue;
+    cursor: pointer;
+    transition: all 1000ms ease;
+}
     
 </style>
 </head>
 
 <body>
+<p id="top_btn"><a class="cc" href="#" onclick="history.back(-1);return false;">CC</a></p>
+
 <div id="main">
 <ul id="update_log">
 <?php if (!empty($rows)): ?>
