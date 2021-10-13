@@ -35,12 +35,13 @@ fclose($fp);
 <link rel="stylesheet" href="/map/css/update.css"/>
 <style>
     body { margin: 0; padding: 0; background-color:lemonchiffon;}
-    #update_log {wide:75%; margin:auto;}
+    #main {wide:75%; margin:auto;}
     
 </style>
 </head>
 
 <body>
+<div id="main">
 <ul id="update_log">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
@@ -65,5 +66,6 @@ fclose($fp);
 <p class="relax"><b>Mapboxを使って、初めて訪れた場所・お気に入りの場所を集めたコレクションを作成しています。</b></p>
 </li>
 </ul>
+</div>
 </body>
 </html>
