@@ -42,30 +42,6 @@ $(function(){
   font-family: "DiaPro";
 }
 
-#bg_link {
-  position:fixed;
-  z-index:100;
-  top:0;
-  right:0;
-  color:#000;
-  line-height:1.5rem;
-  letter-spacing:.1rem;
-  font-size:0.9rem;
-  text-decoration:none;
-  display:inline-block;
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-}
-#bg_link a {
-  color:#000;
-  line-height:1.5rem;
-  letter-spacing:.1rem;
-  background:#fff;
-  text-decoration:none;
-  padding:0.25rem 0.125rem;
-}
-#bg_link i {padding:0.25rem 0.125rem;}
-
 
 </style>
 <title>Fancy and Relaxin' | Go Out</title>
@@ -74,18 +50,6 @@ $(function(){
 <link rel="stylesheet" type="text/css" href="../review.css" />
 </head>
 <body>
-
-<span id="bg_link">
-<a><b>Update</b>
-  <i>
-  <?php
-  $mod = filemtime("list.csv");
-  date_default_timezone_set('Asia/Tokyo');
-  print "".date("m.d.y H:i",$mod);
-  ?>
-  </i>
-</a>
-</span>
 
 <div id="announce">
 <div class="greeting">
