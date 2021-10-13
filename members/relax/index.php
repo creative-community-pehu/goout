@@ -86,7 +86,16 @@
 <div class="about">
 <div class="inside">
 <span class="sub"><b>Fancy and Relaxin'</b></span>
-<span class="right DiaPro"><u class="no_print">投稿する | <i>Submit</i></u></span>
+<span class="right DiaPro">
+<u>Update
+  <i>
+  <?php
+  $mod = filemtime("list.csv");
+  date_default_timezone_set('Asia/Tokyo');
+  print "".date("m.d.y H:i",$mod);
+  ?>
+  </i>
+</u></span>
 <a id="link" class="tag" onclick="obj=document.getElementById('submit').style; obj.display=(obj.display=='none')?'block':'none';"></a>
 </div>
 </div>
