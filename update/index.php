@@ -57,7 +57,7 @@ body { margin: 0; padding: 0; }
 <a href="<?=h($row[3])?>" target="_parent"></a></p>
 </li>
 <?php endif; ?>
-<h1 class="relax" style="text-align:center;"><b class="goout">Topics</b></h1>
+<h1 class="relax" style="text-align:center;"><span class="goout">Topics</span></h1>
 </ul>
 </body>
 </html>
