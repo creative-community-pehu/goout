@@ -39,10 +39,12 @@ fclose($fp);
 <link rel="stylesheet" href="https://creative-community.space/coding/fontbook/css/font-family.css"/>
 <style>
 body { margin: 0; padding: 0; }
+.click {}
 </style>
 </head>
 
 <body>
+<div id="links">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div class="click">
@@ -58,5 +60,6 @@ body { margin: 0; padding: 0; }
 <p class="btn center relax"><a href="/map/members/relax/" target="_parent">Members Only</a></p>
 </div>
 <?php endif; ?>
+</div>
 </body>
 </html>
