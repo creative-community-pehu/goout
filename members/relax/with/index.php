@@ -34,7 +34,7 @@ fclose($fp);
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name="description" content="行ったことのない場所へ（知らない道を選んで）、行く">
 <link rel="icon" href="/map/members/relax/logo.png">
-<link rel="stylesheet" href="/map/css/links.css"/>
+<link rel="stylesheet" href="/map/css/click.css"/>
 <link rel="stylesheet" href="/map/css/fonts.css"/>
 <link rel="stylesheet" href="https://creative-community.space/coding/fontbook/css/font-family.css"/>
 <style>
