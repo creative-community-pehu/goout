@@ -29,21 +29,18 @@ body {padding:0; margin: 0;}
 
 
 <div id="menu">
-<div><a class="tab" href="#goout">Go Out</a><span class="check"><b>✔</b></span></div>
+<div>Members Only</div>
 <div><a class="tab" href="#relax">Fancy & Relaxin'</a><span class="check"><b>✔</b></span></div>
-<div><a class="tab" href="#print">WWW to Print</a><span class="check"><b>✔</b></span></div>
-<div><a class="tab" href="/thankyou/">HTML graffiti</a><span class="check"><b>✔</b></span></div>
 </div>
 
-<div id="goout" class="change"><iframe src="/map/"></iframe></div>
+<div id="relax" class="change"><iframe src="/map/members/relax/"></iframe></div>
 <div id="relax" class="change"></div>
-<div id="print" class="change"></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/sign/infomation/menu.js"></script>
 <script type="text/javascript">
 $(function(){
-$("#relax").load("/map/members/relax/");
+$("#").load("");
 })
 
 $('a[href^="#"]').click(function(){
