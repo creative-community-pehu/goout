@@ -97,7 +97,7 @@
   ?>
   </i>
 </u></span>
-<a id="link" class="tag" onclick="obj=document.getElementById('submit').style; obj.display=(obj.display=='none')?'block':'none';"></a>
+<a id="link" class="tag" onclick="obj=document.getElementById('topic').style; obj.display=(obj.display=='none')?'block':'none';"></a>
 </div>
 </div>
 
@@ -123,7 +123,7 @@
 <div class="greeting">
 <h1 class="DiaPro">行ったことのない場所へ行き、その場所を「贅沢度・リラックス度」を基準に評価し、優雅にリラックスできるスポットのコレクションを制作しています。</h1>
 <p>ファンシー・アンド・リラキシンは、行ったことのない場所に行く／知らない道を選ぶことで、気分をリフレッシュし、こ・こ・ろ・豊かな生活を送ることを目指した活動です。</p>
-<p>スポットの紹介と同時に、行ったことのない場所に行く／知らない道を選ぶことの楽しさを、記録しましょう。</p>
+<p>スポットの紹介と同時に、行ったことのない場所に行く／知らない道を選ぶ楽しさを、記録します。</p>
 </div>
 </div>
 
@@ -132,6 +132,16 @@
 <hr/>
 </div>
 
+<div class="about">
+<div class="inside">
+<span class="sub"><b>Submit Your Fancy and Relaxin' Spot</b></span>
+<span class="right DiaPro">
+<u>
+  <i>あなたが見つけた優雅にリラックスできるスポットを投稿する</i>
+</u></span>
+<a id="link" class="tag" onclick="obj=document.getElementById('submit').style; obj.display=(obj.display=='none')?'block':'none';"></a>
+</div>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="http://creative-community.space/coding/js/org.js"></script>
 <script type="text/javascript">
