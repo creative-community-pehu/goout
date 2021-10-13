@@ -36,6 +36,7 @@ fclose($fp);
 <link rel="stylesheet" href="/map/css/info.css" />
 <link rel="stylesheet" href="/map/css/fonts.css" />
 <link rel="stylesheet" href="/map/css/update.css"/>
+<link rel="stylesheet" href="https://creative-community.space/coding/fontbook/css/font-family.css" />
 <style>
     body {margin: 0; padding: 0; background-color:lemonchiffon;}
     #main {width:75%; margin:2vw auto;}
