@@ -84,6 +84,10 @@
 <p><iframe src="submit.php"></iframe></p>
 <span class="close" onclick="obj=document.getElementById('submit').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
 </div>
+<div class="popup" id="with" style="display:none;">
+<p><iframe src="with"></iframe></p>
+<span class="close" onclick="obj=document.getElementById('with').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
+</div>
 <div class="about">
 <div class="inside">
 <span class="sub"><b>Fancy and Relaxin'</b></span>
@@ -97,7 +101,7 @@
   ?>
   </i>
 </u></span>
-<a id="link" class="tag" onclick="obj=document.getElementById('topic').style; obj.display=(obj.display=='none')?'block':'none';"></a>
+<a id="link" class="tag" onclick="obj=document.getElementById('with').style; obj.display=(obj.display=='none')?'block':'none';"></a>
 </div>
 </div>
 
