@@ -74,6 +74,7 @@
 }
 </style>
 <title>Fancy and Relaxin' | Go Out</title>
+<meta name="description" content="行ったことのない場所へ（知らない道を選んで）、行く">
 <link rel="icon" href="logo.png">
 <link rel="stylesheet" type="text/css" href="styles.css" />
 <link rel="stylesheet" type="text/css" href="../review.css" />
