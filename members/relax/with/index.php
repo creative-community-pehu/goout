@@ -41,6 +41,8 @@ fclose($fp);
 body { margin: 0; padding: 0;  background:#ebd809;}
 #links {width:95%; margin:auto;}
 
+.DiaPro, .sub {font-family: "DiaPro";}
+
 .about {
   top:0;
   font-size:1rem;
