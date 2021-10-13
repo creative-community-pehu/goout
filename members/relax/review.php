@@ -58,8 +58,8 @@ $(function(){
 <div class="search-box type">
 <ol>
 <li>
-<input type="radio" name="type" value="park" id="park">
-<label for="park" class="label">公園・自然</label></li>
+<input type="radio" name="type" value="nature" id="nature">
+<label for="nature" class="label">公園・自然</label></li>
 <li>
 <input type="radio" name="type" value="cafe" id="cafe">
 <label for="cafe" class="label">喫茶</label></li>
@@ -67,11 +67,17 @@ $(function(){
 <input type="radio" name="type" value="spa" id="spa">
 <label for="spa" class="label">銭湯・スパ</label></li>
 <li>
-<input type="radio" name="type" value="hotel" id="hotel">
-<label for="hotel" class="label">ホテル</label></li>
+<input type="radio" name="type" value="fancy" id="fancy">
+<label for="fancy" class="label">ホテル</label></li>
+<li>
+<input type="radio" name="type" value="public" id="public">
+<label for="public" class="label">商業・公共施設</label></li>
+<li>
+<input type="radio" name="type" value="touristic" id="touristic">
+<label for="touristic" class="label">観光地</label></li>
 <li>
 <input type="radio" name="type" value="etc" id="etc">
-<label for="etc" class="label">その他の施設</label></li>
+<label for="etc" class="label">その他</label></li>
 </ol>
 </div>
 
