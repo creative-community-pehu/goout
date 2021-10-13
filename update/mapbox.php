@@ -59,7 +59,7 @@ body { margin: 0; padding: 0; }
 <?php endif; ?>
 <li>
 <h2 class="relax"><u>地図を作ろう</u><br/>
-<i class="goout">How to Coding</i></h2>
+<i class="goout">Work In Progress</i></h2>
 <p class="relax"><b>Mapboxを使って、初めて訪れた場所・お気に入りの場所を集めたコレクションを作成しています。</b></p>
 </li>
 </ul>
