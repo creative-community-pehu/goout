@@ -46,7 +46,7 @@ body { margin: 0; padding: 0; }
 <h2><u><?=h($row[0])?></u><br/>
 <i><?=h($row[1])?></i></h2>
 <p><b><?=h($row[2])?></b>
-<a href="<?=h($row[3])?>" target="_blank" rel=”noopener noreferrer”></a></p>
+<a href="<?=h($row[3])?>" target="_parent"></a></p>
 </li>
 <?php endforeach; ?>
 <?php else: ?>
@@ -54,7 +54,7 @@ body { margin: 0; padding: 0; }
 <h2><u>タイトル</u><br/>
 <i>進行状況</i></h2>
 <p><b>説明</b>
-<a href="<?=h($row[3])?>" target="_blank" rel=”noopener noreferrer”></a></p>
+<a href="<?=h($row[3])?>" target="_parent"></a></p>
 </li>
 <?php endif; ?>
 <li>
