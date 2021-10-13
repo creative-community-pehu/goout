@@ -86,8 +86,7 @@ border:0.1rem solid #000;
 <body>
 <form action="complete.php" id="org" class="submit" method="post">
 <div class="greeting ipaexm">
-<p>※ 初めて訪れた場所を「贅沢度・リラックス度」を基準に評価し、あなたが見つけたスポットをコレクションに追加することができます。<br/>
-ぜひお気軽にご投稿ください。</p>
+<p>※ 初めて訪れた場所を「贅沢度・リラックス度」を基準に評価し、あなたが見つけたスポットをコレクションに追加することができます。</p>
 </div>
 <p class="sub ipaexm"><b class="DiaPro">Title</b><br/>場所の名前（正式名称がない場合はあなたの呼び名）を入力して下さい<br/>
 <input type="text" name="title" placeholder="Title" required></p>
