@@ -87,8 +87,8 @@
 <div class="inside">
 <span class="sub"><b>Fancy and Relaxin'</b></span>
 <span class="right DiaPro">
-<u>Update
-  <i>
+<u>
+  <i>Update | 
   <?php
   $mod = filemtime("list.csv");
   date_default_timezone_set('Asia/Tokyo');
