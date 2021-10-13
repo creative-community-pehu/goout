@@ -48,8 +48,8 @@ body { margin: 0; padding: 0; }
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div class="click">
-<h1 class="left relax"><b><?=h($row[0])?></b></h1>
-<h1 class="right relax"><b><?=h($row[1])?></b></h1>
+<h1 class="left relax"><b><?=h($row[1])?></b></h1>
+<h1 class="right relax"><b><?=h($row[0])?></b></h1>
 <p class="btn center relax"><a href="<?=h($row[3])?>" target="_parent"><?=h($row[2])?></a></p>
 </div>
 <?php endforeach; ?>
