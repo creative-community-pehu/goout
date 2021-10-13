@@ -55,6 +55,13 @@ body { margin: 0; padding: 0;  background:#ebd809;}
   max-width:75rem;
   margin:auto;
 }
+
+.sub b {
+  display:block;
+  color:#ebd809;
+  font-size:4.5rem;
+  padding:1.25%;
+}
 </style>
 </head>
 
