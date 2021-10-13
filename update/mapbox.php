@@ -35,7 +35,7 @@ fclose($fp);
 <link rel="stylesheet" href="/map/css/update.css"/>
 <style>
     body { margin: 0; padding: 0; background-color:lemonchiffon;}
-    #main {wide:75%; margin:auto;}
+    #main {width:75%; margin:auto;}
     
 </style>
 </head>
