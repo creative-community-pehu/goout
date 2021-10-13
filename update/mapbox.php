@@ -34,7 +34,9 @@ fclose($fp);
 <link rel="icon" href="/map/logo.png">
 <link rel="stylesheet" href="/map/css/update.css"/>
 <style>
-body { margin: 0; padding: 0; }
+    body { margin: 0; padding: 0; background-color:lemonchiffon;}
+    #update_log {wide:75%; margin:auto;}
+    
 </style>
 </head>
 
