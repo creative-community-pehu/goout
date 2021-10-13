@@ -32,6 +32,9 @@ fclose($fp);
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name="description" content="Life is precious.　Every minute.　And more precious with you in it.　Let's have some fun.">
 <link rel="icon" href="/map/logo.png">
+<link rel="stylesheet" href="/map/css/top.css" />
+<link rel="stylesheet" href="/map/css/info.css" />
+<link rel="stylesheet" href="/map/css/fonts.css" />
 <link rel="stylesheet" href="/map/css/update.css"/>
 <style>
     body {margin: 0; padding: 0; background-color:lemonchiffon;}
