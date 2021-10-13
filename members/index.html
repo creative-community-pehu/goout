@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="/sign/infomation/menu.css" />
+<title>Members Only | Go Out</title>
+<style type="text/css">
+body {padding:0; margin: 0;}
+#goout,
+#relax,
+#cc {
+  position:fixed;
+  top:0; left:0;
+  width:100%;
+  height:100vh;
+  overflow-y: auto;
+}
+#goout iframe {
+  border: none;
+  width:100%;
+  height:100%;
+}
+
+</style>
+</head>
+<body>
+
+
+<div id="menu">
+<div><a class="tab" href="#goout">Go Out</a><span class="check"><b>✔</b></span></div>
+<div><a class="tab" href="#relax">Fancy & Relaxin'</a><span class="check"><b>✔</b></span></div>
+<div><a class="tab" href="#print">WWW to Print</a><span class="check"><b>✔</b></span></div>
+<div><a class="tab" href="/thankyou/">HTML graffiti</a><span class="check"><b>✔</b></span></div>
+</div>
+
+<div id="goout" class="change"><iframe src="/map/"></iframe></div>
+<div id="relax" class="change"></div>
+<div id="print" class="change"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/sign/infomation/menu.js"></script>
+<script type="text/javascript">
+$(function(){
+$("#relax").load("/map/members/relax/");
+})
+
+$('a[href^="#"]').click(function(){
+   var href= $(this).attr("href");
+   var target = $(href == "#" || href == "" ? 'html' : href);
+   return false;
+ });
+</script>
+</body>
+</html>
