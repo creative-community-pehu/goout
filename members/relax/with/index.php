@@ -38,7 +38,7 @@ fclose($fp);
 <link rel="stylesheet" href="/map/css/fonts.css"/>
 <link rel="stylesheet" href="https://creative-community.space/coding/fontbook/css/font-family.css"/>
 <style>
-body { margin: 0; padding: 0; }
+body { margin: 0; padding: 0;  background:#ebd809;}
 #links {width:95%; margin:auto;}
 </style>
 </head>
