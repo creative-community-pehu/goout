@@ -19,6 +19,9 @@
   padding:1.5vh 2.5%;
   font-weight:500;
 }
+.click .left {
+  float:left;
+}
 .click .right {
   float:right;
 }
