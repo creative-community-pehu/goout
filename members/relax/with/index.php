@@ -44,6 +44,12 @@ body { margin: 0; padding: 0;  background:#ebd809;}
 </head>
 
 <body>
+
+<div class="about">
+<div class="inside">
+<span class="sub"><b>Special Contents</b></span>
+</div>
+</div>
 <div id="links">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
