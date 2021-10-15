@@ -10,7 +10,6 @@
 body {padding:0; margin: 0;}
 #menu {background:lemonchiffon;}
 
-#goout,
 #date,
 #relax {
   position:fixed;
@@ -19,7 +18,6 @@ body {padding:0; margin: 0;}
   height:100vh;
   overflow-y: auto;
 }
-#goout iframe,
 #relax iframe {
   border: none;
   width:100%;
@@ -32,12 +30,12 @@ body {padding:0; margin: 0;}
 
 
 <div id="menu">
+<div><a class="tab" href="/map/">Go Out</a><span class="check"><b>✔</b></span></div>
 <div><a class="tab" href="#date">Infomation</a><span class="check"><b>✔</b></span></div>
 <div><a class="tab" href="#plan">Plan</a><span class="check"><b>✔</b></span></div>
 <div><a class="tab" href="#relax">Fancy & Relaxin'</a><span class="check"><b>✔</b></span></div>
 </div>
 
-<div id="goout"><iframe src="/map/"></iframe></div>
 <div id="date" class="change"></div>
 <div id="plan" class="change"></div>
 <div id="relax" class="change"><iframe src="/map/members/relax/"></iframe></div>
