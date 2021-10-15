@@ -5,18 +5,7 @@ h2 {margin:1rem 0 0; padding:0; font-size:1.25rem;}
 hr {border:hidden; height:1rem;}
 
 .ipaexg {font-family: "ipaexg";}
-@font-face {
-  font-family: "ipaexg";
-  src: url("IPA/ipamp.ttf");
-}
-
 .DiaPro, .sub {font-family: "DiaPro";}
-@font-face {
-  font-family: "DiaPro";
-  src: url("DiaPro/DiaPro-Regular.eot"),
-       url("DiaPro/DiaPro-Regular.otf"),
-       url("DiaPro/DiaPro-Regular.woff");
-}
 
 .about {
   top:0;
@@ -52,7 +41,7 @@ hr {border:hidden; height:1rem;}
 .about i {
   font-size:125%;
   font-style:normal;
-  font-family:"MS ćć", "MS Mincho", serif;
+  font-family:"MS Mincho", serif;
 }
 
 #info,
@@ -125,7 +114,7 @@ hr {border:hidden; height:1rem;}
   background:#fff;
   font-size:3vw;
   clear:both;
-  font-family: "YuMincho","Yu Mincho","ÄÂ¸Â¸ÄÂÂÄÂÂĂ¤ËÂ";
+  font-family: "YuMincho","Yu Mincho",serif;
   animation:0.55s linear infinite alternate heartbeat;
 }
 #greeting p {

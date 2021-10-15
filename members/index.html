@@ -33,14 +33,14 @@ body {padding:0; margin: 0;}
 <div><a class="tab" href="#relax">Fancy & Relaxin'</a><span class="check"><b>✔</b></span></div>
 </div>
 
+<div id="date"></div>
 <div id="relax" class="change"><iframe src="/map/members/relax/"></iframe></div>
-<div id="relax" class="change"></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/sign/infomation/menu.js"></script>
 <script type="text/javascript">
 $(function(){
-$("#").load("");
+$("#date").load("date.html");
 })
 
 $('a[href^="#"]').click(function(){
