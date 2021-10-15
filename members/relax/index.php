@@ -141,7 +141,7 @@
 
 <div class="about">
 <div class="inside">
-<span class="sub"><b><i class="font-size:55%;">Submit Your Fancy and Relaxin' Spot</i></b></span>
+<span class="sub"><b>Submit Your Fancy and Relaxin' Spot</b></span>
 <span class="right DiaPro">
 <u>
   <i>初めて訪れた場所の評価を投稿する</i>
