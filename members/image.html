@@ -1,0 +1,294 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+$("#").load("");
+})
+</script>
+<title>Fancy and Relaxin' | Let's Go Out</title>
+<link rel="icon" href="logo.png">
+<link rel="stylesheet" type="text/css" href="dance.css" />
+<style type="text/css">
+body {overflow-x:hidden;}
+
+#image {
+  position:relative;
+  width:90vw;
+  max-width:30rem;
+  margin:0 auto 7.5rem;
+  height:42.5vh;
+  transform:scale(2);
+  transition:2.5s all;
+}
+#image .face,
+#image .body,
+#image .hip,
+#image .arm_r,
+#image .arm_l,
+#image .leg_r,
+#image .leg_l {
+  display:block;
+}
+#image .face,
+#image #top,
+#image #bottom,
+#image .hip,
+#image .arm_r,
+#image .arm_l,
+#image .leg_r,
+#image .leg_l  {
+  position: absolute;
+  margin:0; padding:0;
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+}
+#image .face {
+  width: 0;
+  height: 0;
+  border-left: 2.5rem solid black;
+  border-top: 1.25rem solid transparent;
+  border-bottom: 1.25rem solid transparent;
+  top: 40%; left: 20%;
+  transform: rotate(65deg);
+  animation:1.25s linear infinite alternate face;
+}
+#image #top {
+  top: 50%; left: 25%;
+  transform: rotate(35deg);
+  animation:2.5s linear infinite alternate top;
+}
+#image .body {
+  width: 0;
+  height: 0;
+  border-left: 5.5rem solid black;
+  border-top: 1.5rem solid transparent;
+  border-bottom: 1.5rem solid transparent;
+}
+#image .arm_r,
+#image .arm_l {
+  width: 0;
+  height: 0;
+  border-left: 5.5rem solid black;
+  border-top: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid transparent;
+}
+#image .arm_r {
+  top: -77.5%; left: -15%;
+  transform: rotate(-55deg);
+  animation:2.5s linear infinite alternate arm_r;
+}
+#image .arm_l {
+  top: 140%; left: -10%;
+  transform: rotate(50deg);
+  animation:2.5s linear infinite alternate arm_l;
+}
+
+#image .arm_r::after,
+#image .arm_l::after {
+  content: "";
+  display:block;
+  width: 0;
+  height: 0;
+  border-left: 4.5rem solid black;
+  border-top: 0.15rem solid transparent;
+  border-bottom: 0.15rem solid transparent;
+  position: absolute;
+  margin:0; padding:0;
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+  top:2rem; left:-3rem;
+  transform: rotate(100deg);
+  animation:1.25s linear infinite alternate arm_r;
+}
+
+#image .hip {
+  width: 0;
+  height: 0;
+  top: 60%; left:42.5%;
+  border-right: 3rem solid black;
+  border-top: 1.5rem solid transparent;
+  border-bottom: 1.5rem solid transparent;
+  transform: rotate(25deg);
+  animation:1.25s linear infinite alternate hip;
+}
+#image #bottom {
+  width:4.5rem;
+  height:4.5rem;
+  top: 80%; left: 75%;
+}
+#image .leg_r,
+#image .leg_l
+{
+  width: 0;
+  height: 0;
+  border-left: 7.5rem solid black;
+  border-top: 0.75rem solid transparent;
+  border-bottom: 0.75rem solid transparent;
+}
+#image .leg_r {
+  top: -75%; left: -115%;
+  transform: rotate(-40deg);
+  animation:2.5s linear infinite alternate leg_r;
+}
+#image .leg_l {
+  top: 12.5%; left: -110%;
+  transform: rotate(15deg);
+  animation:2.5s linear infinite alternate leg_l;
+}
+
+#image .leg_r::after,
+#image .leg_l::after {
+  content: "";
+  display:block;
+  width: 0;
+  height: 0;
+  border-left: 7rem solid black;
+  border-top: 0.45rem solid transparent;
+  border-bottom: 0.45rem solid transparent;
+  position: absolute;
+  margin:0; padding:0;
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+}
+
+#image .leg_r::after {
+  top:3rem; left:-4.75rem;
+  transform: rotate(100deg);
+  animation:1.25s linear infinite alternate leg_l_a;
+}
+#image .leg_l::after {
+  top:-3.75rem; left:-3.25rem;
+  transform: rotate(-75deg);
+  animation:1.25s linear infinite alternate leg_r_a;
+}
+
+@-webkit-keyframes face {
+  0% {
+  transform: rotate(15deg);
+  }
+  100% {
+  transform: rotate(115deg);
+  }
+}
+
+@-webkit-keyframes top {
+  0% {
+  transform: rotate(20deg);
+  }
+  100% {
+  transform: rotate(50deg);
+  }
+}
+
+@-webkit-keyframes arm_r {
+  0% {
+  transform: rotate(-5deg);
+  }
+  100% {
+  transform: rotate(-80deg);
+  }
+}
+
+@-webkit-keyframes arm_l {
+  0% {
+  transform: rotate(25deg);
+  }
+  100% {
+  transform: rotate(75deg);
+  }
+}
+
+@-webkit-keyframes arm {
+  0% {
+  transform: rotate(90deg);
+  }
+  100% {
+  transform: rotate(110deg);
+  }
+}
+
+@-webkit-keyframes hip {
+  0% {
+  transform: rotate(0deg);
+  }
+  100% {
+  transform: rotate(50deg);
+  }
+}
+
+@-webkit-keyframes hip {
+  0% {
+  transform: rotate(0deg);
+  }
+  100% {
+  transform: rotate(50deg);
+  }
+}
+
+@-webkit-keyframes leg_r {
+  0% {
+  transform: rotate(-25deg);
+  }
+  100% {
+  transform: rotate(-55deg);
+  }
+}
+
+@-webkit-keyframes leg_l {
+  0% {
+  transform: rotate(0deg);
+  }
+  100% {
+  transform: rotate(30deg);
+  }
+}
+
+@-webkit-keyframes leg_l_a {
+  0% {
+  transform: rotate(125deg);
+  }
+  100% {
+  transform: rotate(75deg);
+  }
+}
+
+@-webkit-keyframes leg_r_a {
+  0% {
+  transform: rotate(-50deg);
+  }
+  100% {
+  transform: rotate(-100deg);
+  }
+}
+
+@media screen and (max-width: 750px){
+  #image {transform:scale(1);
+  margin:0 auto 2.5rem;}
+}
+
+@media screen and (max-width: 1000px){
+  #image {transform:scale(1.25);
+  margin:0 auto 5rem;}
+}
+</style>
+</head>
+<body>
+
+<div id="image">
+<b class="face"></b>
+<div id="top">
+<b class="body"></b>
+<b class="arm_r"></b>
+<b class="arm_l"></b>
+</div>
+<b class="hip"></b>
+<div id="bottom">
+<b class="leg_r"></b>
+<b class="leg_l"></b>
+</div>
+</div>
+</body>
+</html>
