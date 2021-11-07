@@ -45,7 +45,36 @@ $(function(){
   font-family: "DiaPro";
 }
 
+.close {filter: invert(1);}
 
+.about #link {
+  position:absolute;
+	cursor:pointer;
+  margin:0;
+  top:0; left:0;
+  width:100%; height:100%;
+  text-indent:-999px;
+}
+.about:hover {
+  cursor:pointer;
+  color:#fff;
+  background:#eee;
+  text-shadow:0.1rem 0.1rem #000;
+  transition:.5s all;
+}
+
+.print{display:none;}
+
+@media print{
+.print{display:block;}
+.no_print{display: none;}
+}
+
+@media screen and (max-width: 750px){
+#date_list li {
+  width:100%;
+}
+}
 </style>
 <title>Fancy and Relaxin' | Go Out</title>
 <link rel="icon" href="logo.png">
