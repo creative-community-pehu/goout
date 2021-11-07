@@ -162,5 +162,6 @@ $(function(){
 </li>
 <?php endif; ?>
 </ol>
+</hr>
 </body>
 </html>
