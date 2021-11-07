@@ -1,0 +1,140 @@
+body {margin:0; padding:0; background:#ebd809;}
+ul {padding:0; margin:0 5%;}
+li {list-style:none;}
+h2 {margin:1rem 0 0; padding:0; font-size:1.25rem;}
+hr {border:hidden; height:1rem;}
+
+.ipaexg {font-family: "ipaexg";}
+.DiaPro, .sub {font-family: "DiaPro";}
+
+.about {
+  top:0;
+  font-size:1rem;
+	padding:0 2.5% 0.5rem;
+	position:relative;
+  z-index:50;
+  background:#000;
+  width:95%;
+}
+.inside {
+  width:95%;
+  max-width:75rem;
+  margin:auto;
+}
+.about .right {
+  margin:0;
+  display:block;
+  color:#fff;
+  text-align:right;
+  font-weight: 550;
+}
+.sub b {
+  display:block;
+  color:#ebd809;
+  font-size:7rem;
+  padding:1.25%;
+  margin-bottom:4.5rem;
+}
+.about .right span {
+  font-size:150%;
+}
+.about i {
+  font-size:125%;
+  font-style:normal;
+  font-family:"MS Mincho", serif;
+}
+
+#info,
+#announce{
+  top:0;
+  width:90%;
+  z-index:2;
+  padding:2.5%;
+  margin:auto;
+  position:relative;
+}
+#info {
+  max-width: 55rem;
+}
+
+#info h1 {
+  font-size:2rem;
+  padding:0 2.5% 0;
+}
+#announce h1 {
+  font-size:2.5rem;
+  padding:2.5%;
+}
+#info h1 span {
+  padding:1rem 0;
+  display:inline-block;
+  font-size:75%;
+}
+#info .greeting,
+#announce .greeting {
+  font-size:1rem;
+  padding:0 2.5%;
+  font-family: "ipaexg";
+}
+#info .greeting {
+  margin:5% 0;
+}
+#announce .greeting {
+  margin:2.5% 0;
+}
+#announce .greeting p {
+  font-size:125%;
+}
+#info .greeting b,
+#announce .greeting b {
+  color:#ebd809;
+  background:#000;
+  display:inline-block;
+  padding:0.5rem;
+}
+#announce a {
+  font-family: "DiaPro";
+  font-size:2.5rem;
+  text-decoration:none;
+  color:#000;
+  display:inline-block;
+  border:1px solid;
+  margin:5.5% 0 4%;
+  padding:0.25rem 1.5rem 0.75rem;
+  border-radius:5rem;
+  background:#fff;
+}
+#greeting {
+  margin:5% auto;
+  width:80%;
+  position:relative;
+  top:0;
+  z-index:2;
+  padding:3vw;
+  background:#fff;
+  font-size:3vw;
+  clear:both;
+  font-family: "YuMincho","Yu Mincho",serif;
+  animation:0.55s linear infinite alternate heartbeat;
+}
+#greeting p {
+  margin:0;
+}
+#greeting span {
+  font-size:80%;
+  display:block;
+  padding:1rem 0 0;
+}
+
+#bgm {
+  padding:2.5% 0;
+  width:100%;
+  height:30rem;
+}
+
+@media screen and (max-width: 55rem){
+#bgm {
+  width:100%;
+  height:50vw;
+}
+}
