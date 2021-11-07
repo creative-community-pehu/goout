@@ -30,23 +30,23 @@ body {padding:0; margin: 0;}
 
 
 <div id="menu">
-<div><a class="tab" href="#date">Infomation</a><span class="check"><b>✔</b></span></div>
-<div><a class="tab" href="#plan">Plan</a><span class="check"><b>✔</b></span></div>
-<div><a class="tab" href="#review">Fancy & Relaxin'</a><span class="check"><b>✔</b></span></div>
+<div><a class="tab" href="#plan">Infomation</a><span class="check"><b>✔</b></span></div>
+<div><a class="tab" href="#review">Review</a><span class="check"><b>✔</b></span></div>
+<div><a class="tab" href="#date">Special Contents</a><span class="check"><b>✔</b></span></div>
 </div>
 
 <div id="relax"></div>
-<div id="date" class="change"></div>
 <div id="plan" class="change"></div>
 <div id="review" class="change"><iframe src="/map/members/relax/"></iframe></div>
+<div id="date" class="change"></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/sign/infomation/menu.js"></script>
 <script type="text/javascript">
 $(function(){
 $("#relax").load("relax.html");
-$("#date").load("with/");
 $("#plan").load("plan.html");
+$("#date").load("with/");
 })
 
 $('a[href^="#"]').click(function(){
