@@ -62,7 +62,7 @@ $(function(){
   text-shadow:0.1rem 0.1rem #000;
   transition:.5s all;
 }
-
+.list {margin-bottom:5rem;}
 .print{display:none;}
 
 @media print{
@@ -115,7 +115,6 @@ $(function(){
 
 <div id="announce">
 <div class="greeting">
-
 <form id="org">
 <div class="search-box type">
 <ol>
@@ -167,7 +166,6 @@ $(function(){
   </div>
   </div>
 </form>
-
 </div>
 </div>
 
@@ -192,6 +190,5 @@ $(function(){
 </li>
 <?php endif; ?>
 </ol>
-</hr>
 </body>
 </html>
