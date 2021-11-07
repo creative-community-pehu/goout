@@ -35,6 +35,9 @@ $(function(){
 })
 </script>
 <style type="text/css">
+.ipaexg {font-family: "ipaexg";}
+.DiaPro, .sub {font-family: "DiaPro";}
+
 .type,
 .list .title,
 .list .address,
@@ -58,7 +61,7 @@ $(function(){
 
 <div class="about">
 <div class="inside">
-<span class="sub"><b>Fancy and Relaxin'</b></span>
+<span class="sub"><b>Fancy and Relaxin' Spots</b></span>
 <span class="right DiaPro">
 <u>
   <i>Update | 
@@ -72,7 +75,6 @@ $(function(){
 <a id="link" class="tag" onclick="obj=document.getElementById('submit').style; obj.display=(obj.display=='none')?'block':'none';"></a>
 </div>
 </div>
-<hr/>
 <div id="announce">
 <div class="greeting">
 <h1 class="DiaPro">初めて訪れた場所を「贅沢度・リラックス度」を基準に評価し、優雅にリラックスできるスポットのコレクションを制作しています。</h1>
