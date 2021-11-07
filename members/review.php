@@ -62,7 +62,7 @@ $(function(){
   text-shadow:0.1rem 0.1rem #000;
   transition:.5s all;
 }
-.list {margin-bottom:5rem;}
+.list {padding-bottom:5rem;}
 .print{display:none;}
 
 @media print{
