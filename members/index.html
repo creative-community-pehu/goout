@@ -9,6 +9,34 @@
 <style type="text/css">
 body {padding:0; margin: 0;}
 
+.cc {
+    font-family: "ipag", monospace;
+    transform:scale(1, 1.25);
+}
+#top_btn {
+    position: fixed;
+    top:0; right:0;
+    z-index: 1000;
+    margin:2.5vw;
+    font-size:2.5vw;
+}
+#top_btn a {
+    display: block;
+    text-align: center;
+    width: 5.5vw;
+    height: 4.5vw;
+    color:#fff;
+    line-height: 4.5vw;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 1000ms ease;
+}
+#top_btn a:hover {
+    color:#ebd809;
+    cursor: pointer;
+    transition: all 1000ms ease;
+}
+
 #relax,
 #infomation,
 #date,
@@ -33,7 +61,7 @@ body {padding:0; margin: 0;}
 </style>
 </head>
 <body>
-
+<p id="top_btn"><a class="cc" href="#" onClick="history.back(); return false;" target="_parent">↵</a></p>
 
 <div id="menu">
 <div><a class="tab" href="#infomation">Infomation</a><span class="check"><b>✔</b></span></div>
