@@ -10,7 +10,7 @@
 body {padding:0; margin: 0;}
 
 #relax,
-#plan,
+#infomation,
 #date,
 #review {
   position:fixed;
@@ -20,7 +20,7 @@ body {padding:0; margin: 0;}
   overflow-y: auto;
 }
 
-#plan,
+#infomation,
 #date
 {background:#ebd809;}
 
@@ -36,13 +36,13 @@ body {padding:0; margin: 0;}
 
 
 <div id="menu">
-<div><a class="tab" href="#plan">Infomation</a><span class="check"><b>✔</b></span></div>
+<div><a class="tab" href="#infomation">Infomation</a><span class="check"><b>✔</b></span></div>
 <div><a class="tab" href="#review">Review</a><span class="check"><b>✔</b></span></div>
 <div><a class="tab" href="#date">Special Contents</a><span class="check"><b>✔</b></span></div>
 </div>
 
 <div id="relax"></div>
-<div id="plan" class="change"></div>
+<div id="infomation" class="change"></div>
 <div id="review" class="change"><iframe src="/map/members/relax/"></iframe></div>
 <div id="date" class="change"></div>
 
@@ -51,7 +51,7 @@ body {padding:0; margin: 0;}
 <script type="text/javascript">
 $(function(){
 $("#relax").load("relax.html");
-$("#plan").load("plan.html");
+$("#infomation").load("plan.html");
 $("#date").load("with/");
 })
 
