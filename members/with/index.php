@@ -6,14 +6,32 @@
 <meta name="viewport" content="width=device-width">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title> Go Out | Members Only </title>
-<link rel="stylesheet" href="https://creative-community.space/map/css/top.css" />
 <link rel="stylesheet" href="https://creative-community.space/map/css/click.css" />
 <link rel="stylesheet" href="https://creative-community.space/map/css/fonts.css" />
 <style type="text/css">
 body {padding:0; margin: 0; background:lemonchiffon;}
+#cover {
+  position:relative;
+  display:block;
+  width:100%;
+  height:10rem;
+  animation: 5s ease-in 2.5s reverse both running slidein;
+}
 #cover a {
+    background:#fff;
+    border: 0.1vw solid #000;
+    border-radius: 50%;
+    padding: 0.5vw 5vw;
+    font-size: 4vw;
     color:#000;
     text-decoration: none;
+}
+.center {
+  position:absolute;
+  top:50%; left:50%;
+  transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+  margin:0; padding:0;
 }
 body { margin: 0; padding: 0;}
 #links {width:95%; margin:auto;}
@@ -45,7 +63,6 @@ body { margin: 0; padding: 0;}
 </head>
 <body>
 <div id="cover">
-<h1 id="title" class="center goout"><span>Go Out</span></h1>
 <a class="center goout">Special Contents</a>
 </div>
 
