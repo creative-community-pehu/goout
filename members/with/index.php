@@ -1,43 +1,20 @@
 
-<?php
-function h($str) {
-    return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
-}
-$format = (string)filter_input(INPUT_POST, 'format');
-$date = (string)filter_input(INPUT_POST, 'date');
-$comment = (string)filter_input(INPUT_POST, 'comment');
-$link = (string)filter_input(INPUT_POST, 'link');
-
-$fp = fopen('date.csv', 'a+b');
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    flock($fp, LOCK_EX);
-    fputcsv($fp, [$format, $date, $comment, $link]);
-    rewind($fp);
-}
-
-flock($fp, LOCK_SH);
-while ($row = fgetcsv($fp)) {
-    $rows[] = $row;
-}
-flock($fp, LOCK_UN);
-fclose($fp);
-
-?>
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<title>Fancy and Relaxin' | with</title>
-
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta name="description" content="行ったことのない場所へ（知らない道を選んで）、行く">
-<link rel="icon" href="/map/members/logo.png">
-<link rel="stylesheet" href="/map/css/click.css"/>
-<link rel="stylesheet" href="/map/css/fonts.css"/>
-<link rel="stylesheet" href="https://creative-community.space/coding/fontbook/css/font-family.css"/>
-<style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Go Out | Members Only </title>
+<link rel="stylesheet" href="https://creative-community.space/map/css/top.css" />
+<link rel="stylesheet" href="https://creative-community.space/map/css/click.css" />
+<link rel="stylesheet" href="https://creative-community.space/map/css/fonts.css" />
+<style type="text/css">
+body {padding:0; margin: 0; background:lemonchiffon;}
+#cover a {
+    color:#000;
+    text-decoration: none;
+}
 body { margin: 0; padding: 0;}
 #links {width:95%; margin:auto;}
 
@@ -66,30 +43,28 @@ body { margin: 0; padding: 0;}
 }
 </style>
 </head>
-
 <body>
+<div id="cover">
+<h1 id="title" class="center goout"><span>Go Out</span></h1>
+<a class="center goout">Special Contents</a>
+</div>
 
-<div class="about">
-<div class="inside">
-<span class="sub"><b>Special Contents</b></span>
-</div>
-</div>
 <div id="links">
-<?php if (!empty($rows)): ?>
-<?php foreach ($rows as $row): ?>
 <div class="click">
-<h1 class="left relax"><b><?=h($row[1])?></b></h1>
-<h1 class="right relax"><b><?=h($row[0])?></b></h1>
-<p class="btn center relax"><a href="<?=h($row[3])?>" target="_parent"><?=h($row[2])?></a></p>
+<h1 class="left goout"><b>2019.8.4</b></h1>
+<h1 class="right goout"><b>Essay</b></h1>
+<p class="btn center goout"><a href="/map/members/with/essay.pdf" target="_parent">いつもと違う道を通る Going the other way than usual</a></p>
 </div>
-<?php endforeach; ?>
-<?php else: ?>
 <div class="click">
-<h1 class="left relax"><b>Fancy and</b></h1>
-<h1 class="right relax"><b>Relaxin' with</b></h1>
-<p class="btn center relax"><a href="/map/members/relax/" target="_parent">Members Only</a></p>
+<h1 class="left relax"><b>2019.3.6</b></h1>
+<h1 class="right relax"><b>Video</b></h1>
+<p class="btn center relax"><a href="https://newlifecollection.com/ca51/1207/p-r-s/" target="_parent">ただずっと環状線に乗ってぐるぐる回って、窓の外を眺める</a></p>
 </div>
-<?php endif; ?>
+<div class="click">
+<h1 class="left relax"><b>2019.2.15</b></h1>
+<h1 class="right relax"><b>Video</b></h1>
+<p class="btn center relax"><a href="https://newlifecollection.com/ca51/1206/p-r-s/" target="_parent">阪急百貨店梅田店の前の歩道橋の上</a></p>
+</div>
 </div>
 </body>
 </html>
