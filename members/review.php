@@ -83,28 +83,6 @@ $(function(){
 <link rel="stylesheet" href="https://creative-community.space/coding/fontbook/css/font-family.css" />
 </head>
 <body>
-
-<div class="popup" id="submit" style="display:none;">
-<p><iframe src="submit.php"></iframe></p>
-<span class="close" onclick="obj=document.getElementById('submit').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
-</div>
-
-<div class="about">
-<div class="inside">
-<span class="sub"><b>Fancy and Relaxin' Spots</b></span>
-<span class="right DiaPro">
-<u>
-  <i>Update | 
-  <?php
-  $mod = filemtime("list.csv");
-  date_default_timezone_set('Asia/Tokyo');
-  print "".date("m.d.y H:i",$mod);
-  ?>
-  </i>
-</u></span>
-<a id="link" class="tag" onclick="obj=document.getElementById('submit').style; obj.display=(obj.display=='none')?'block':'none';"></a>
-</div>
-</div>
 <div id="announce">
 <div class="greeting">
 <h1 class="DiaPro">初めて訪れた場所を「贅沢度・リラックス度」を基準に評価し、優雅にリラックスできるスポットのコレクションを制作しています。</h1>
