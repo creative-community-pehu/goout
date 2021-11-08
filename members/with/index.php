@@ -33,7 +33,7 @@ body {padding:0; margin: 0; background:lemonchiffon;}
   margin:0; padding:0;
 }
 body { margin: 0; padding: 0;}
-#links {width:95%; margin:auto;}
+#links {width:95%; margin:0 auto 5rem;}
 .DiaPro, .sub {font-family: "DiaPro";}
 .about {
   top:0;
