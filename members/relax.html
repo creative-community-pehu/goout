@@ -75,9 +75,10 @@
 <link rel="stylesheet" href="https://creative-community.space/coding/fontbook/css/font-family.css" />
 </head>
 <body>
-<div class="popup" id="with" style="display:none;">
-<p><iframe src="/map/membersonly.html"></iframe></p>
-<span class="close" onclick="obj=document.getElementById('with').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
+
+<div class="popup" id="submit" style="display:none;">
+<p><iframe src="submit.php"></iframe></p>
+<span class="close" onclick="obj=document.getElementById('submit').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
 </div>
 
 <div class="about">
@@ -85,9 +86,16 @@
 <span class="sub"><b>Fancy and Relaxin'</b></span>
 <span class="right DiaPro">
 <u>
-  <i>Members Only</i>
-</u></span>
-<a id="link" class="tag" onclick="obj=document.getElementById('with').style; obj.display=(obj.display=='none')?'block':'none';"></a>
+  <i>Update | 
+  <?php
+  $mod = filemtime("list.csv");
+  date_default_timezone_set('Asia/Tokyo');
+  print "".date("m.d.y H:i",$mod);
+  ?>
+  </i>
+</u>
+</span>
+<a id="link" class="tag" onclick="obj=document.getElementById('submit').style; obj.display=(obj.display=='none')?'block':'none';"></a>
 </div>
 </div>
 <div id="info" class="no_print">
@@ -108,11 +116,12 @@
 <button id="btn-play" type="button"><b class="fas fa-play">"We'll play and tell you what it is later"</b></button>
 <hr/>
 </div>
-
+<div id="review"></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
 $("#dance").load("image.html");
+$("#review").load("review.php");
 })
 </script>
 <script>
