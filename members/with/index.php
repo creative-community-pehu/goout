@@ -10,14 +10,14 @@
 <link rel="stylesheet" href="https://creative-community.space/map/css/fonts.css" />
 <style type="text/css">
 body {padding:0; margin: 0; background:lemonchiffon;}
-#cover {
+#sp {
   position:relative;
   display:block;
   width:100%;
   height:10rem;
   animation: 5s ease-in 2.5s reverse both running slidein;
 }
-#cover a {
+#sp a {
     background:#fff;
     border: 0.1vw solid #000;
     border-radius: 50%;
@@ -62,7 +62,7 @@ body { margin: 0; padding: 0;}
 </style>
 </head>
 <body>
-<div id="cover">
+<div id="sp">
 <a class="center goout">Special Contents</a>
 </div>
 
