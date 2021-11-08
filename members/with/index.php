@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -10,14 +9,14 @@
 <link rel="stylesheet" href="https://creative-community.space/map/css/fonts.css" />
 <style type="text/css">
 body {padding:0; margin: 0; background:lemonchiffon;}
-#sp {
+#cover {
   position:relative;
   display:block;
   width:100%;
   height:10rem;
   animation: 5s ease-in 2.5s reverse both running slidein;
 }
-#sp a {
+#cover a {
     background:#fff;
     border: 0.1vw solid #000;
     border-radius: 50%;
@@ -35,9 +34,7 @@ body {padding:0; margin: 0; background:lemonchiffon;}
 }
 body { margin: 0; padding: 0;}
 #links {width:95%; margin:auto;}
-
 .DiaPro, .sub {font-family: "DiaPro";}
-
 .about {
   top:0;
   font-size:1rem;
@@ -52,7 +49,6 @@ body { margin: 0; padding: 0;}
   max-width:75rem;
   margin:auto;
 }
-
 .sub b {
   display:block;
   color:#ebd809;
@@ -62,8 +58,8 @@ body { margin: 0; padding: 0;}
 </style>
 </head>
 <body>
-<div id="sp">
-<a class="center goout">Special Contents</a>
+<div id="cover">
+<h1 id="title" class="center goout"><span>Special</span></h1>
 </div>
 
 <div id="links">
