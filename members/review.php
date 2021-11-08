@@ -78,7 +78,7 @@ $(function(){
 </style>
 <title>Fancy and Relaxin' | Go Out</title>
 <link rel="icon" href="logo.png">
-<link rel="stylesheet" type="text/css" href="styles.css" />
+<link rel="stylesheet" type="text/css" href="relax.css" />
 <link rel="stylesheet" type="text/css" href="review.css" />
 <link rel="stylesheet" href="https://creative-community.space/coding/fontbook/css/font-family.css" />
 </head>
