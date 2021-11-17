@@ -1,3 +1,28 @@
+<?php
+function h($str) {
+    return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+}
+$label = (string)filter_input(INPUT_POST, 'label');
+$date = (string)filter_input(INPUT_POST, 'date');
+$status = (string)filter_input(INPUT_POST, 'status');
+$title = (string)filter_input(INPUT_POST, 'title');
+$link = (string)filter_input(INPUT_POST, 'link');
+
+$fp = fopen('date.csv', 'a+b');
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    flock($fp, LOCK_EX);
+    fputcsv($fp, [$label, $date, $status, $title, $link]);
+    rewind($fp);
+}
+
+flock($fp, LOCK_SH);
+while ($row = fgetcsv($fp)) {
+    $rows[] = $row;
+}
+flock($fp, LOCK_UN);
+fclose($fp);
+
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -63,21 +88,23 @@ body { margin: 0; padding: 0;}
 </div>
 
 <div id="links">
+<?php if (!empty($rows)): ?>
+<?php foreach ($rows as $row): ?>
 <div class="click">
-<h1 class="left goout"><b>2019.8.4</b></h1>
-<h1 class="right goout"><b>Essay</b></h1>
-<p class="btn center goout"><a href="/map/members/with/essay.pdf" target="_parent">いつもと違う道を通る Going the other way than usual</a></p>
-</div>
+<h1 class="left <?=h($row[0])?>"><b><?=h($row[1])?></b></h1>
+<h1 class="right <?=h($row[0])?>"><b><?=h($row[2])?></b></h1>
+<p class="btn center <?=h($row[0])?>">
+  <a href="<?=h($row[4])?>" target="_parent"><?=h($row[3])?></a>
+</p>
+
+<?php endforeach; ?>
+<?php else: ?>
 <div class="click">
-<h1 class="left relax"><b>2019.3.6</b></h1>
-<h1 class="right relax"><b>Video</b></h1>
-<p class="btn center relax"><a href="https://newlifecollection.com/ca51/1207/p-r-s/" target="_parent">ただずっと環状線に乗ってぐるぐる回って、窓の外を眺める</a></p>
+<h1 class="left goout"><b>00.00.0000</b></h1>
+<h1 class="right goout"><b>With</b></h1>
+<p class="btn center goout"><a href="" target="_parent">Title</a></p>
 </div>
-<div class="click">
-<h1 class="left relax"><b>2019.2.15</b></h1>
-<h1 class="right relax"><b>Video</b></h1>
-<p class="btn center relax"><a href="https://newlifecollection.com/ca51/1206/p-r-s/" target="_parent">阪急百貨店梅田店の前の歩道橋の上</a></p>
-</div>
+<?php endif; ?>
 </div>
 </body>
 </html>
