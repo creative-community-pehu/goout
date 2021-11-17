@@ -103,6 +103,9 @@ border:0.1rem solid #000;
 <input type="radio" name="type" value="spa" id="spa">
 <label for="spa" class="label">銭湯・スパ</label></li>
 <li>
+<input type="radio" name="type" value="sports" id="sports">
+<label for="sports" class="label">運動場</label></li>
+<li>
 <input type="radio" name="type" value="hotel" id="hotel">
 <label for="hotel" class="label">ホテル</label></li>
 <li>
