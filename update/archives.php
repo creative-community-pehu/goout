@@ -79,7 +79,7 @@ fclose($fp);
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <li class="goout">
-<h2>
+<h2><?=h($row[0])?><br/>
 <i><?=h($row[1])?></i></h2>
 <p><b><?=h($row[2])?></b>
 <a href="<?=h($row[3])?>" target="_blank" rel=”noopener noreferrer”></a></p>
