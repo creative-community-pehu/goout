@@ -25,12 +25,12 @@ fclose($fp);
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<title>Go Out | お知らせ</title>
+<title>Go Out | 地図を作ろう</title>
 
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta name="description" content="Life is precious.　Every minute.　And more precious with you in it.　Let's have some fun.">
+<meta name="description" content="行ったことのない場所へ行く">
 <link rel="icon" href="/map/logo.png">
 <link rel="stylesheet" href="/map/css/update.css"/>
 <style>
@@ -57,7 +57,6 @@ body { margin: 0; padding: 0; }
 <a href="<?=h($row[3])?>" target="_parent"></a></p>
 </li>
 <?php endif; ?>
-<h2 class="relax"><span class="goout">Topics</span></h2>
 </ul>
 </body>
 </html>

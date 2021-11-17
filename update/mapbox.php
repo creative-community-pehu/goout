@@ -30,7 +30,7 @@ fclose($fp);
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta name="description" content="Life is precious.　Every minute.　And more precious with you in it.　Let's have some fun.">
+<meta name="description" content="行ったことのない場所へ行く">
 <link rel="icon" href="/map/logo.png">
 <link rel="stylesheet" href="/map/css/top.css" />
 <link rel="stylesheet" href="/map/css/info.css" />
@@ -96,7 +96,7 @@ fclose($fp);
 <li>
 <h2 class="relax"><u>地図を作ろう</u><br/>
 <i class="goout">Work In Progress</i></h2>
-<p class="relax"><b>Mapboxを使って、初めて訪れた場所・お気に入りの場所を集めたコレクションを作成しています。</b></p>
+<p class="relax"><b>Mapboxを使って、初めて訪れた場所・お気に入りの場所を集めたデジタル地図を作成します。</b></p>
 </li>
 </ul>
 </div>
