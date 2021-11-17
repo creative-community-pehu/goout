@@ -96,7 +96,7 @@ fclose($fp);
 <li>
 <h2 class="relax">映像・エッセイ<br/>
 <i class="goout">Archives</i></h2>
-<p class="relax"><b>Mapboxを使って、初めて訪れた場所・お気に入りの場所を集めたデジタル地図を作成します。</b></p>
+<h2 class="relax"><b>Mapboxを使って、初めて訪れた場所・お気に入りの場所を集めたデジタル地図を作成します。</b></h2>
 </li>
 </ul>
 </div>
