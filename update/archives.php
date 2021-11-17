@@ -79,7 +79,7 @@ fclose($fp);
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <li class="goout">
-<h2><u><?=h($row[0])?></u><br/>
+<h2><?=h($row[0])?><br/>
 <i><?=h($row[1])?></i></h2>
 <p><b><?=h($row[2])?></b>
 <a href="<?=h($row[3])?>" target="_blank" rel=”noopener noreferrer”></a></p>
@@ -87,7 +87,7 @@ fclose($fp);
 <?php endforeach; ?>
 <?php else: ?>
 <li class="goout">
-<h2><u>タイトル</u><br/>
+<h2>タイトル<br/>
 <i>進行状況</i></h2>
 <p><b>説明</b>
 <a href="<?=h($row[3])?>" target="_blank" rel=”noopener noreferrer”></a></p>
@@ -96,7 +96,6 @@ fclose($fp);
 <li>
 <h2 class="relax">映像・エッセイ<br/>
 <i class="goout">Archives</i></h2>
-<h2 class="relax"><b>Mapboxを使って、初めて訪れた場所・お気に入りの場所を集めたデジタル地図を作成します。</b></h2>
 </li>
 </ul>
 </div>
