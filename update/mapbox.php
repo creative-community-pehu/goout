@@ -94,8 +94,8 @@ fclose($fp);
 </li>
 <?php endif; ?>
 <li>
-<h2 class="goout"><u>Digital Map</u><br/>
-<i class="goout">地図を作ろう</i></h2>
+<h2 class="relax"><u>地図を作ろう</u><br/>
+<i class="goout">Digital Map</i></h2>
 <p class="relax"><b>Mapboxを使って、初めて訪れた場所・お気に入りの場所を集めたデジタル地図を作成します。</b></p>
 </li>
 </ul>
