@@ -109,9 +109,6 @@ $(function(){
 <input type="radio" name="type" value="sports" id="sports">
 <label for="sports" class="label">運動場</label></li>
 <li>
-<input type="radio" name="type" value="hotel" id="hotel">
-<label for="hotel" class="label">ホテル</label></li>
-<li>
 <input type="radio" name="type" value="public" id="public">
 <label for="public" class="label">商業・公共施設</label></li>
 <li>
