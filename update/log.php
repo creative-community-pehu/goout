@@ -94,8 +94,8 @@ fclose($fp);
 </li>
 <?php endif; ?>
 <li>
-<h2 class="relax">映像・エッセイ<br/>
-<i class="goout">Archives</i></h2>
+<h2 class="relax">更新履歴<br/>
+<i class="goout">Update</i></h2>
 </li>
 </ul>
 </div>
