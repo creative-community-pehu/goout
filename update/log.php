@@ -7,7 +7,7 @@ $status = (string)filter_input(INPUT_POST, 'status');
 $more = (string)filter_input(INPUT_POST, 'more');
 $link = (string)filter_input(INPUT_POST, 'link');
 
-$fp = fopen('archives.csv', 'a+b');
+$fp = fopen('log.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$title, $status, $more, $link]);
