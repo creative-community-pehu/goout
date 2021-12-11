@@ -5,11 +5,11 @@ const geojson = {
       type: 'Feature',
       geometry: {
         type: 'Point',
-        coordinates: [-77.032, 38.913]
+        coordinates: [34.69883713756516, 135.49299331023352]
       },
       properties: {
-        title: 'Mapbox',
-        description: 'Washington, D.C.'
+        title: 'OSAKA GARDEN CITY',
+        description: '<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1646238217/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://verygois.bandcamp.com/album/garden-city">Garden City by 🐴</a></iframe>'
       }
     },
     {
