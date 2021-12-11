@@ -58,7 +58,7 @@ const geojson = {
       properties: {
         title: 'OSAKA GARDEN CITY',
         iframe: 'https://www.google.com/maps/embed?pb=!4v1639211015433!6m8!1m7!1sCAoSLEFGMVFpcFBPSE96OTgzaUVqREREXzZ1Rko0RU9uV1hNYzFzLVdMaDd5SU4z!2m2!1d34.6986431!2d135.4924676!3f0!4f0!5f0.7820865974627469',
-        url: 'https://verygois.bandcamp.com/album/garden-city'
+        url: 'http://vg.pe.hu/up/play/garden_city.html'
       }
     }
   ]
