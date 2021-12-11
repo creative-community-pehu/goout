@@ -21,7 +21,7 @@ body {margin:0; padding:0;}
 }
 @keyframes slidein {
   from {height: 0vh;}
-  to   {height: 100vh;}
+  to {height: 100vh;}
 }
 
 .center {
