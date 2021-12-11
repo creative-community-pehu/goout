@@ -15,7 +15,7 @@ const geojson = {
       type: 'Feature',
       geometry: {
         type: 'Point',
-        coordinates: [34.698759433805705,135.4925126445242]
+        coordinates: [135.49249037915752,34.698777739416045]
       },
       properties: {
         title: 'OSAKA GARDEN CITY',
