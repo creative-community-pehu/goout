@@ -20,7 +20,7 @@ body {margin:0; padding:0;}
 }
 @keyframes slidein {
   from {height: 100vw; max-height:100vh;}
-  to   {height: 100vh;}
+  to   {height: 0vh;}
 }
 
 .center {
