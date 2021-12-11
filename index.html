@@ -18,7 +18,6 @@
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
 <style>
 #links {background-color: #fff;}
-#info {display:none;}
 #top {pointer-events:none; user-select:none;}
 
 .hidden {
@@ -149,7 +148,7 @@ $(function(){
 $("#info").load("info.html");
 })
 
-    let btn = document.querySelector('#top_btn a');
+    let btn = document.querySelector('#top_btn');
     let index = document.querySelector('#info');
      
     let btnToggleclass = function(el) {
