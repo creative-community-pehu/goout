@@ -60,9 +60,9 @@
   border-radius: 50%;
   cursor: pointer;
 }
+
 .mapboxgl-popup {
-  width: 55vw;
-  max-width: 500px;
+  max-width: 200px;
 }
 
 .mapboxgl-popup-content {
@@ -104,7 +104,15 @@ for (const marker of geojson.features) {
   el.className = 'marker';
 
   // make a marker for each feature and add to the map
-  new mapboxgl.Marker(el).setLngLat(marker.geometry.coordinates).addTo(map);
+  new mapboxgl.Marker(el)
+  .setLngLat(marker.geometry.coordinates)
+  .setPopup(
+    new mapboxgl.Popup({ offset: 25 }) // add popups
+      .setHTML(
+        `<h3>${marker.properties.title}</h3><p>${marker.properties.description}</p>`
+      )
+  )
+  .addTo(map);
 }
 </script>
 
