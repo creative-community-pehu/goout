@@ -9,18 +9,20 @@ const geojson = {
       },
       properties: {
         title: 'OSAKA GARDEN CITY',
-        description: '<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1646238217/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://verygois.bandcamp.com/album/garden-city">Garden City by 🐴</a></iframe>'
+        iframe: 'https://www.google.com/maps/embed?pb=!4v1639207891102!6m8!1m7!1sCAoSLEFGMVFpcE80TlBvQmVBWV9mTlhSeGZGSWR4eEw5ckhuY1VyLXV6N0drN0x1!2m2!1d34.6986431!2d135.4924676!3f0!4f20!5f0.7820865974627469',
+        url: 'https://goo.gl/maps/JVotUK14EoaExpJD8'
       }
     },
     {
       type: 'Feature',
       geometry: {
         type: 'Point',
-        coordinates: [-122.414, 37.776]
+        coordinates: [34.69883713756516, 135.49299331023352]
       },
       properties: {
-        title: 'Mapbox',
-        description: 'San Francisco, California'
+        title: 'OSAKA GARDEN CITY',
+        iframe: 'https://www.google.com/maps/embed?pb=!4v1639207891102!6m8!1m7!1sCAoSLEFGMVFpcE80TlBvQmVBWV9mTlhSeGZGSWR4eEw5ckhuY1VyLXV6N0drN0x1!2m2!1d34.6986431!2d135.4924676!3f0!4f20!5f0.7820865974627469',
+        url: 'https://goo.gl/maps/JVotUK14EoaExpJD8'
       }
     }
   ]
