@@ -62,14 +62,16 @@
 }
 
 .mapboxgl-popup {
-    max-width: 750px;
+    width: 750px;
     z-index:20;
+}
+.mapboxgl-popup h3 {
+    transform:scale(1, 1.25);
 }
 
 .mapboxgl-popup-content {
     text-align: center;
     font-family: "ipag", monospace;
-    transform:scale(1, 1.25);
 }
 </style>
 </head>
@@ -113,7 +115,7 @@ for (const marker of geojson.features) {
       .setHTML(
         `<h3>${marker.properties.title}</h3>
         <p>
-        <iframe src="${marker.properties.iframe}" width="100%" height="20vw" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="${marker.properties.iframe}" width="100%" height="45vw" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <a href="${marker.properties.url}">Link</a></p>`
       )
   )
