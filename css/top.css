@@ -19,8 +19,8 @@ body {margin:0; padding:0;}
   animation: 5s ease-in 2.5s reverse both running slidein;
 }
 @keyframes slidein {
-  from {height: 100vw; max-height:100vh;}
-  to   {height: 0vh;}
+  from {height: 0vh;}
+  to   {height: 100vh;}
 }
 
 .center {
