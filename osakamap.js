@@ -41,7 +41,7 @@ const geojson = {
       type: 'Feature',
       geometry: {
         type: 'Point',
-        coordinates: [135.49249037915752,34.698777739416045]
+        coordinates: [135.49833040290451,34.70324334937851]
       },
       properties: {
         title: '阪急百貨店梅田店コンコース',
