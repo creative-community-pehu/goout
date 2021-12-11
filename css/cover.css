@@ -5,6 +5,7 @@ body {margin:0; padding:0;}
     top: 0; bottom: 0;
     width: 100%; height: 100vh;
 }
+
 #top {
   position:relative;
   z-index: 10;
@@ -81,21 +82,13 @@ body {margin:0; padding:0;}
 }
 
 @media screen and (max-width: 550px){
-#cover #title {font-size:10vw;}
-@keyframes play {
-  from {
-    letter-spacing:2vw;
-  }
-  to {
-    letter-spacing:.2vw;
-  }
-}
-@-webkit-keyframes play {
-  from {
-    letter-spacing:1vh;
-  }
-  to {
-    letter-spacing:0.5vh;
-  }
-}
+    #cover #title {font-size:10vw;}
+    @keyframes play {
+        from {letter-spacing:2vw;}
+        to {letter-spacing:.2vw;}
+    }
+    @-webkit-keyframes play {
+    from {letter-spacing:1vh;}
+    to {letter-spacing:0.5vh;}
+    }
 }
