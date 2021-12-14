@@ -96,6 +96,7 @@ body { margin: 0; padding: 0;}
 <p class="btn center <?=h($row[0])?>">
   <a href="<?=h($row[4])?>" target="_parent"><?=h($row[3])?></a>
 </p>
+</div>
 
 <?php endforeach; ?>
 <?php else: ?>
