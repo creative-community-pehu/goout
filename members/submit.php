@@ -84,7 +84,7 @@ border:0.1rem solid #000;
 <link rel="stylesheet" type="text/css" href="review.css" />
 </head>
 <body>
-<form action="complete.php" id="org" class="submit" method="post">
+<form action="complete.php" id="org" class="submit" method="post" target="_parent">
 <div class="greeting ipaexm">
 <p>※ このフォームから、あなたが見つけたスポットをコレクションに追加することができます。</p>
 </div>
