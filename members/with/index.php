@@ -50,6 +50,7 @@ body {padding:0; margin: 0; background:lemonchiffon;}
     color:#000;
     text-decoration: none;
 }
+.right {text-align:right;}
 .center {
   position:absolute;
   top:50%; left:50%;
