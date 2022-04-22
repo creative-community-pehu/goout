@@ -106,10 +106,94 @@ const geojson = {
             },
             properties: {
                 title: 'やば、パジャマじゃ入れやんやん',
-                date: '2020年8月19日 13:00頃',
+                date: '2020年8月19日 13:00',
                 address: '住之江区北加賀屋２丁目５−３１',
                 link: 'link',
                 url: 'https://newlifecollection.com/ca100/316/p-r-s/'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.47900601191344, 34.63051145948182]
+            },
+            properties: {
+                title: 'Lets　fly　to　the　future!',
+                date: '2021年12月15日 14:00',
+                address: '西成区南津守５丁目６',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.47900601191344, 34.63051145948182]
+            },
+            properties: {
+                title: 'Lets　fly　to　the　future!',
+                date: '2021年12月15日 14:00',
+                address: '西成区南津守５丁目６',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.47900601191344, 34.63051145948182]
+            },
+            properties: {
+                title: 'おいカラス',
+                date: '2022年2月5日 14:30',
+                address: '住之江区粉浜西２丁目３−３４',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.4859449878253, 34.61941516434365]
+            },
+            properties: {
+                title: 'おいカラス',
+                date: '2022年2月5日 14:30',
+                address: '住之江区粉浜西２丁目３−３４',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.45589981471238, 34.63947527641302]
+            },
+            properties: {
+                title: 'おしくらまんじゅう押されて泣くな',
+                date: '2022年2月7日 16:13',
+                address: '大正区鶴町２丁目７',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.48583895057817, 34.62241109180829]
+            },
+            properties: {
+                title: 'さいなら、がんばろー',
+                date: '2022年2月8日 13:10',
+                address: '住之江区東加賀屋１丁目１−２８',
+                link: 'none',
+                url: ''
             }
         }
 
