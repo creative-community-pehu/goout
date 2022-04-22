@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="description" content="音ビル周辺で聞いた言葉">
-    <link href='map.css' rel='stylesheet' />
+    <link href='map_v2.css' rel='stylesheet' />
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/2.6.1/mapbox-gl.css' rel='stylesheet' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/2.6.1/mapbox-gl.js'></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
@@ -17,6 +17,26 @@
         body {
             margin: 0;
             padding: 0;
+        }
+        
+        h1 {
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            width: 95%;
+            height: 95vh;
+            padding: 2.5vh 2.5%;
+            color: #fff;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 12vw;
+            font-weight: 100;
+            margin: 0;
+        }
+        
+        h1:hover {
+            cursor: pointer;
+            font-style: italic;
         }
         
         #map {
@@ -29,9 +49,21 @@
     </style>
 </head>
 
-<body>
-
+<body id="box">
+    <h1 id="btn">things that i (we) heard around OTO building</h1>
     <div id="map"></div>
+    <script>
+        let btn = document.querySelector('#btn');
+        let box = document.querySelector('#btn');
+
+        let btnToggleclass = function(el) {
+            el.classList.toggle('none');
+        }
+
+        btn.addEventListener('click', function() {
+            btnToggleclass(box);
+        }, false);
+    </script>
     <script src='map_v1.js'></script>
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoicGVodSIsImEiOiJja3R4Y3diNmIybTg5Mm9waWgwYTdsc3FyIn0.lVvnPZ3aa6332EaWJIxPaQ';

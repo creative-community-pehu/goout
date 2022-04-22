@@ -133,20 +133,6 @@ const geojson = {
                 coordinates: [135.47900601191344, 34.63051145948182]
             },
             properties: {
-                title: 'Lets　fly　to　the　future!',
-                date: '2021年12月15日 14:00',
-                address: '西成区南津守５丁目６',
-                link: 'none',
-                url: ''
-            }
-        },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
-                coordinates: [135.47900601191344, 34.63051145948182]
-            },
-            properties: {
                 title: 'おいカラス',
                 date: '2022年2月5日 14:30',
                 address: '住之江区粉浜西２丁目３−３４',
