@@ -130,20 +130,6 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
-                coordinates: [135.47900601191344, 34.63051145948182]
-            },
-            properties: {
-                title: 'おいカラス',
-                date: '2022年2月5日 14:30',
-                address: '住之江区粉浜西２丁目３−３４',
-                link: 'none',
-                url: ''
-            }
-        },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
                 coordinates: [135.4859449878253, 34.61941516434365]
             },
             properties: {
