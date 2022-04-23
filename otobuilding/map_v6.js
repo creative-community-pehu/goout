@@ -172,14 +172,14 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
-                coordinates: [135.47204760716556, 34.634853208732636]
+                coordinates: [135.45773444268912, 34.639953117809014]
             },
             properties: {
-                title: 'ケンケンしてるだけ',
-                date: '2022年2月7日 18:05',
-                address: '大正区南恩加島１丁目１３−３８',
+                title: 'ションベンするな',
+                date: '2022年2月7日 16:18',
+                address: '大正区鶴町５丁目 西福橋',
                 link: 'link',
-                url: 'https://newlifecollection.com/ca98/206/p-r-s/'
+                url: 'https://newlifecollection.com/ca100/672/p-r-s/'
             }
         },
         {
