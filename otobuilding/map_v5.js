@@ -88,20 +88,6 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
-                coordinates: [135.46692081091408, 34.634831295508775]
-            },
-            properties: {
-                title: 'まーっすぐ！まーっすぐ！背中まーっすぐ！',
-                date: '2022年2月7日 16:28',
-                address: '大正区南恩加島６丁目７',
-                link: 'link',
-                url: 'https://newlifecollection.com/ca98/206/p-r-s/'
-            }
-        },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
                 coordinates: [135.4783593740841, 34.62293030222976]
             },
             properties: {
@@ -144,14 +130,56 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
-                coordinates: [135.45589981471238, 34.63947527641302]
+                coordinates: [135.46692081091408, 34.634831295508775]
             },
             properties: {
-                title: 'おしくらまんじゅう押されて泣くな',
-                date: '2022年2月7日 16:13',
-                address: '大正区鶴町２丁目７',
-                link: 'none',
-                url: ''
+                title: 'まーっすぐ！まーっすぐ！背中まーっすぐ！',
+                date: '2022年2月7日 16:28',
+                address: '大正区南恩加島６丁目７',
+                link: 'link',
+                url: 'https://newlifecollection.com/ca98/206/p-r-s/'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.47123308901666, 34.63502917570287]
+            },
+            properties: {
+                title: '「バイバイ」「バイバイ」',
+                date: '2022年2月7日 18:00',
+                address: '大正区南恩加島３丁目１６',
+                link: 'link',
+                url: 'https://newlifecollection.com/ca98/206/p-r-s/'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.47204760716556, 34.634853208732636]
+            },
+            properties: {
+                title: 'ケンケンしてるだけ',
+                date: '2022年2月7日 18:05',
+                address: '大正区南恩加島１丁目１３−３８',
+                link: 'link',
+                url: 'https://newlifecollection.com/ca98/206/p-r-s/'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.47204760716556, 34.634853208732636]
+            },
+            properties: {
+                title: 'ケンケンしてるだけ',
+                date: '2022年2月7日 18:05',
+                address: '大正区南恩加島１丁目１３−３８',
+                link: 'link',
+                url: 'https://newlifecollection.com/ca98/206/p-r-s/'
             }
         },
         {
@@ -164,8 +192,8 @@ const geojson = {
                 title: 'さいなら、がんばろー',
                 date: '2022年2月8日 13:10',
                 address: '住之江区東加賀屋１丁目１−２８',
-                link: 'none',
-                url: ''
+                link: 'link',
+                url: 'https://newlifecollection.com/ca98/206/p-r-s/'
             }
         }
 
