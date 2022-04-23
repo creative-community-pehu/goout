@@ -8,16 +8,18 @@
 }
 
 .mapboxgl-popup {
-    mix-blend-mode: difference;
+    min-width: 55%;
+    filter: invert(90%);
 }
 
 .mapboxgl-popup h3 {
     font-size: 150%;
-    margin: 1rem 0.5rem 1.5rem;
+    line-height: 150%;
+    margin: 1rem 1rem 2rem;
 }
 
 .mapboxgl-popup p {
-    margin: 1rem 1rem 0.5rem;
+    margin: 1.5rem 1rem 0.5rem;
 }
 
 .mapboxgl-popup a {
@@ -27,14 +29,14 @@
     padding: 0.1rem 0.2rem;
 }
 
-.none {
+.mapboxgl-popup .none {
     display: none;
 }
 
 .mapboxgl-popup-content {
     color: #000;
     text-align: center;
-    font-family: "ipag", monospace;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .mapboxgl-popup-close-button {

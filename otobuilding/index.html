@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="description" content="音ビル周辺で聞いた言葉">
-    <link href='map_v3.css' rel='stylesheet' />
+    <link href='map_v4.css' rel='stylesheet' />
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/2.6.1/mapbox-gl.css' rel='stylesheet' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/2.6.1/mapbox-gl.js'></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
@@ -19,13 +19,16 @@
             padding: 0;
         }
         
-        h1 {
+        #btn {
             position: fixed;
             z-index: 100;
             top: 0;
             left: 0;
             width: 95%;
             height: 95vh;
+            opacity: 1;
+            pointer-events: all;
+            user-select: text;
             padding: 2.5vh 2.5%;
             color: #fff;
             font-family: Georgia, 'Times New Roman', Times, serif;
@@ -34,9 +37,16 @@
             margin: 0;
         }
         
-        h1:hover {
+        #btn:hover {
             cursor: pointer;
             font-style: italic;
+        }
+        
+        #btn.none {
+            opacity: 0;
+            pointer-events: none;
+            user-select: none;
+            transition: all 1s ease-out;
         }
         
         #map {
@@ -64,7 +74,7 @@
             btnToggleclass(box);
         }, false);
     </script>
-    <script src='map_v2.js'></script>
+    <script src='map_v4.js'></script>
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoicGVodSIsImEiOiJja3R4Y3diNmIybTg5Mm9waWgwYTdsc3FyIn0.lVvnPZ3aa6332EaWJIxPaQ';
         var map = new mapboxgl.Map({
@@ -90,11 +100,11 @@
                     .setHTML(
                         `<div>
                         <h3>${marker.properties.title}</h3>
-                        <p class="date">${marker.properties.date}
-                          </br>${marker.properties.address}</p>
                         <p class="${marker.properties.link}">
                           <a href="${marker.properties.url}" target="_blank">More Info</a>
                         </p>
+                        <p class="date">${marker.properties.date}
+                          </br>${marker.properties.address}</p>
                         </div>`
                     )
                 )
