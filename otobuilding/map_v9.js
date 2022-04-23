@@ -21,7 +21,7 @@ const geojson = {
                 coordinates: [135.47748776730742, 34.622850959026295]
             },
             properties: {
-                title: '温めましょうね',
+                title: '小泉さんにもろたマスクやろ？',
                 date: '2020年春',
                 address: '住之江区北加賀屋２丁目３−１５',
                 link: 'link',
