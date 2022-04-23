@@ -42,3 +42,10 @@
 .mapboxgl-popup-close-button {
     font-size: 1.5rem;
 }
+
+@media screen and (max-width: 550px) {
+    .marker {
+        width: 0.75rem;
+        height: 0.75rem;
+    }
+}
