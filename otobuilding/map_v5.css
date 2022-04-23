@@ -1,14 +1,14 @@
 .marker {
     background: #fff;
     background-size: cover;
-    width: 1rem;
-    height: 1rem;
+    width: 0.5rem;
+    height: 0.5rem;
     border-radius: 50%;
     cursor: pointer;
 }
 
 .mapboxgl-popup {
-    min-width: 55%;
+    min-width: 25%;
     filter: invert(90%);
 }
 
