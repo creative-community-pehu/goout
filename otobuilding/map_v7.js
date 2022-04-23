@@ -200,6 +200,34 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
+                coordinates: [135.45617780532035, 34.637499896076974]
+            },
+            properties: {
+                title: '19時になるまではいけるから',
+                date: '2022年2月7日 16:10',
+                address: '大正区鶴町２丁目９−１７',
+                link: 'link',
+                url: 'https://newlifecollection.com/ca100/318/p-r-s/'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.45578028682843, 34.63948369718926]
+            },
+            properties: {
+                title: 'おしくらまんじゅう押されて泣くな',
+                date: '2022年2月7日 16:13',
+                address: '大正区鶴町２丁目７',
+                link: 'link',
+                url: 'https://newlifecollection.com/ca100/318/p-r-s/'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
                 coordinates: [135.48583895057817, 34.62241109180829]
             },
             properties: {
