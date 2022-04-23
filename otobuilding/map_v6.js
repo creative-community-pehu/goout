@@ -18,14 +18,14 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
-                coordinates: [135.4738534037411, 34.62493209288219]
+                coordinates: [135.47748776730742, 34.622850959026295]
             },
             properties: {
                 title: '温めましょうね',
-                date: '2021年11月15日 16:40',
-                address: '住之江区北加賀屋５丁目４−７０',
+                date: '2020年春',
+                address: '住之江区北加賀屋２丁目３−１５',
                 link: 'link',
-                url: 'https://newlifecollection.com/ca100/317/p-r-s/'
+                url: 'https://newlifecollection.com/ca100/182/p-r-s/'
             }
         },
         {
@@ -40,6 +40,20 @@ const geojson = {
                 address: '住之江区北加賀屋５丁目３',
                 link: 'link',
                 url: 'https://newlifecollection.com/ca100/315/p-r-s/'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.4738534037411, 34.62493209288219]
+            },
+            properties: {
+                title: '温めましょうね',
+                date: '2021年11月15日 16:40',
+                address: '住之江区北加賀屋５丁目４−７０',
+                link: 'link',
+                url: 'https://newlifecollection.com/ca100/317/p-r-s/'
             }
         },
         {
