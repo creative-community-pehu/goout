@@ -237,6 +237,132 @@ const geojson = {
                 link: 'link',
                 url: 'https://newlifecollection.com/ca98/206/p-r-s/'
             }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.48788711952034, 34.63834165501548]
+            },
+            properties: {
+                title: 'ゆずの匂いすごいやろ。ごめんな',
+                date: '2021年12月22日 23:30',
+                address: '西成区橘３丁目１２−２０',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.46831103386143, 34.635149532714806]
+            },
+            properties: {
+                title: '「クリスマスに何もらった？」<br/>「ヘッドホン」',
+                date: '2021年12月31日 17:00',
+                address: '大正区南恩加島６丁目５−５',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.4874222705268, 34.615542730420984]
+            },
+            properties: {
+                title: 'ここは客の質がいい。味もいいし高くないやろ？',
+                date: '2022年1月23日 20:20',
+                address: '住之江区粉浜西３丁目１',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.4768335595408, 34.621277963475166]
+            },
+            properties: {
+                title: 'ほらいた！お前ちゃんと作れんのか？',
+                date: '2022年2月2日 15:40',
+                address: '住之江区北加賀屋２丁目１１−８',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.4759254859694, 34.620835743767884]
+            },
+            properties: {
+                title: '本当に大丈夫ですか？大丈夫じゃなさそう',
+                date: '2022年2月4日 18:45',
+                address: '住之江区北加賀屋５丁目２',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.4806292922339, 34.61255039926802]
+            },
+            properties: {
+                title: 'ブッ刺したろか',
+                date: '2022年2月5日 19:00',
+                address: '住之江区御崎２丁目５−１',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.49152234812152, 34.61259069437729]
+            },
+            properties: {
+                title: '心を清く。目上の人を敬う。',
+                date: '2022年2月6日 15:30',
+                address: '住吉区住吉２丁目９',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.49063227353213, 34.615485710748246]
+            },
+            properties: {
+                title: 'オダギリジョーに似てるって言われませんか？',
+                date: '2022年2月6日 16:30',
+                address: '住之江区粉浜３丁目８−７',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.49073136471583, 34.615218390828886]
+            },
+            properties: {
+                title: '熟女いけてもうたら幅広がるよな',
+                date: '2022年3月2日 23:57',
+                address: '住之江区粉浜３丁目９−２４',
+                link: 'none',
+                url: ''
+            }
         }
 
     ]
