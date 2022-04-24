@@ -49,6 +49,10 @@
             height: 100vh;
         }
         
+        #links {
+            background-color: #fff;
+        }
+        
         .hidden {
             width: 100%;
             height: 0;
@@ -122,7 +126,7 @@
     <p id="top_btn"><a class="cc">i</a></p>
 
     <div id="top">
-        <div id="cover" class="hidden"></div>
+        <div id="info" class="hidden"></div>
     </div>
     <div id="map"></div>
     <script src='v2.js'></script>
@@ -165,11 +169,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(function() {
-            $("#cover").load("cover.html");
+            $("#info").load("cover.html");
         })
 
         let btn = document.querySelector('#top_btn');
-        let index = document.querySelector('#cover');
+        let index = document.querySelector('#info');
 
         let btnToggleclass = function(el) {
             el.classList.toggle('index');

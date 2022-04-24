@@ -1,8 +1,8 @@
-#cover {
+#info {
     width: 100%;
 }
 
-#cover .propose {
+#info .propose {
     font-size: 1rem;
     position: relative;
     padding: 1rem 10% 2rem;
@@ -12,17 +12,17 @@
     text-align: center;
 }
 
-#cover .propose h1 {
+#info .propose h1 {
     margin: 1rem 0;
     font-size: 150%;
 }
 
-#cover .propose p {
+#info .propose p {
     margin: 1rem 0;
     font-weight: 700;
 }
 
-#cover #update {
+#info #update {
     position: relative;
     padding: 1rem;
     margin: 2.5rem auto 5rem;
