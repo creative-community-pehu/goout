@@ -17,6 +17,7 @@
     font-size: 150%;
     line-height: 150%;
     margin: 1rem 1rem 2rem;
+    font-family: 'Libre Baskerville', "YuMincho", "Yu Mincho", "游明朝体", serif;
 }
 
 .mapboxgl-popup p {
@@ -37,7 +38,7 @@
 .mapboxgl-popup-content {
     color: #000;
     text-align: center;
-    font-family: 'Libre Baskerville', serif;
+    font-family: "YuMincho", "Yu Mincho", "游明朝体", serif;
 }
 
 .mapboxgl-popup-close-button {
