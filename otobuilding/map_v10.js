@@ -122,8 +122,8 @@ const geojson = {
                 title: 'Lets　fly　to　the　future!',
                 date: '2021年12月15日 14:00',
                 address: '西成区南津守５丁目６',
-                link: 'none',
-                url: ''
+                link: 'link',
+                url: 'https://goo.gl/maps/BR77sSpYQo1o2eAWA'
             }
         },
         {
@@ -248,8 +248,8 @@ const geojson = {
                 title: 'ゆずの匂いすごいやろ。ごめんな',
                 date: '2021年12月22日 23:30',
                 address: '西成区橘３丁目１２−２０',
-                link: 'none',
-                url: ''
+                link: 'link',
+                url: 'https://newlifecollection.com/ca100/319/p-r-s/'
             }
         },
         {
@@ -262,8 +262,8 @@ const geojson = {
                 title: '「クリスマスに何もらった？」<br/>「ヘッドホン」',
                 date: '2021年12月31日 17:00',
                 address: '大正区南恩加島６丁目５−５',
-                link: 'none',
-                url: ''
+                link: 'link',
+                url: 'https://newlifecollection.com/ca100/320/p-r-s/'
             }
         },
         {
