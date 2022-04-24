@@ -1,111 +1,114 @@
-.goout {font-family: "Kristina";}
-@font-face {
-  font-family: "Kristina";
-  src: url("https://creative-community.space/coding/fontbook/family/Kristina.Bold.otf"),
-       url("https://creative-community.space/coding/fontbook/family/Kristina.Fine.otf");
+.goout {
+    font-family: "Kristina";
 }
 
-.relax {font-family: "DiaPro";}
 @font-face {
-  font-family: "DiaPro";
-  src: url("https://creative-community.space/coding/fontbook/family/DiaPro/DiaPro-Regular.eot"),
-       url("https://creative-community.space/coding/fontbook/family/DiaPro/DiaPro-Regular.otf"),
-       url("https://creative-community.space/coding/fontbook/family/DiaPro/DiaPro-Regular.woff");
+    font-family: "Kristina";
+    src: url("https://creative-community.space/coding/fontbook/family/Kristina.Bold.otf"), url("https://creative-community.space/coding/fontbook/family/Kristina.Fine.otf");
 }
 
+.relax {
+    font-family: "DiaPro";
+}
+
+@font-face {
+    font-family: "DiaPro";
+    src: url("https://creative-community.space/coding/fontbook/family/DiaPro/DiaPro-Regular.eot"), url("https://creative-community.space/coding/fontbook/family/DiaPro/DiaPro-Regular.otf"), url("https://creative-community.space/coding/fontbook/family/DiaPro/DiaPro-Regular.woff");
+}
 
 .sports {
-  font-weight:500;
-  font-size: 75%;
-  font-family: "Gill Sans";
-  text-transform: uppercase;
+    font-weight: 500;
+    font-size: 75%;
+    font-family: "Gill Sans";
+    text-transform: uppercase;
 }
 
+.goout a {
+    animation: 2s linear infinite alternate goout;
+}
 
+.goout a:hover {
+    cursor: pointer;
+    animation: .25s linear infinite alternate goout;
+}
 
-      .goout a {
-        animation:2s linear infinite alternate goout;
-      }
-      .goout a:hover {
-        cursor:pointer;
-        animation:.25s linear infinite alternate goout;
-      }
-
-      @keyframes goout {
+@keyframes goout {
+    0% {
+        color: lemonchiffon;
+        background: lightskyblue;
+    }
+    100% {
+        color: lightskyblue;
+        background: lemonchiffon;
+    }
+    @-webkit-keyframes goout {
         0% {
-          color:lemonchiffon;
-          background:lightskyblue;
+            color: lemonchiffon;
+            background: lightskyblue;
         }
         100% {
-          color:lightskyblue;
-          background:lemonchiffon;
+            color: lightskyblue;
+            background: lemonchiffon;
         }
-        @-webkit-keyframes goout {
-          0% {
-          color:lemonchiffon;
-          background:lightskyblue;
-          }
-          100% {
-          color:lightskyblue;
-          background:lemonchiffon;
-          }
-        }
-      }
+    }
+}
 
-      .relax a {
-        animation:2s linear infinite alternate relax;
-      }
-      .relax a:hover {
-        cursor:pointer;
-        animation:.25s linear infinite alternate relax;
-      }
+.relax a {
+    animation: 2s linear infinite alternate relax;
+}
 
-      @keyframes relax {
+.relax a:hover {
+    cursor: pointer;
+    animation: .25s linear infinite alternate relax;
+}
+
+@keyframes relax {
+    0% {
+        color: #ebd809;
+        background: #000;
+    }
+    100% {
+        color: #000;
+        background: #ebd809;
+    }
+    @-webkit-keyframes relax {
         0% {
-          color:#ebd809;
-          background:#000;
+            color: #ebd809;
+            background: #000;
         }
         100% {
-          color:#000;
-          background:#ebd809;
+            color: #000;
+            background: #ebd809;
         }
-        @-webkit-keyframes relax {
-          0% {
-          color:#ebd809;
-          background:#000;
-          }
-          100% {
-          color:#000;
-          background:#ebd809;
-          }
-        }
-      }
+    }
+}
 
-      .sports a {
-        animation:2s linear infinite alternate sports;
-      }
-      .sports a:hover {
-        cursor:pointer;
-        animation:.25s linear infinite alternate sports;
-      }
+.sports a {
+    animation: 2s linear infinite alternate sports;
+}
 
-      @keyframes sports {
+.sports a:hover {
+    cursor: pointer;
+    animation: .25s linear infinite alternate sports;
+}
+
+@keyframes sports {
+    0% {
+        color: #333;
+        background: #DCF7EE;
+    }
+    100% {
+        color: #DCF7EE;
+        background: #333;
+    }
+    @-webkit-keyframes sports {
         0% {
-          color:#333;
-          background:#DCF7EE;
+            color: #333;
+            background: #DCF7EE;
         }
         100% {
-          color:#DCF7EE;
-          background:#333;
+            color: #DCF7EE;
+            background: #333;
         }
-        @-webkit-keyframes sports {
-          0% {
-          color:#333;
-          background:#DCF7EE;
-          }
-          100% {
-          color:#DCF7EE;
-          background:#333;
-          }
-        }
-      }
+    }
+}

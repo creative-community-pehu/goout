@@ -1,161 +1,188 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<title>Go Out | 地図を作ろう</title>
+    <title>Go Out | 地図を作ろう</title>
 
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta name="description" content="行ったことのない場所へ行く">
-<link rel="icon" href="logo.png">
-<link rel="stylesheet" href="css/info.css"/>
-<link rel="stylesheet" href="css/fonts.css"/>
-<link rel="stylesheet" href="https://creative-community.space/coding/fontbook/css/font-family.css"/>
-<link href='https://api.tiles.mapbox.com/mapbox-gl-js/2.6.1/mapbox-gl.css' rel='stylesheet' />
-<script src='https://api.tiles.mapbox.com/mapbox-gl-js/2.6.1/mapbox-gl.js'></script>
-<link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
-<script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
-<style>
-#top {
-  position:relative;
-  z-index: 10;
-}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="creative-community.space">
+    <meta name="reply-to" content="we.are.pe.hu&#64;gmail.com">
+    <meta name="description" content="知らないものごとと出会いに、行ったことのない場所へ行く">
 
-#map {
-    position: fixed;
-    top: 0; bottom: 0;
-    width: 100%; height: 100vh;
-}
-#links {background-color: #fff;}
+    <meta property="og:title" content="Go Out | 地図を作ろう" />
+    <meta property="og:description" content="知らないものごとと出会いに、行ったことのない場所へ行く" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://creative-community.space/map/" />
+    <meta property="og:site_name" content="creative-community.space" />
+    <meta property="og:image" content="logo.png" />
+    <meta property="og:locale" content="ja_JP" />
 
-.hidden {
-    width: 100%;
-    height: 0;
-    opacity: 0;
-    transition: all 1500ms ease;
-    position: fixed;
-    top:0;
-    z-index: 999;
-    overflow-y: hidden;
-}
-.index {
-    width: 100%;
-    height: 100vh;
-    opacity: 1;
-    transition: all 2500ms ease;
-    position: fixed;
-    top:0;
-    z-index: 999;
-    overflow-y: auto;
-}
-.cc {
-    font-family: "ipag", monospace;
-    transform:scale(1, 1.25);
-}
-#top_btn {
-    position: fixed;
-    top:0; right:0;
-    z-index: 1000;
-    margin:2.5vw;
-    font-size:2.5vw;
-}
-#top_btn a {
-    display: block;
-    text-align: center;
-    width: 5.5vw;
-    height: 4.5vw;
-    line-height: 4.5vw;
-    color: #000;
-    border: solid 0.25vw #000;
-    border-radius: 50%;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 1000ms ease;
-}
-#top_btn a:hover {
-    color:lightskyblue;
-    background-color:lemonchiffon;
-    border: solid 0.25vw lightskyblue;
-    cursor: pointer;
-    transition: all 1000ms ease;
-}
-.marker {
-  background-image: url('/map/logo.png');
-  background-size: cover;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  cursor: pointer;
-}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@NLC_update" />
+    <meta name="twitter:image" content="logo.png" />
 
-.mapboxgl-popup {
-  max-width: 200px;
-}
-.mapboxgl-popup h3 {
-    transform:scale(1, 1.25);
-}
+    <link rel="icon" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+    <link rel="stylesheet" href="css/info.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/mapbox.css" />
+    <link rel="stylesheet" href="https://creative-community.space/coding/fontbook/css/font-family.css" />
 
-.mapboxgl-popup-content {
-    text-align: center;
-    font-family: "ipag", monospace;
-}
-</style>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/2.6.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/2.6.1/mapbox-gl.js'></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+    <style>
+        #top {
+            position: relative;
+            z-index: 10;
+        }
+        
+        #map {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100vh;
+        }
+        
+        #links {
+            background-color: #fff;
+        }
+        
+        .hidden {
+            width: 100%;
+            height: 0;
+            opacity: 0;
+            transition: all 1500ms ease;
+            position: fixed;
+            top: 0;
+            z-index: 999;
+            overflow-y: hidden;
+        }
+        
+        .index {
+            width: 100%;
+            height: 100vh;
+            opacity: 1;
+            transition: all 2500ms ease;
+            position: fixed;
+            top: 0;
+            z-index: 999;
+            overflow-y: auto;
+        }
+        
+        .cc {
+            font-family: "ipag", monospace;
+            transform: scale(1, 1.25);
+        }
+        
+        #top_btn {
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            margin: 2.5vw;
+            font-size: 1.5rem;
+        }
+        
+        #top_btn a {
+            display: block;
+            text-align: center;
+            width: 2.5rem;
+            height: 2rem;
+            line-height: 2rem;
+            color: lemonchiffon;
+            border: solid 2px lemonchiffon;
+            border-radius: 50%;
+            background-color: lightskyblue;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 1000ms ease;
+        }
+        
+        #top_btn a:hover {
+            color: lightskyblue;
+            background-color: lemonchiffon;
+            border: solid 2px lightskyblue;
+            cursor: pointer;
+        }
+        
+        .marker {
+            background-image: url('logo.png');
+            background-size: cover;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
-<p id="top_btn"><a class="cc">i</a></p>
+    <p id="top_btn"><a class="cc">i</a></p>
 
-<div id="top">
-<div id="info" class="hidden"></div>
-</div>
-<div id="map"></div>
-<script src='osakamap.js'></script>
-<script>
-mapboxgl.accessToken = 'pk.eyJ1IjoicGVodSIsImEiOiJja3R4Y3diNmIybTg5Mm9waWgwYTdsc3FyIn0.lVvnPZ3aa6332EaWJIxPaQ';
-var map = new mapboxgl.Map({
-container: 'map',
-style: 'mapbox://styles/pehu/ckx1e2xhw13kw14s4rjhaiv17',
-center: [135.50433479522678,34.69699057458179],
-zoom: 11.11
-});
+    <div id="top">
+        <div id="info" class="hidden"></div>
+    </div>
+    <div id="map"></div>
+    <script src='v2.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoicGVodSIsImEiOiJja3R4Y3diNmIybTg5Mm9waWgwYTdsc3FyIn0.lVvnPZ3aa6332EaWJIxPaQ';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/pehu/ckx1e2xhw13kw14s4rjhaiv17',
+            center: [135.50433479522678, 34.69699057458179],
+            zoom: 11.11
+        });
 
-// add markers to map
-for (const marker of geojson.features) {
-  // create a HTML element for each feature
-  const el = document.createElement('div');
-  el.className = 'marker';
+        // add markers to map
+        for (const marker of geojson.features) {
+            // create a HTML element for each feature
+            const el = document.createElement('div');
+            el.className = 'marker';
 
-  // make a marker for each feature and add to the map
-  new mapboxgl.Marker(el)
-  .setLngLat(marker.geometry.coordinates)
-  .setPopup(
-    new mapboxgl.Popup({ offset: 25 }) // add popups
-      .setHTML(
-        `<h3>${marker.properties.title}</h3>
-        <p>
-        <iframe src="${marker.properties.iframe}" width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <a href="${marker.properties.url}">More Info</a></p>`
-      )
-  )
-  .addTo(map);
-}
-</script>
+            // make a marker for each feature and add to the map
+            new mapboxgl.Marker(el)
+                .setLngLat(marker.geometry.coordinates)
+                .setPopup(
+                    new mapboxgl.Popup({
+                        offset: 25
+                    }) // add popups
+                    .setHTML(
+                        `<h3>${marker.properties.title}</h3>
+                        <p class="iframe">
+                          <iframe src="${marker.properties.iframe}" allowfullscreen="" loading="lazy"></iframe>
+                        </p>
+                        <p class="nlc ${marker.properties.nlc}">
+                          <a href="${marker.properties.url}" target="_blank">View More</a>
+                        </p>`
+                    )
+                )
+                .addTo(map);
+        }
+    </script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
-$(function(){
-$("#info").load("info.html");
-})
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#info").load("info.html");
+        })
 
-    let btn = document.querySelector('#top_btn');
-    let index = document.querySelector('#info');
-     
-    let btnToggleclass = function(el) {
-      el.classList.toggle('index');
-    }
-     
-    btn.addEventListener('click', function() {
-      btnToggleclass(index);
-    }, false);
-</script>
+        let btn = document.querySelector('#top_btn');
+        let index = document.querySelector('#info');
+
+        let btnToggleclass = function(el) {
+            el.classList.toggle('index');
+        }
+
+        btn.addEventListener('click', function() {
+            btnToggleclass(index);
+        }, false);
+    </script>
 </body>
+
 </html>
