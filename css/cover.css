@@ -1,0 +1,34 @@
+#cover {
+    width: 100%;
+}
+
+#cover .propose {
+    font-size: 1rem;
+    position: relative;
+    padding: 1rem 10% 2rem;
+    margin: 0 auto;
+    width: 45%;
+    max-width: 25rem;
+    text-align: center;
+}
+
+#cover .propose h1 {
+    margin: 1rem 0;
+    font-size: 150%;
+}
+
+#cover .propose p {
+    margin: 1rem 0;
+    font-weight: 700;
+}
+
+#cover #update {
+    position: relative;
+    padding: 1rem;
+    margin: 2.5rem auto 5rem;
+    width: 90%;
+    max-width: 55rem;
+    border: 1px solid #000;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.75);
+}
