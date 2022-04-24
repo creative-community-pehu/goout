@@ -18,6 +18,20 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
+                coordinates: [135.47365651397894, 34.62467754316394]
+            },
+            properties: {
+                title: 'なんでもやるタイプ',
+                date: '2020年5月26日 14:30',
+                address: '住之江区北加賀屋５丁目４−６４',
+                link: 'link',
+                url: 'https://newlifecollection.com/ca98/455/p-r-s/'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
                 coordinates: [135.47748776730742, 34.622850959026295]
             },
             properties: {
