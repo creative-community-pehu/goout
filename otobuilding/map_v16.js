@@ -74,6 +74,34 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
+                coordinates: [135.48089016640586, 34.62780416305391]
+            },
+            properties: {
+                title: 'ご予約の3名様',
+                date: '2021年12月30日 20:30',
+                address: '住之江区北加賀屋４丁目６−１５',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.47138181634438, 34.62568776823558]
+            },
+            properties: {
+                title: '手振ったの気づいた？ 車ですぐわかったよ。',
+                date: '2022年2月??日 13:00',
+                address: '住之江区北加賀屋４丁目６−１５',
+                link: 'link',
+                url: 'https://newlifecollection.com/ca100/182/p-r-s/'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
                 coordinates: [135.47455957175714, 34.63217273804081]
             },
             properties: {
