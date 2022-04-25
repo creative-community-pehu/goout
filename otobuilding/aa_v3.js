@@ -18,7 +18,7 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
-                coordinates: [135.48059970640924, 34.612530112983364]
+                coordinates: [135.48930246358145, 34.61194391675484]
             },
             properties: {
                 title: 'ドキドキするけど大丈夫！',
