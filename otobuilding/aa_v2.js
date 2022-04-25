@@ -83,6 +83,48 @@ const geojson = {
                 link: 'none',
                 url: '関連記事'
             }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.49187281851079, 34.618000679283696]
+            },
+            properties: {
+                title: '中途半端なことがいちばん困んねやぁ',
+                date: '2022年2月13日 19:15',
+                address: '住吉区東粉浜３丁目２３',
+                link: 'none',
+                url: '関連記事'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.49227968288875, 34.605819819360846]
+            },
+            properties: {
+                title: '私、初恋時代は絶対忘れへん！一生！',
+                date: '2022年2月27日 21:30',
+                address: '住吉区清水丘１丁目３１−１５',
+                link: 'none',
+                url: '関連記事'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.49603212288486, 34.64744739591383]
+            },
+            properties: {
+                title: 'くっせー服',
+                date: '2022年3月26日 16:10',
+                address: '西成区鶴見橋１丁目１７−１５',
+                link: 'none',
+                url: '関連記事'
+            }
         }
 
     ]
