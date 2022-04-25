@@ -102,20 +102,6 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
-                coordinates: [座標情報]
-            },
-            properties: {
-                title: '聞いた言葉',
-                date: '日付',
-                address: '住所',
-                link: 'none',
-                url: ''
-            }
-        },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
                 coordinates: [135.47666421864864, 34.60006459036512]
             },
             properties: {
@@ -136,6 +122,20 @@ const geojson = {
                 title: '極楽っちゅうもんや',
                 date: '2022年3月5日 16:50',
                 address: '住之江区泉１丁目１−８２',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.476455672234, 34.62205989666809]
+            },
+            properties: {
+                title: 'おいしかったぁ、死ぬおえ吐く〜',
+                date: '2022年3月12日 18:50',
+                address: '住之江区北加賀屋５丁目１−１',
                 link: 'none',
                 url: ''
             }
