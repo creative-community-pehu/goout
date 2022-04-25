@@ -377,7 +377,8 @@ const geojson = {
                 link: 'none',
                 url: ''
             }
-        }, {
+        },
+        {
             type: 'Feature',
             geometry: {
                 type: 'Point',
@@ -597,8 +598,8 @@ const geojson = {
                 title: '末は社長や',
                 date: '2022年4月10日 12:00',
                 address: '住之江区南加賀屋１丁目１−１１７',
-                link: 'none',
-                url: '関連記事'
+                link: '',
+                url: 'https://newlifecollection.com/ca100/1286/p-r-s/'
             }
         }
 
