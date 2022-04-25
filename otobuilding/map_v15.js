@@ -217,7 +217,7 @@ const geojson = {
                 coordinates: [135.45617780532035, 34.637499896076974]
             },
             properties: {
-                title: '19時になるまではいけるから',
+                title: '9時になるまではいけるから',
                 date: '2022年2月7日 16:10',
                 address: '大正区鶴町２丁目９−１７',
                 link: 'link',
