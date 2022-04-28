@@ -457,7 +457,7 @@ const geojson = {
             properties: {
                 title: 'こうやってるだけでねぇ痩せる',
                 date: '2022年4月28日 18:02',
-                address: '住之江区南港南７丁目３',
+                address: '住之江区南港南６丁目９−３',
                 link: 'none',
                 url: ''
             }
@@ -471,6 +471,20 @@ const geojson = {
             properties: {
                 title: 'まだエサあるん？',
                 date: '2022年4月28日 18:10',
+                address: '住之江区南港南６丁目９−３',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.41117608691104, 34.615461763168526]
+            },
+            properties: {
+                title: '野犬にご注意！',
+                date: '2022年4月28日 18:19',
                 address: '住之江区南港南７丁目３',
                 link: 'none',
                 url: ''
