@@ -494,7 +494,7 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
-                coordinates: [___]
+                coordinates: [135.45089972233228, 34.61217899663477]
             },
             properties: {
                 title: 'Enjoy Outing!',
