@@ -410,6 +410,20 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
+                coordinates: [135.41461413285577, 34.63849760215912]
+            },
+            properties: {
+                title: '3回目は2回目の半分の量',
+                date: '2022年4月13日 14:30',
+                address: '住之江区南港北１丁目１−１４−１６',
+                link: '',
+                url: 'https://newlifecollection.com/ca98/1282/p-r-s/'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
                 coordinates: [135.44314325642927, 34.61394372106045]
             },
             properties: {
