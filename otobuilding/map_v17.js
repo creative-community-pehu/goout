@@ -38,8 +38,8 @@ const geojson = {
                 title: '小泉さんにもろたマスクやろ？',
                 date: '2020年春',
                 address: '住之江区北加賀屋２丁目３−１５',
-                link: 'link',
-                url: 'https://newlifecollection.com/ca100/182/p-r-s/'
+                link: 'none',
+                url: ''
             }
         },
         {
@@ -94,8 +94,8 @@ const geojson = {
                 title: '手振ったの気づいた？ 車ですぐわかったよ。',
                 date: '2022年2月??日 13:00',
                 address: '住之江区北加賀屋４丁目６−１５',
-                link: 'link',
-                url: 'https://newlifecollection.com/ca100/182/p-r-s/'
+                link: 'none',
+                url: ''
             }
         },
         {
@@ -150,8 +150,8 @@ const geojson = {
                 title: 'やば、パジャマじゃ入れやんやん',
                 date: '2020年8月19日 13:00',
                 address: '住之江区北加賀屋２丁目５−３１',
-                link: 'link',
-                url: 'https://newlifecollection.com/ca100/316/p-r-s/'
+                link: 'none',
+                url: ''
             }
         },
         {
@@ -192,8 +192,8 @@ const geojson = {
                 title: 'まーっすぐ！まーっすぐ！背中まーっすぐ！',
                 date: '2022年2月7日 16:28',
                 address: '大正区南恩加島６丁目７',
-                link: 'link',
-                url: 'https://newlifecollection.com/ca98/206/p-r-s/'
+                link: 'none',
+                url: ''
             }
         },
         {
@@ -206,8 +206,8 @@ const geojson = {
                 title: '「バイバイ」「バイバイ」',
                 date: '2022年2月7日 18:00',
                 address: '大正区南恩加島３丁目１６',
-                link: 'link',
-                url: 'https://newlifecollection.com/ca98/206/p-r-s/'
+                link: 'none',
+                url: ''
             }
         },
         {
@@ -220,8 +220,8 @@ const geojson = {
                 title: 'ケンケンしてるだけ',
                 date: '2022年2月7日 18:05',
                 address: '大正区南恩加島１丁目１３−３８',
-                link: 'link',
-                url: 'https://newlifecollection.com/ca98/206/p-r-s/'
+                link: 'none',
+                url: ''
             }
         },
         {
@@ -248,8 +248,8 @@ const geojson = {
                 title: '9時になるまではいけるから',
                 date: '2022年2月7日 16:10',
                 address: '大正区鶴町２丁目９−１７',
-                link: 'link',
-                url: 'https://newlifecollection.com/ca100/318/p-r-s/'
+                link: 'none',
+                url: ''
             }
         },
         {
@@ -262,8 +262,8 @@ const geojson = {
                 title: 'おしくらまんじゅう押されて泣くな',
                 date: '2022年2月7日 16:13',
                 address: '大正区鶴町２丁目７',
-                link: 'link',
-                url: 'https://newlifecollection.com/ca100/318/p-r-s/'
+                link: 'none',
+                url: ''
             }
         },
         {
@@ -276,8 +276,8 @@ const geojson = {
                 title: 'さいなら、がんばろー',
                 date: '2022年2月8日 13:10',
                 address: '住之江区東加賀屋１丁目１−２８',
-                link: 'link',
-                url: 'https://newlifecollection.com/ca98/206/p-r-s/'
+                link: 'none',
+                url: ''
             }
         },
         {
@@ -316,7 +316,7 @@ const geojson = {
             },
             properties: {
                 title: 'ここは客の質がいい。味もいいし高くないやろ？',
-                date: '2022年1月23日 20:20',
+                date: '2022年1月23日 19:20',
                 address: '住之江区粉浜西３丁目１',
                 link: 'none',
                 url: ''
@@ -402,6 +402,132 @@ const geojson = {
                 title: '熟女いけてもうたら幅広がるよな',
                 date: '2022年3月2日 23:57',
                 address: '住之江区粉浜３丁目９−２４',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.44314325642927, 34.61394372106045]
+            },
+            properties: {
+                title: 'また生えてきとるなんや',
+                date: '2022年4月28日 17:28',
+                address: '住之江区南港東２丁目２',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.41046440723602, 34.61515489987758]
+            },
+            properties: {
+                title: 'えっほんえっほん',
+                date: '2022年4月28日 17:48',
+                address: '住之江区南港南６丁目１',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.4016286962231, 34.61486617414742]
+            },
+            properties: {
+                title: 'こうやってるだけでねぇ痩せる',
+                date: '2022年4月28日 18:02',
+                address: '住之江区南港南７丁目３',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.4007918033211, 34.61754173523204]
+            },
+            properties: {
+                title: 'まだエサあるん？',
+                date: '2022年4月28日 18:10',
+                address: '住之江区南港南７丁目３',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.42470784251913, 34.61466882565618]
+            },
+            properties: {
+                title: 'えーまちまちっすね',
+                date: '2022年4月28日 18:34',
+                address: '住之江区南港南３丁目',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.43778261875684, 34.61375760823577]
+            },
+            properties: {
+                title: 'イガッソー',
+                date: '2022年4月28日 18:45',
+                address: '住之江区南港東２丁目４−５４',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [___]
+            },
+            properties: {
+                title: 'Enjoy Outing!',
+                date: '2022年4月28日 18:52',
+                address: '住之江区平林南２丁目１１−１２',
+                link: '',
+                url: 'https://goo.gl/maps/LHoGv6ogUco9sRR79'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.46449883123023, 34.61002007156068]
+            },
+            properties: {
+                title: 'なんかおかしな匂いする',
+                date: '2022年4月28日 19:01',
+                address: '住之江区新北島５丁目１−６０',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.48060126349048, 34.61713388386255]
+            },
+            properties: {
+                title: '絞めて決めてしもた方が',
+                date: '2022年4月28日 19:19',
+                address: '住之江区中加賀屋２丁目７−２４',
                 link: 'none',
                 url: ''
             }
