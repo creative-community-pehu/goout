@@ -8,9 +8,7 @@
     <meta name="format-detection" content="telephone=no">
 
     <title>やるぞ ‼ | Go Out</title>
-    <meta name="author" content="∧° ┐">
-    <meta name="reply-to" content="we.are.pe.hu&#64;gmail.com">
-    <meta name="description" content="やるぞ ‼">
+    <meta name="description" content="大阪ヘルスバンクニュース掲示板">
 
     <meta property="og:title" content="やるぞ ‼" />
     <meta property="og:description" content="大阪ヘルスバンクニュース掲示板" />
@@ -24,11 +22,11 @@
     <meta name="twitter:site" content="@NLC_update" />
     <meta name="twitter:image" content="card.png" />
 
-    <link rel="icon" href="../logo.png">
-    <link rel="apple-touch-icon" href="logo.png">
+    <link rel="icon" href="icon.png">
+    <link rel="apple-touch-icon" href="icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
     <link href='style.css' rel='stylesheet' />
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/2.6.1/mapbox-gl.css' rel='stylesheet' />
@@ -52,52 +50,25 @@
             position: fixed;
             z-index: 100;
             top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            opacity: 1;
-            pointer-events: all;
-            user-select: text;
-            color: #fff;
+            right: 0;
+            margin: 0;
+            padding: 0;
         }
         
         #btn {
-            color: #fff;
-            font-family: 'Libre Baskerville', serif;
-            font-size: 10vw;
+            font-size: 1.25rem;
+            font-family: 'Mochiy Pop One', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 1rem 0.25rem;
+            letter-spacing: 0.25rem;
+            color: #B1302B;
+            background: #166BB6;
+            border: 2px #eee solid;
+            text-orientation: upright;
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
             transition: all 1s ease-out;
-            font-weight: 100;
-            width: 85%;
-            overflow: hidden;
-            position: absolute;
-            margin: 0;
-            padding: 0;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-        }
-        
-        #btn:hover {
-            cursor: pointer;
-        }
-        
-        #box.none {
-            pointer-events: none;
-            user-select: none;
-            font-style: italic;
-        }
-        
-        .none #btn {
-            font-size: 2rem;
-            position: absolute;
-            margin: 0;
-            padding: 1rem 2.5%;
-            top: 0;
-            left: 0;
-            -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
         }
         
         .marker {
@@ -123,13 +94,6 @@
             min-width: 25%;
         }
         
-        .mapboxgl-popup h3 {
-            font-size: 150%;
-            line-height: 150%;
-            margin: 1rem 1rem 2rem;
-            font-family: 'Libre Baskerville', "YuMincho", "Yu Mincho", "游明朝体", serif;
-        }
-        
         .mapboxgl-popup p {
             margin: 1.5rem 1rem 0.5rem;
         }
@@ -137,42 +101,28 @@
         .mapboxgl-popup-content {
             color: #000;
             text-align: center;
-            font-family: "YuMincho", "Yu Mincho", "游明朝体", serif;
+            font-family: 'Mochiy Pop One', sans-serif;
         }
         
         .mapboxgl-popup-close-button {
             font-size: 1.5rem;
         }
-        
-        @media screen and (max-width: 920px) {
-            #btn {
-                font-size: 10vw;
-                width: 90%;
-            }
-        }
-        
-        @media screen and (max-width: 550px) {
-            #btn {
-                font-size: 3.5rem;
-                width: 90%;
-            }
-            .none #btn {
-                font-size: 1.5rem;
-            }
-        }
     </style>
 </head>
 
 <body>
+    <div id="box">
+        <h1 id="btn">やるぞ<i>‼</i></h1>
+    </div>
     <div id="map"></div>
     <script src='v2.js'></script>
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoicGVodSIsImEiOiJja3R4Y3diNmIybTg5Mm9waWgwYTdsc3FyIn0.lVvnPZ3aa6332EaWJIxPaQ';
         var map = new mapboxgl.Map({
             container: 'map',
-            style: 'mapbox://styles/pehu/ckx1e2xhw13kw14s4rjhaiv17',
-            center: [135.47306292634534, 34.62458544610712],
-            zoom: 13.5
+            style: 'mapbox://styles/pehu/cl2eui8gp000515msswx438qt',
+            center: [135.49373383081854, 34.634214346195165],
+            zoom: 14
         });
 
         // add markers to map
