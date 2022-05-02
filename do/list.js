@@ -83,6 +83,90 @@ const geojson = {
                 link: 'none',
                 url: 'https://64.media.tumblr.com/addc1003321d55f1e67dd5ede87d8643/23e0358af9b6527a-72/s540x810/5e3e33df69ec371c318aea0f0087961f3b03818a.jpg'
             }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.48717317682286, 34.63879986177503]
+            },
+            properties: {
+                title: 'やるぞ ‼',
+                date: '2022年5月2日 15:41',
+                address: '西成区橘３丁目１７−７',
+                link: 'none',
+                url: '___'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.48776750786493, 34.63920320769225]
+            },
+            properties: {
+                title: 'やるぞ ‼',
+                date: '2022年5月2日 15:45',
+                address: '西成区橘３丁目１０−１７',
+                link: 'none',
+                url: '___'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.49745783743867, 34.64085942695837]
+            },
+            properties: {
+                title: 'やるぞ ‼',
+                date: '2022年5月2日 16:04',
+                address: '西成区松１丁目１０−３０',
+                link: 'none',
+                url: '___'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.49303368254732, 34.64092310084271]
+            },
+            properties: {
+                title: 'やるぞ ‼',
+                date: '2022年5月2日 16:07',
+                address: '西成区花園南１丁目１１−１',
+                link: 'none',
+                url: '___'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.49882913537078, 34.635158017385336]
+            },
+            properties: {
+                title: 'やるぞ ‼',
+                date: '2022年5月2日 16:40',
+                address: '西成区天下茶屋３丁目９−２１',
+                link: 'none',
+                url: '___'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.4960245179385, 34.627339317979306]
+            },
+            properties: {
+                title: 'やるぞ ‼',
+                date: '2022年5月2日 16:50',
+                address: '西成区玉出東１丁目６−１０',
+                link: 'none',
+                url: '___'
+            }
         }
 
     ]
