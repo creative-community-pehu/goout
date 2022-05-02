@@ -101,22 +101,47 @@
         }
         
         .marker {
-            width: 1rem;
-            height: 1rem;
-            background: blue;
-            border: 2px red solid;
-            animation: 0.5s linear infinite alternate pin;
+            width: 1.5rem;
+            height: 1.75rem;
+            background: #166BB6;
+            border: 2px #eee solid;
         }
         
-        @keyframes pin {
-            from {
-                background: blue;
-                border: 2px red solid;
-            }
-            to {
-                background: red;
-                border: 2px blue solid;
-            }
+        .marker::after {
+            content: '‼';
+            color: #B1302B;
+            position: absolute;
+            font-style: italic;
+            text-align: center;
+            font-weight: bolder;
+            line-height: 1.75rem;
+            width: 1.5rem;
+            height: 1.75rem;
+        }
+        
+        .mapboxgl-popup {
+            min-width: 25%;
+        }
+        
+        .mapboxgl-popup h3 {
+            font-size: 150%;
+            line-height: 150%;
+            margin: 1rem 1rem 2rem;
+            font-family: 'Libre Baskerville', "YuMincho", "Yu Mincho", "游明朝体", serif;
+        }
+        
+        .mapboxgl-popup p {
+            margin: 1.5rem 1rem 0.5rem;
+        }
+        
+        .mapboxgl-popup-content {
+            color: #000;
+            text-align: center;
+            font-family: "YuMincho", "Yu Mincho", "游明朝体", serif;
+        }
+        
+        .mapboxgl-popup-close-button {
+            font-size: 1.5rem;
         }
         
         @media screen and (max-width: 920px) {
@@ -165,7 +190,9 @@
                     }) // add popups
                     .setHTML(
                         `<div>
-                        <h3>${marker.properties.title}</h3>
+                        <p>
+                          <img src="${marker.properties.url}" width="100%">
+                        </p>
                         <p class="date">${marker.properties.date}
                           </br>${marker.properties.address}</p>
                         </div>`
