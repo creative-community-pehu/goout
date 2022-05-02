@@ -158,7 +158,7 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
-                coordinates: [135.4783593740841, 34.62293030222976]
+                coordinates: [135.47860617872533, 34.622887364739526]
             },
             properties: {
                 title: 'やば、パジャマじゃ入れやんやん',
@@ -410,6 +410,20 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
+                coordinates: [135.48275812473065, 34.609633864653674]
+            },
+            properties: {
+                title: 'ほっとしたわ〜',
+                date: '2022年2月25日 15:15',
+                address: '住之江区御崎3-1-17',
+                link: '',
+                url: 'https://newlifecollection.com/ca98/1284/p-r-s/'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
                 coordinates: [135.49073136471583, 34.615218390828886]
             },
             properties: {
@@ -472,8 +486,8 @@ const geojson = {
                 title: 'こうやってるだけでねぇ痩せる',
                 date: '2022年4月28日 18:02',
                 address: '住之江区南港南６丁目９−３',
-                link: 'none',
-                url: ''
+                link: '',
+                url: 'https://newlifecollection.com/ca100/1289/p-r-s/'
             }
         },
         {
@@ -486,8 +500,8 @@ const geojson = {
                 title: 'まだエサあるん？',
                 date: '2022年4月28日 18:10',
                 address: '住之江区南港南６丁目９−３',
-                link: 'none',
-                url: ''
+                link: '',
+                url: 'https://newlifecollection.com/ca100/1289/p-r-s/'
             }
         },
         {
