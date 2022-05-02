@@ -1119,6 +1119,62 @@ const geojson = {
                 link: 'none',
                 url: ''
             }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.48641471397286, 34.63357632592684]
+            },
+            properties: {
+                title: 'やるぞ ‼',
+                date: '2022年5月2日 15:10',
+                address: '西成区千本中２丁目３−２０',
+                link: 'none',
+                url: 'https://64.media.tumblr.com/f442a093a7e6d11b885147965d260fb2/6f4405fbfc77396a-08/s540x810/c565d87baceeef3926443e9e6fa6426b06f99e16.jpg'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.48766121074425, 34.63457791958582]
+            },
+            properties: {
+                title: 'やるぞ ‼',
+                date: '2022年5月2日 15:20',
+                address: '西成区千本北２丁目２９−１８',
+                link: 'none',
+                url: 'https://64.media.tumblr.com/e73dd37716fa1e5382e451d6b4e8cb99/b13107044ef94fb9-c7/s540x810/08781d63fc14dcab2dca407eb19e57e229dfaba3.jpg'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.48680727044314, 34.635939323277086]
+            },
+            properties: {
+                title: 'やるぞ ‼',
+                date: '2022年5月2日 15:22',
+                address: '西成区千本北２丁目２０−２３',
+                link: 'none',
+                url: 'https://64.media.tumblr.com/5797451dc178ba9c661e64bbcae272ee/5ee639181df57e55-94/s2048x3072/8cf24d0910c14c2058c2603beeeeca543d187f6f.jpg'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.488939135542, 34.635929166387655]
+            },
+            properties: {
+                title: 'やるぞ ‼',
+                date: '2022年5月2日 15:28',
+                address: '西成区千本北２丁目１８−２６',
+                link: 'none',
+                url: 'https://64.media.tumblr.com/6174ef37ef2f7b11c2fea341b8d03a16/f40badde38773178-42/s540x810/179c481a3e9eb65de4af2b20aef046d4ec05e41d.jpg'
+            }
         }
 
     ]
