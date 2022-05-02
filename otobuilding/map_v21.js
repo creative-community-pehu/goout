@@ -8,10 +8,24 @@ const geojson = {
             },
             properties: {
                 title: '春はなんかおかしいですわ',
-                date: '2022年3月25日 11:30',
+                date: '2022年3月25日 11:30頃',
                 address: '住之江区北加賀屋５丁目５−１',
                 link: 'link',
                 url: 'https://newlifecollection.com/ca100/1277/p-r-s/'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.47371358970133, 34.6236900465306]
+            },
+            properties: {
+                title: 'なんでもやるタイプ',
+                date: '2020年5月23日 17:00頃',
+                address: '住之江区北加賀屋５丁目５−４',
+                link: 'link',
+                url: 'https://newlifecollection.com/ca98/316/p-r-s/'
             }
         },
         {
@@ -22,7 +36,7 @@ const geojson = {
             },
             properties: {
                 title: 'なんでもやるタイプ',
-                date: '2020年5月26日 14:30',
+                date: '2020年5月26日 14:30頃',
                 address: '住之江区北加賀屋５丁目４−６４',
                 link: 'link',
                 url: 'https://newlifecollection.com/ca98/455/p-r-s/'
@@ -50,7 +64,7 @@ const geojson = {
             },
             properties: {
                 title: '楽しい。笑顔',
-                date: '2020年9月12日 21:00',
+                date: '2020年9月12日 21:00頃',
                 address: '住之江区北加賀屋５丁目３',
                 link: 'link',
                 url: 'https://newlifecollection.com/ca100/315/p-r-s/'
@@ -78,7 +92,7 @@ const geojson = {
             },
             properties: {
                 title: 'ご予約の3名様',
-                date: '2021年12月30日 20:30',
+                date: '2021年12月30日 20:30頃',
                 address: '住之江区北加賀屋４丁目６−１５',
                 link: 'none',
                 url: ''
@@ -92,7 +106,7 @@ const geojson = {
             },
             properties: {
                 title: '手振ったの気づいた？ 車ですぐわかったよ。',
-                date: '2022年2月??日 13:00',
+                date: '2022年2月?日 13:00頃',
                 address: '住之江区北加賀屋４丁目６−１５',
                 link: 'none',
                 url: ''
@@ -162,7 +176,7 @@ const geojson = {
             },
             properties: {
                 title: 'Lets　fly　to　the　future!',
-                date: '2021年12月15日 14:00',
+                date: '2021年12月15日 14:00頃',
                 address: '西成区南津守５丁目６',
                 link: 'link',
                 url: 'https://goo.gl/maps/BR77sSpYQo1o2eAWA'
@@ -176,7 +190,7 @@ const geojson = {
             },
             properties: {
                 title: 'おいカラス',
-                date: '2022年2月5日 14:30',
+                date: '2022年2月5日 14:30頃',
                 address: '住之江区粉浜西２丁目３−３４',
                 link: 'none',
                 url: ''
@@ -302,7 +316,7 @@ const geojson = {
             },
             properties: {
                 title: '「クリスマスに何もらった？」<br/>「ヘッドホン」',
-                date: '2021年12月31日 17:00',
+                date: '2021年12月31日 17:00頃',
                 address: '大正区南恩加島６丁目５−５',
                 link: 'link',
                 url: 'https://newlifecollection.com/ca100/320/p-r-s/'
@@ -316,7 +330,7 @@ const geojson = {
             },
             properties: {
                 title: 'ここは客の質がいい。味もいいし高くないやろ？',
-                date: '2022年1月23日 19:20',
+                date: '2022年1月23日 19:00頃',
                 address: '住之江区粉浜西３丁目１',
                 link: 'none',
                 url: ''
@@ -358,7 +372,7 @@ const geojson = {
             },
             properties: {
                 title: 'ブッ刺したろか',
-                date: '2022年2月5日 19:00',
+                date: '2022年2月5日 19:00頃',
                 address: '住之江区御崎２丁目５−１',
                 link: 'none',
                 url: ''
@@ -372,7 +386,7 @@ const geojson = {
             },
             properties: {
                 title: '心を清く。目上の人を敬う。',
-                date: '2022年2月6日 15:30',
+                date: '2022年2月6日 15:30頃',
                 address: '住吉区住吉２丁目９',
                 link: 'none',
                 url: ''
@@ -386,7 +400,7 @@ const geojson = {
             },
             properties: {
                 title: 'オダギリジョーに似てるって言われませんか？',
-                date: '2022年2月6日 16:30',
+                date: '2022年2月6日 16:30頃',
                 address: '住之江区粉浜３丁目８−７',
                 link: 'none',
                 url: ''
@@ -414,7 +428,7 @@ const geojson = {
             },
             properties: {
                 title: '3回目は2回目の半分の量',
-                date: '2022年4月13日 14:30',
+                date: '2022年4月13日 14:30頃',
                 address: '住之江区南港北１丁目１−１４−１６',
                 link: '',
                 url: 'https://newlifecollection.com/ca98/1282/p-r-s/'
@@ -568,7 +582,7 @@ const geojson = {
             },
             properties: {
                 title: 'バニラとチョコチップで ',
-                date: '2021年12月8日 19:00',
+                date: '2021年12月8日 19:00頃',
                 address: '住之江区北加賀屋３丁目１−２０',
                 link: 'none',
                 url: '関連記事'
@@ -652,7 +666,7 @@ const geojson = {
             },
             properties: {
                 title: '「渡るで」「渡るん？」「渡るやろ」',
-                date: '2022年2月18日 13:00',
+                date: '2022年2月18日 13:00頃',
                 address: '住之江区新北島７丁目４',
                 link: 'none',
                 url: '関連記事'
@@ -708,7 +722,7 @@ const geojson = {
             },
             properties: {
                 title: 'いっせーのーでっ<br/>いっせーのーでっ',
-                date: '2022年2月18日 15:00',
+                date: '2022年2月18日 15:00頃',
                 address: '住之江区新北島３丁目８−３３',
                 link: 'none',
                 url: '135.46527845549628,34.606859411026804'
@@ -764,7 +778,7 @@ const geojson = {
             },
             properties: {
                 title: '末は社長や',
-                date: '2022年4月10日 12:00',
+                date: '2022年4月10日 12:00頃',
                 address: '住之江区南加賀屋１丁目１−１１７',
                 link: '',
                 url: 'https://newlifecollection.com/ca100/1286/p-r-s/'
