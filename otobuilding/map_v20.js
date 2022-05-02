@@ -480,20 +480,6 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
-                coordinates: [135.41117608691104, 34.615461763168526]
-            },
-            properties: {
-                title: '野犬にご注意！',
-                date: '2022年4月28日 18:19',
-                address: '住之江区南港南７丁目３',
-                link: 'none',
-                url: ''
-            }
-        },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
                 coordinates: [135.42470784251913, 34.61466882565618]
             },
             properties: {
