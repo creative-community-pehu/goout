@@ -21,7 +21,7 @@ const geojson = {
                 coordinates: [135.47371358970133, 34.6236900465306]
             },
             properties: {
-                title: 'なんでもやるタイプ',
+                title: '空に階段が生えてるみたい',
                 date: '2020年5月23日 17:00頃',
                 address: '住之江区北加賀屋５丁目５−４',
                 link: 'link',
