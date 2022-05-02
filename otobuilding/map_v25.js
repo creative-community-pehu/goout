@@ -578,20 +578,6 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
-                coordinates: [135.4875474720384, 34.63374890837616]
-            },
-            properties: {
-                title: 'やるぞ ‼︎',
-                date: '2021年12月5日 11:07',
-                address: '西成区千本中２丁目３ー１',
-                link: 'none',
-                url: '関連記事'
-            }
-        },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
                 coordinates: [135.47856187287965, 34.62529785418573]
             },
             properties: {
@@ -1124,6 +1110,33 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
+                coordinates: [135.4875474720384, 34.63374890837616]
+            },
+            properties: {
+                title: 'やるぞ ‼︎',
+                date: '2021年12月5日 11:07',
+                address: '西成区千本中２丁目３ー１',
+                link: 'none',
+                url: '関連記事'
+            }
+        }, {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.50391050613052, 34.64546789712162]
+            },
+            properties: {
+                title: 'やるぞ ‼',
+                date: '2022年2月26日 13:44',
+                address: '西成区太子２丁目３−１０',
+                link: 'none',
+                url: '___'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
                 coordinates: [135.48641471397286, 34.63357632592684]
             },
             properties: {
@@ -1174,6 +1187,90 @@ const geojson = {
                 address: '西成区千本北２丁目１８−２６',
                 link: 'none',
                 url: 'https://64.media.tumblr.com/6174ef37ef2f7b11c2fea341b8d03a16/f40badde38773178-42/s540x810/179c481a3e9eb65de4af2b20aef046d4ec05e41d.jpg'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.48717317682286, 34.63879986177503]
+            },
+            properties: {
+                title: 'やるぞ ‼',
+                date: '2022年5月2日 15:41',
+                address: '西成区橘３丁目１７−７',
+                link: 'none',
+                url: 'https://64.media.tumblr.com/71f095c710e60cc09c5032e3524a803e/dc14d5678321c361-0d/s2048x3072/d9fdcf874635920b50b4bf47224f33dbd8695b8a.jpg'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.48776750786493, 34.63920320769225]
+            },
+            properties: {
+                title: 'やるぞ ‼',
+                date: '2022年5月2日 15:45',
+                address: '西成区橘３丁目１０−１７',
+                link: 'none',
+                url: 'https://64.media.tumblr.com/0a29a203ea498bb41dc7c52e19474805/afdb34a81f897361-2d/s540x810/57f4b20e144c502cb704d64ce9cbacc6f5419006.jpg'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.49303368254732, 34.64092310084271]
+            },
+            properties: {
+                title: 'やるぞ ‼',
+                date: '2022年5月2日 16:04',
+                address: '西成区松１丁目１０−３０',
+                link: 'none',
+                url: 'https://64.media.tumblr.com/b0fe0f9636fa743714153c5ef2b51906/0982a35fedfd68da-d8/s2048x3072/20858ac4822a8b32398232f7e2f3c704010ce864.jpg'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.49745783743867, 34.64085942695837]
+            },
+            properties: {
+                title: 'やるぞ ‼',
+                date: '2022年5月2日 16:07',
+                address: '西成区花園南１丁目１１−１',
+                link: 'none',
+                url: 'https://64.media.tumblr.com/6f344565726947be443ae5a03e44cd7c/f12ca01c8cac9157-96/s2048x3072/0264c112b16d2ebd8d95db9ed03e8a0526fc4bed.jpg'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.49882913537078, 34.635158017385336]
+            },
+            properties: {
+                title: 'やるぞ ‼',
+                date: '2022年5月2日 16:40',
+                address: '西成区天下茶屋３丁目９−２１',
+                link: 'none',
+                url: 'https://64.media.tumblr.com/646d16bfc9d29a3d74fb066ccdb62e53/ea59006282cde8ec-6f/s540x810/ec734423fc2bac9152535f56c1f4497003a212b4.jpg'
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.4960245179385, 34.627339317979306]
+            },
+            properties: {
+                title: 'やるぞ ‼',
+                date: '2022年5月2日 16:50',
+                address: '西成区玉出東１丁目６−１０',
+                link: 'none',
+                url: 'https://64.media.tumblr.com/2502a850b6985dafa13cc4bcca98347c/42cea0db8a304e0a-d5/s2048x3072/1278efa35db99460516456667242d81cee2b74f2.jpg'
             }
         }
 
