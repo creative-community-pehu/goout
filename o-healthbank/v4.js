@@ -11,7 +11,7 @@ const geojson = {
                 date: '2021年12月5日 11:07',
                 address: '西成区千本中２丁目３ー１',
                 link: 'none',
-                url: '関連記事'
+                url: 'https://64.media.tumblr.com/77f43ecf1dfd0947ff85bd9e5ee5cc48/93892f9d68228bb7-74/s2048x3072/1d7e363ae19de8b0efafdc17e1b86dcd95309deb.jpg'
             }
         }, {
             type: 'Feature',
@@ -24,7 +24,7 @@ const geojson = {
                 date: '2022年2月26日 13:44',
                 address: '西成区太子２丁目３−１０',
                 link: 'none',
-                url: '___'
+                url: 'https://64.media.tumblr.com/7f757e74b3dee9746837b75ed25169cc/44086809a17d1407-b1/s540x810/9942e912b315e586805ab121be0b3cd2e7598af8.jpg'
             }
         },
         {
