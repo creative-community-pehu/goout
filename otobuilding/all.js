@@ -396,20 +396,6 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
-                coordinates: [135.49063227353213, 34.615485710748246]
-            },
-            properties: {
-                title: 'オダギリジョーに似てるって言われませんか？',
-                date: '2022年2月6日 16:30頃',
-                address: '住之江区粉浜３丁目８−７',
-                link: 'none',
-                url: ''
-            }
-        },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
                 coordinates: [135.48275812473065, 34.609633864653674]
             },
             properties: {
