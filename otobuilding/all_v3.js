@@ -74,20 +74,6 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
-                coordinates: [135.4738534037411, 34.62493209288219]
-            },
-            properties: {
-                title: '温めましょうね',
-                date: '2021年11月15日 16:40',
-                address: '住之江区北加賀屋５丁目４−７０',
-                link: 'link',
-                url: 'https://newlifecollection.com/ca100/317/p-r-s/'
-            }
-        },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
                 coordinates: [135.48089016640586, 34.62780416305391]
             },
             properties: {
@@ -326,34 +312,6 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
-                coordinates: [135.4874222705268, 34.615542730420984]
-            },
-            properties: {
-                title: 'ここは客の質がいい。味もいいし高くないやろ？',
-                date: '2022年1月23日 19:00頃',
-                address: '住之江区粉浜西３丁目１',
-                link: 'none',
-                url: ''
-            }
-        },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
-                coordinates: [135.4768335595408, 34.621277963475166]
-            },
-            properties: {
-                title: 'ほらいた！お前ちゃんと作れんのか？',
-                date: '2022年2月2日 15:40',
-                address: '住之江区北加賀屋２丁目１１−８',
-                link: 'none',
-                url: ''
-            }
-        },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
                 coordinates: [135.4759254859694, 34.620835743767884]
             },
             properties: {
@@ -404,20 +362,6 @@ const geojson = {
                 address: '住之江区御崎3-1-17',
                 link: '',
                 url: 'https://newlifecollection.com/ca98/1284/p-r-s/'
-            }
-        },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
-                coordinates: [135.49073136471583, 34.615218390828886]
-            },
-            properties: {
-                title: '熟女いけてもうたら幅広がるよな',
-                date: '2022年3月2日 23:57',
-                address: '住之江区粉浜３丁目９−２４',
-                link: 'none',
-                url: ''
             }
         },
         {
@@ -578,34 +522,6 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
-                coordinates: [135.47936383460274, 34.622953173247666]
-            },
-            properties: {
-                title: '振り返ってもらいま〜す',
-                date: '2022年2月10日 11:57',
-                address: '住之江区北加賀屋２丁目５−２６',
-                link: 'none',
-                url: '関連記事'
-            }
-        },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
-                coordinates: [135.47663935011116, 34.6203679507164]
-            },
-            properties: {
-                title: 'ヤマガタさんが買ってきてくれるような煎餅やね',
-                date: '2022年2月10日 12:33',
-                address: '住之江区西加賀屋１丁目２−３４',
-                link: 'none',
-                url: '関連記事'
-            }
-        },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
                 coordinates: [135.48303366711173, 34.62825847640973]
             },
             properties: {
@@ -668,20 +584,6 @@ const geojson = {
                 title: 'テッテレー',
                 date: '2022年2月18日 13:48',
                 address: '住之江区新北島３丁目８−１２',
-                link: 'none',
-                url: '関連記事'
-            }
-        },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
-                coordinates: [135.46531234843206, 34.60793427450585]
-            },
-            properties: {
-                title: '鬼滅鬼滅鬼滅欲しいー！',
-                date: '2022年2月18日 14:31',
-                address: '住之江区新北島５丁目２−１８',
                 link: 'none',
                 url: '関連記事'
             }
@@ -816,40 +718,12 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
-                coordinates: [135.46463988902042, 34.6063333988492]
-            },
-            properties: {
-                title: 'でっか！なんやねんこの白菜',
-                date: '2022年2月8日 18:50',
-                address: '住之江区新北島６丁目１−５５',
-                link: 'none',
-                url: '関連記事'
-            }
-        },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
                 coordinates: [135.4808284868539, 34.61827594571754]
             },
             properties: {
                 title: 'すばらしいやないか！',
                 date: '2022年2月8日 19:30',
                 address: '住之江区中加賀屋３丁目７',
-                link: 'none',
-                url: '関連記事'
-            }
-        },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
-                coordinates: [135.49010563251517, 34.61261492920843]
-            },
-            properties: {
-                title: '東京のもんには敵わんけ',
-                date: '2022年2月9日 18:00',
-                address: '住吉区長峡町３',
                 link: 'none',
                 url: '関連記事'
             }
@@ -934,20 +808,6 @@ const geojson = {
                 title: 'お風呂掃除したら50円な？',
                 date: '2022年2月23日 10:15',
                 address: '住之江区粉浜西３丁目４',
-                link: 'none',
-                url: ''
-            }
-        },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
-                coordinates: [135.49139840617704, 34.61760551293973]
-            },
-            properties: {
-                title: '冬もの、売っちゃいます！',
-                date: '2022年2月24日 20:35',
-                address: '住吉区東粉浜３丁目２３−２３',
                 link: 'none',
                 url: ''
             }
@@ -1054,20 +914,6 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
-                coordinates: [135.48638856608255, 34.615822882690466]
-            },
-            properties: {
-                title: 'ここで一つ、面白い話をします。',
-                date: '2022年3月19日 14:30',
-                address: '住之江区粉浜西３丁目１−５',
-                link: 'none',
-                url: ''
-            }
-        },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
                 coordinates: [135.47776778334372, 34.620788703512616]
             },
             properties: {
@@ -1123,34 +969,6 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
-                coordinates: [135.48641471397286, 34.63357632592684]
-            },
-            properties: {
-                title: 'やるぞ ‼',
-                date: '2022年5月2日 15:10',
-                address: '西成区千本中２丁目３−２０',
-                link: 'none',
-                url: 'https://64.media.tumblr.com/f442a093a7e6d11b885147965d260fb2/6f4405fbfc77396a-08/s540x810/c565d87baceeef3926443e9e6fa6426b06f99e16.jpg'
-            }
-        },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
-                coordinates: [135.48766121074425, 34.63457791958582]
-            },
-            properties: {
-                title: 'やるぞ ‼',
-                date: '2022年5月2日 15:20',
-                address: '西成区千本北２丁目２９−１８',
-                link: 'none',
-                url: 'https://64.media.tumblr.com/e73dd37716fa1e5382e451d6b4e8cb99/b13107044ef94fb9-c7/s540x810/08781d63fc14dcab2dca407eb19e57e229dfaba3.jpg'
-            }
-        },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
                 coordinates: [135.48680727044314, 34.635939323277086]
             },
             properties: {
@@ -1173,34 +991,6 @@ const geojson = {
                 address: '西成区千本北２丁目１８−２６',
                 link: 'none',
                 url: 'https://64.media.tumblr.com/6174ef37ef2f7b11c2fea341b8d03a16/f40badde38773178-42/s540x810/179c481a3e9eb65de4af2b20aef046d4ec05e41d.jpg'
-            }
-        },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
-                coordinates: [135.48717317682286, 34.63879986177503]
-            },
-            properties: {
-                title: 'やるぞ ‼',
-                date: '2022年5月2日 15:41',
-                address: '西成区橘３丁目１７−７',
-                link: 'none',
-                url: 'https://64.media.tumblr.com/71f095c710e60cc09c5032e3524a803e/dc14d5678321c361-0d/s2048x3072/d9fdcf874635920b50b4bf47224f33dbd8695b8a.jpg'
-            }
-        },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
-                coordinates: [135.48776750786493, 34.63920320769225]
-            },
-            properties: {
-                title: 'やるぞ ‼',
-                date: '2022年5月2日 15:45',
-                address: '西成区橘３丁目１０−１７',
-                link: 'none',
-                url: 'https://64.media.tumblr.com/0a29a203ea498bb41dc7c52e19474805/afdb34a81f897361-2d/s540x810/57f4b20e144c502cb704d64ce9cbacc6f5419006.jpg'
             }
         },
         {
