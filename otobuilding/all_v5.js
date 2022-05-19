@@ -79,7 +79,7 @@ const geojson = {
             properties: {
                 title: 'ご予約の3名様',
                 date: '2021年12月30日 20:30頃',
-                address: '住之江区北加賀屋４丁目６−１５',
+                address: '西成区南津守６丁目１−７０',
                 link: 'none',
                 url: ''
             }
@@ -94,8 +94,8 @@ const geojson = {
                 title: '赤いTシャツですぐ分かりましたよ',
                 date: '2022年2月10日 13:30',
                 address: '住之江区北加賀屋４丁目６−１５',
-                link: 'none',
-                url: ''
+                link: 'link',
+                url: 'https://newlifecollection.com/ca100/186/p-r-s/'
             }
         },
         {
@@ -148,7 +148,7 @@ const geojson = {
             },
             properties: {
                 title: 'やば、パジャマじゃ入れやんやん',
-                date: '2020年8月19日 13:00',
+                date: '2020年8月19日 13:00頃',
                 address: '住之江区北加賀屋２丁目５−３１',
                 link: 'none',
                 url: ''
@@ -164,8 +164,8 @@ const geojson = {
                 title: 'Lets　fly　to　the　future!',
                 date: '2021年12月15日 14:00頃',
                 address: '西成区南津守５丁目６',
-                link: 'link',
-                url: 'https://goo.gl/maps/BR77sSpYQo1o2eAWA'
+                link: 'none',
+                url: ''
             }
         },
         {
@@ -234,8 +234,8 @@ const geojson = {
                 title: 'ションベンするな',
                 date: '2022年2月7日 16:18',
                 address: '大正区鶴町５丁目 西福橋',
-                link: 'link',
-                url: 'https://newlifecollection.com/ca100/672/p-r-s/'
+                link: 'none',
+                url: ''
             }
         },
         {
@@ -290,8 +290,8 @@ const geojson = {
                 title: 'ゆずの匂いすごいやろ。ごめんな',
                 date: '2021年12月22日 23:30',
                 address: '西成区橘３丁目１２−２０',
-                link: 'link',
-                url: 'https://newlifecollection.com/ca100/319/p-r-s/'
+                link: 'none',
+                url: ''
             }
         },
         {
@@ -306,20 +306,6 @@ const geojson = {
                 address: '大正区南恩加島６丁目５−５',
                 link: 'link',
                 url: 'https://newlifecollection.com/ca100/320/p-r-s/'
-            }
-        },
-        {
-            type: 'Feature',
-            geometry: {
-                type: 'Point',
-                coordinates: [135.4759254859694, 34.620835743767884]
-            },
-            properties: {
-                title: '本当に大丈夫ですか？大丈夫じゃなさそう',
-                date: '2022年2月4日 18:45',
-                address: '住之江区北加賀屋５丁目２',
-                link: 'none',
-                url: ''
             }
         },
         {
@@ -345,9 +331,9 @@ const geojson = {
             properties: {
                 title: '心清く。目上の人を敬う。',
                 date: '2022年2月6日 15:30頃',
-                address: '住吉区住吉２丁目９',
-                link: 'none',
-                url: ''
+                address: '住吉区住吉２丁目９−８９',
+                link: 'link',
+                url: 'https://newlifecollection.com/ca100/326/p-r-s/'
             }
         },
         {
@@ -360,7 +346,7 @@ const geojson = {
                 title: 'ほっとしたわ〜',
                 date: '2022年2月25日 15:15',
                 address: '住之江区御崎3-1-17',
-                link: '',
+                link: 'link',
                 url: 'https://newlifecollection.com/ca98/1284/p-r-s/'
             }
         },
@@ -472,8 +458,8 @@ const geojson = {
                 title: 'Enjoy Outing!',
                 date: '2022年4月28日 18:52',
                 address: '住之江区平林南２丁目１１−１２',
-                link: '',
-                url: 'https://goo.gl/maps/LHoGv6ogUco9sRR79'
+                link: 'none',
+                url: ''
             }
         },
         {
@@ -500,8 +486,8 @@ const geojson = {
                 title: '絞めて決めてしもた方が',
                 date: '2022年4月28日 19:19',
                 address: '住之江区中加賀屋２丁目７−２４',
-                link: 'none',
-                url: ''
+                link: '',
+                url: 'https://newlifecollection.com/ca100/1293/p-r-s/'
             }
         },
         {
@@ -822,8 +808,8 @@ const geojson = {
                 title: '走れクソガキ',
                 date: '2022年2月26日 19:10',
                 address: '住之江区中加賀屋４丁目６−２８',
-                link: 'none',
-                url: ''
+                link: '',
+                url: 'https://newlifecollection.com/ca100/1293/p-r-s/'
             }
         },
         {
