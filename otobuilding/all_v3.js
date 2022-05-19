@@ -91,8 +91,8 @@ const geojson = {
                 coordinates: [135.47138181634438, 34.62568776823558]
             },
             properties: {
-                title: '手振ったの気づいた？ 車ですぐわかったよ。',
-                date: '2022年2月?日 13:00頃',
+                title: '赤いTシャツですぐ分かりましたよ',
+                date: '2022年2月10日 13:30',
                 address: '住之江区北加賀屋４丁目６−１５',
                 link: 'none',
                 url: ''
@@ -343,7 +343,7 @@ const geojson = {
                 coordinates: [135.49152234812152, 34.61259069437729]
             },
             properties: {
-                title: '心を清く。目上の人を敬う。',
+                title: '心清く。目上の人を敬う。',
                 date: '2022年2月6日 15:30頃',
                 address: '住吉区住吉２丁目９',
                 link: 'none',
