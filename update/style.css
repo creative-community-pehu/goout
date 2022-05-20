@@ -54,7 +54,8 @@
       position: relative;
       margin: 1rem 0;
       border: 1px solid;
-      padding: 0.5rem;
+      padding: 0.5rem 1rem;
+      line-height: 200%;
   }
   
   #update_log p b {
