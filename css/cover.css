@@ -1,14 +1,6 @@
 #info {
-    width: 100%;
-}
-
-#info .propose {
-    font-size: 1rem;
-    position: relative;
-    padding: 1rem 10% 2rem;
+    width: 90%;
     margin: 0 auto;
-    width: 45%;
-    max-width: 25rem;
     text-align: center;
 }
 
