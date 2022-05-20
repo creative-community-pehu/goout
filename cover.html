@@ -37,18 +37,17 @@
         }
         
         #cover #title {
-            color: lightskyblue;
             font-size: 15vw;
             top: 50%;
             font-weight: 900;
             text-align: center;
             width: 100%;
-            user-select: none;
-            pointer-events: none;
             transition: 1s all;
         }
         
-        #cover #title span {
+        #cover #title .goout {
+            color: lightskyblue;
+            text-decoration: none;
             display: block;
             overflow: hidden;
             transform: scale(1, 5);
@@ -56,7 +55,7 @@
             -webkit-animation: .5s infinite alternate play;
         }
         
-        #cover a {
+        #cover .relax {
             text-decoration: none;
             color: #000;
             background: #fff;
@@ -148,7 +147,7 @@
         <div id="header" class="goout">
             Life is precious. Every minute. And more precious with you in it. Let's have some fun.
         </div>
-        <h1 id="title" class="center goout"><span>Go Out</span></h1>
+        <h1 id="title" class="center"><a class="goout" href="date.html" target="right">Go Out</a></h1>
         <a class="center relax" href="date.html" target="right">行ったことのない場所へ行く</a>
         <p class="random"></p>
     </div>
