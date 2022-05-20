@@ -25,12 +25,12 @@ fclose($fp);
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<title>Go Out | 地図を作ろう</title>
+<title>Go Out | 行ったことのない場所へ行く</title>
 
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta name="description" content="行ったことのない場所へ行く">
+<meta name="description" content="知っていることの外へ、わからないところまで出かける">
 <link rel="icon" href="/map/logo.png">
 <link rel="stylesheet" href="/map/css/top.css" />
 <link rel="stylesheet" href="/map/css/info.css" />
@@ -79,10 +79,9 @@ fclose($fp);
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <li class="goout">
-<h2><?=h($row[0])?><br/>
-<i><?=h($row[1])?></i></h2>
-<p><b><?=h($row[2])?></b>
-<a href="<?=h($row[3])?>" target="_blank" rel=”noopener noreferrer”></a></p>
+<h2><?=h($row[0])?></h2>
+<p><b><?=h($row[1])?></b>
+<a href="<?=h($row[2])?>" target="_parent"></a></p>
 </li>
 <?php endforeach; ?>
 <?php else: ?>
@@ -90,12 +89,12 @@ fclose($fp);
 <h2>タイトル<br/>
 <i>進行状況</i></h2>
 <p><b>説明</b>
-<a href="<?=h($row[3])?>" target="_blank" rel=”noopener noreferrer”></a></p>
+<a href="#" target="_parent"></a></p>
 </li>
 <?php endif; ?>
 <li>
-<h2 class="relax">更新履歴<br/>
-<i class="goout">Update</i></h2>
+<h2 class="relax">地図を作ろう<br/>
+<i class="goout">Digital Map</i></h2>
 </li>
 </ul>
 </div>
