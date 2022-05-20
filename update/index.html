@@ -83,7 +83,7 @@ fclose($fp);
                         <?=h($row[0])?>
                     </h2>
                     <p><b><?=h($row[1])?></b>
-                        <a href="<?=h($row[2])?>" target="_parent"></a>
+                        <a href="<?=h($row[2])?>" target="<?=h($row[3])?>"></a>
                     </p>
                 </li>
                 <?php endforeach; ?>
