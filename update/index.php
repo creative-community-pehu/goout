@@ -78,7 +78,7 @@ fclose($fp);
             <ul id="update_log">
                 <?php if (!empty($rows)): ?>
                 <?php foreach ($rows as $row): ?>
-                <li class="goout">
+                <li class="relax">
                     <h2>
                         <?=h($row[0])?>
                     </h2>
@@ -88,7 +88,7 @@ fclose($fp);
                 </li>
                 <?php endforeach; ?>
                 <?php else: ?>
-                <li class="goout">
+                <li class="relax">
                     <h2>タイトル<br/>
                         <i>進行状況</i></h2>
                     <p><b>説明</b>
