@@ -29,6 +29,7 @@
         
         #cover .center {
             position: absolute;
+            z-index: 10;
             margin: 0;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -67,6 +68,23 @@
         
         #cover #header {
             font-size: 1.25rem;
+        }
+        
+        #cover img {
+            margin: auto;
+            text-align: center;
+            pointer-events: none;
+            user-select: none;
+            position: absolute;
+            z-index: 0;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            -webkit-transform: translateY(-50%) translateX(-50%);
+            width: auto;
+            min-width: 100%;
+            height: auto;
+            min-height: 100%;
         }
         
         @keyframes play {
@@ -127,13 +145,32 @@
         </div>
         <h1 id="title" class="center goout"><span>Go Out</span></h1>
         <a class="center relax">行ったことのない場所へ行く</a>
+        <p class="random"></p>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(function() {
-            $("#").load("");
-        })
+    <script type="text/javascript ">
+        const random = [
+            "https://64.media.tumblr.com/ad6ce5f0029bda2a7e215fc289bec6fa/67092b13a3535916-4a/s500x750/dea6b3f082ec728fda869307914d41932081fbe8.png",
+            "https://64.media.tumblr.com/4f516709c63f9b4ac454270a88b41101/434a4ba3c51a6762-77/s500x750/602e62086b95375f05906d296f79b3b4e1ff96f0.jpg",
+            "https://64.media.tumblr.com/2f0b65b0e7b356c713cca3d82f06b04a/ab79cab6826aba24-e9/s500x750/5d15b62096b3190581236329bdccd525a90f817e.jpg",
+            "https://64.media.tumblr.com/967ed16b8c4e1f7427e9b76158ea8387/7373d8439bf4de21-e2/s1280x1920/343eeba7ae9758d1340b9367c506abd38f5f3598.jpg",
+            "https://64.media.tumblr.com/6c85ee8f5b9cbfec44c1fd89e6d7789a/795cf6b4ff275a3e-46/s500x750/49fbaac75764801854a730dd3acbee22dc16fd41.jpg"
+        ];
+
+        function randomImg(randomArray) {
+            var random =
+                randomArray[Math.floor(Math.random() * randomArray.length)];
+            console.log(random);
+            return random;
+        }
+
+        function imgGenerator() {
+            var img = `<img src="${randomImg(random)} ">`;
+            document.querySelector(".random ").innerHTML = img;
+        }
+        window.setInterval(function() {
+            imgGenerator();
+        }, 500);
     </script>
 
 </body>
