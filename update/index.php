@@ -43,8 +43,9 @@ fclose($fp);
             }
             
             #main {
-                width: 75%;
-                margin: 2vw auto;
+                width: 90%;
+                max-width: 750px;
+                margin: 1rem auto;
             }
             
             #top_btn {
