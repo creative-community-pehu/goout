@@ -36,7 +36,8 @@
         
         #about {
             position: relative;
-            padding: 0 5%;
+            margin: 0;
+            padding: 0;
         }
         
         #about h1,
@@ -52,12 +53,56 @@
         #about h1 {
             font-size: 7.5vw;
             line-height: 200%;
-            padding: 1.5rem 10%;
+            padding: 1.5rem 15%;
+            margin: 0;
+        }
+        
+        #about .goout {
+            color: lightskyblue;
+            background: lemonchiffon;
+            position: relative;
+        }
+        
+        #about .relax {
+            color: #ebd809;
+            background: #000;
+            position: relative;
+        }
+        
+        #about .goout a,
+        #about .relax a {
+            font-size: 1rem;
+            bottom: 1rem;
+            right: 10%;
+            position: absolute;
+            line-height: 1rem;
+            font-size: 1rem;
+        }
+        
+        #about .goout::before {
+            content: '地図を作ろう';
+            position: absolute;
+            line-height: 1rem;
+            font-size: 1rem;
+            color: lemonchiffon;
+            background: lightskyblue;
+            display: inline-block;
+        }
+        
+        #about .relax::before {
+            content: '記録映像';
+            position: absolute;
+            line-height: 1rem;
+            font-size: 1rem;
+            color: #000;
+            background: #ebd809;
+            display: inline-block;
         }
         
         #about p {
             font-family: "ipaexg";
             font-size: 1rem;
+            padding: 0 5%;
         }
         
         #about b {
@@ -125,6 +170,14 @@
         </p>
         <p><a href="https://creative-community.space/map/otobuilding/info.html" target="left">もっと詳しく</a></p>
         <hr />
+        <h1 class="goout">
+            Digital Map
+            <br/><a href="update" target="left">View The Collection</a>
+        </h1>
+        <h1 class="relax">
+            Fancy and Relaxin'
+            <br/><a href="youtube.html" target="left">View The Collection</a>
+        </h1>
     </div>
 </body>
 
