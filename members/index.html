@@ -1,67 +1,224 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" type="text/css" href="/sign/infomation/menu.css" />
-<title> Go Out | Members Only </title>
-<style type="text/css">
-body {padding:0; margin: 0;}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
 
-#relax,
-#ferry,
-#date,
-#review {
-  position:fixed;
-  top:0; left:0;
-  width:100%;
-  height:100vh;
-  overflow-y: auto;
-}
+    <title>things that i (we) heard</title>
+    <meta name="author" content="Sarah Marshall & ∧° ┐">
+    <meta name="reply-to" content="we.are.pe.hu&#64;gmail.com">
+    <meta name="description" content="私（わたしたち）が聞いた言葉">
 
-#review
-{background:#ebd809;}
-#ferry,
-#date
-{background:lemonchiffon;}
+    <meta property="og:title" content="things that i (we) heard" />
+    <meta property="og:description" content="私（わたしたち）が聞いた言葉" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://creative-community.space/map/members/" />
+    <meta property="og:site_name" content="creative-community.space" />
+    <meta property="og:image" content="card.png" />
+    <meta property="og:locale" content="ja_JP" />
 
-#review iframe {
-  border: none;
-  width:100%;
-  height:100%;
-}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@NLC_update" />
+    <meta name="twitter:image" content="card.png" />
 
-.membersonly, #top_btn {display:none;}
-</style>
+    <link rel="icon" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+    <link href='../css/thingsiheard.css' rel='stylesheet' />
+    <link href='../css/fonts.css' rel='stylesheet' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/2.6.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/2.6.1/mapbox-gl.js'></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #map {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100vh;
+        }
+        
+        #box {
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            opacity: 1;
+            pointer-events: all;
+            user-select: text;
+            color: #fff;
+            background: #CDCBCC;
+        }
+        
+        #box h2 {
+            color: #fff;
+            font-family: "Kristina";
+            font-size: 2vw;
+            transition: all 1s ease-out;
+            font-weight: 100;
+            overflow: hidden;
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            top: 12.5%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        
+        #btn {
+            color: #fff;
+            font-family: 'Libre Baskerville', serif;
+            font-size: 12.5vw;
+            transition: all 1s ease-out;
+            font-weight: 100;
+            width: 85%;
+            overflow: hidden;
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        
+        #btn:hover {
+            cursor: pointer;
+        }
+        
+        #box.none {
+            pointer-events: none;
+            user-select: none;
+            font-style: italic;
+            background: transparent;
+        }
+        
+        .none #btn {
+            font-size: 2rem;
+            position: absolute;
+            margin: 0;
+            padding: 1rem 2.5%;
+            top: 0;
+            left: 0;
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+        }
+        
+        #box.none h2 {
+            display: none;
+        }
+        
+        .marker {
+            animation: 1s linear infinite alternate pin;
+        }
+        
+        @keyframes pin {
+            from {
+                background: #CDCBCC;
+                border: 2px #000 solid;
+            }
+            to {
+                background: #fff;
+                border: 2px #000 solid;
+            }
+        }
+        
+        @media screen and (max-width: 920px) {
+            #btn {
+                font-size: 15vw;
+                width: 90%;
+            }
+            #box h2 {
+                font-size: 3vw;
+                top: 15%;
+            }
+        }
+        
+        @media screen and (max-width: 550px) {
+            #btn {
+                font-size: 5.5rem;
+                width: 90%;
+            }
+            #box h2 {
+                font-size: 1.25rem;
+            }
+            .none #btn {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
+    <div id="box">
+        <h1 id="btn">things that i (we) heard</h1>
+        <h2 class="goout">Members Only</h2>
+    </div>
+    <div id="map"></div>
+    <script>
+        let btn = document.querySelector('#btn');
+        let box = document.querySelector('#box');
 
-<div id="menu">
-<div><a class="tab" href="#ferry">渡し船に乗ろう</a><span class="check"><b>✔</b></span></div>
-<div><a class="tab" href="#review">Fancy & Relaxin'</a><span class="check"><b>✔</b></span></div>
-<div><a class="tab" href="#date">Special</a><span class="check"><b>✔</b></span></div>
-</div>
+        let btnToggleclass = function(el) {
+            el.classList.toggle('none');
+        }
 
-<div id="relax"></div>
-<div id="ferry" class="change"></div>
-<div id="review" class="change"><iframe src="/map/members/relax.php"></iframe></div>
-<div id="date" class="change"></div>
+        btn.addEventListener('click', function() {
+            btnToggleclass(box);
+        }, false);
+    </script>
+    <script src='map_v1.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoicGVodSIsImEiOiJja3R4Y3diNmIybTg5Mm9waWgwYTdsc3FyIn0.lVvnPZ3aa6332EaWJIxPaQ';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/pehu/cl2eui8gp000515msswx438qt',
+            center: [135.50433479522678, 34.69699057458179],
+            zoom: 11.11
+        });
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/sign/infomation/menu.js"></script>
-<script type="text/javascript">
-$(function(){
-$("#relax").load("/map/membersonly.html");
-$("#ferry").load("ferry.html");
-$("#date").load("with/");
-})
+        // add markers to map
+        for (const marker of geojson.features) {
+            // create a HTML element for each feature
+            const el = document.createElement('div');
+            el.className = 'marker';
 
-$('a[href^="#"]').click(function(){
-   var href= $(this).attr("href");
-   var target = $(href == "#" || href == "" ? 'html' : href);
-   return false;
- });
-</script>
+            // make a marker for each feature and add to the map
+            new mapboxgl.Marker(el)
+                .setLngLat(marker.geometry.coordinates)
+                .setPopup(
+                    new mapboxgl.Popup({
+                        offset: 25
+                    }) // add popups
+                    .setHTML(
+                        `<div>
+                        <h3>${marker.properties.title}</h3>
+                        <p class="${marker.properties.link}">
+                          <a href="${marker.properties.url}" target="blank">もっと詳しく</a>
+                        </p>
+                        <p class="date">${marker.properties.date}
+                          </br>${marker.properties.address}</p>
+                        </div>`
+                    )
+                )
+                .addTo(map);
+        }
+    </script>
 </body>
+
 </html>
