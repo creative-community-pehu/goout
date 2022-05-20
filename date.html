@@ -11,6 +11,9 @@
     <meta name="reply-to" content="we.are.pe.hu&#64;gmail.com">
     <meta name="description" content="知っていることの外へ、わからないところまで出かける" />
     <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
     <style type="text/css">
         body {
             padding: 0;
@@ -44,7 +47,6 @@
             padding: 0;
         }
         
-        #about h1,
         #about b {
             font-family: "DiaPro";
             font-weight: 500;
@@ -55,49 +57,72 @@
         }
         
         #about h1 {
-            font-size: 7.5vw;
-            line-height: 200%;
+            font-size: 8vw;
             padding: 1.5rem 15%;
             margin: 0;
         }
         
-        #about .goout {
-            color: lightskyblue;
-            background: lemonchiffon;
+        #about h1 span {
+            font-size: 45%;
+            line-height: 100%;
+        }
+        
+        #about h2 {
+            font-size: 5.5vw;
+            line-height: 200%;
+            padding: 2.5rem 15%;
+            font-family: 'Libre Baskerville', serif;
+            margin: 0;
+        }
+        
+        #about .heard {
+            color: #fff;
+            background: #CDCBCC;
             position: relative;
         }
         
         #about .relax {
+            line-height: 250%;
             color: #ebd809;
             background: #000;
             position: relative;
         }
         
-        #about .goout a,
-        #about .relax a {
-            font-size: 1rem;
+        #about a {
             bottom: 1rem;
-            right: 10%;
+            right: 7.5%;
             position: absolute;
-            line-height: 1rem;
-            font-size: 1rem;
         }
         
-        #about .goout::before {
-            content: '地図を作ろう';
-            position: absolute;
-            line-height: 1rem;
+        #about .heard::before,
+        #about .heard a {
+            font-size: 0.5rem;
+            line-height: 0.5rem;
+            color: #CDCBCC;
+            background: #fff;
+        }
+        
+        #about .relax::before,
+        #about .relax a {
             font-size: 1rem;
-            color: lemonchiffon;
-            background: lightskyblue;
+            line-height: 1rem;
+        }
+        
+        #about .heard::before {
+            content: '私（わたしたち）が聞いた言葉';
+            position: absolute;
+            top: 1rem;
+            padding: 0.25rem 0.25rem 0.1rem;
+            color: #CDCBCC;
+            background: #fff;
             display: inline-block;
         }
         
         #about .relax::before {
             content: '記録映像';
             position: absolute;
-            line-height: 1rem;
-            font-size: 1rem;
+            top: 1rem;
+            padding: 0.25rem;
             color: #000;
             background: #ebd809;
             display: inline-block;
@@ -114,7 +139,6 @@
             line-height: 200%;
         }
         
-        #about a:hover,
         #about b {
             color: lightskyblue;
             background-color: lemonchiffon;
@@ -149,12 +173,15 @@
         
         hr {
             border: none;
-            margin: 2.5rem;
+            margin: 7.5vw;
         }
         
         @media screen and (max-width: 550px) {
             #about h1 {
                 font-size: 12.5vw;
+            }
+            #about h2 {
+                font-size: 7.5vw;
             }
             #about p {
                 font-family: "ipaexg";
@@ -174,10 +201,10 @@
         </p>
         <p><a href="https://creative-community.space/map/otobuilding/info.html" target="left">もっと詳しく</a></p>
         <hr />
-        <h1 class="goout">
-            Digital Map
-            <br/><a href="update" target="left">View The Collection</a>
-        </h1>
+        <h2 class="heard">
+            things i (we) heard
+            <br/><a href="otobuilding/info.html" target="left">View The Collection</a>
+        </h2>
         <h1 class="relax">
             Fancy and Relaxin'
             <br/><a href="youtube.html" target="left">View The Collection</a>
