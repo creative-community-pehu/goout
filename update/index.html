@@ -34,7 +34,7 @@ fclose($fp);
         <meta name="description" content="知っていることの外へ、わからないところまで出かける">
         <link rel="icon" href="/map/logo.png">
         <link rel="stylesheet" href="../css/fonts.css" />
-        <link rel="stylesheet" href="style_v1.css" />
+        <link rel="stylesheet" href="style_v2.css" />
         <style>
             body {
                 margin: 0;
