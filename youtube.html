@@ -2,7 +2,8 @@
 <html lang="ja">
 
 <head>
-    <title>KN Gallery</title>
+    <title>Go Out | Fancy and Relaxin'</title>
+    <link rel="stylesheet" href="css/fonts.css" />
     <style type="text/css">
         #YouTube {
             position: fixed;
@@ -13,15 +14,48 @@
             overflow: hidden;
             width: 100%;
             height: 100vh;
+            background: #ebd809;
         }
         
-        iframe {
+        #YouTube .relax {
+            display: none;
+        }
+        
+        #YouTube .relax a,
+        #YouTube iframe {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            min-height: 100%;
-            min-width: 100%;
+        }
+        
+        #YouTube iframe {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #YouTube .relax span {
+            display: block;
+            padding: 5%;
+            color: #ebd809;
+            background: #000;
+            font-size: 15vw;
+        }
+        
+        #YouTube .relax a {
+            display: inline-block;
+            margin-top: 10vw;
+            font-size: 2rem;
+            padding: 0.5rem;
+        }
+        
+        @media screen and (max-width: 550px) {
+            #YouTube iframe {
+                display: none;
+            }
+            #YouTube .relax {
+                display: block;
+            }
         }
     </style>
 </head>
@@ -29,6 +63,10 @@
 <body>
 
     <div id="YouTube" class="">
+        <div class="relax">
+            <span>Fancy and Relaxin'</span>
+            <a href="https://youtube.com/playlist?list=PLNxErRQ8jPVauFoKkIC1eME0G7t-97RdK" target="_parent">Watch The Videos</a>
+        </div>
         <iframe src="https://www.youtube.com/embed/videoseries?list=PLNxErRQ8jPVauFoKkIC1eME0G7t-97RdK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </body>
