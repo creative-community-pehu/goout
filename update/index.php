@@ -99,7 +99,7 @@ fclose($fp);
                 <li>
                     <h2 class="relax">地図を作ろう<br/>
                         <i class="goout">Digital Map</i></h2>
-                    <p class="goout"><b>Mapboxを使って、デジタル地図を作成</b>
+                    <p class="goout"><b>Mapbox を使って、デジタル地図を作成</b>
                         <a href="mapbox.php" target="left"></a>
                     </p>
                 </li>
