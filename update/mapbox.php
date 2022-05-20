@@ -28,45 +28,45 @@ fclose($fp);
 <title>Go Out | 地図を作ろう</title>
 
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta name="description" content="行ったことのない場所へ行く">
-<link rel="icon" href="/map/logo.png">
-<link rel="stylesheet" href="/map/css/top.css" />
-<link rel="stylesheet" href="/map/css/info.css" />
-<link rel="stylesheet" href="/map/css/fonts.css" />
-<link rel="stylesheet" href="/map/css/update.css"/>
-<link rel="stylesheet" href="https://creative-community.space/coding/fontbook/css/font-family.css" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta name="description" content="知っていることの外へ、わからないところまで出かける">
+        <link rel="icon" href="/map/logo.png">
+        <link rel="stylesheet" href="../css/fonts.css" />
+        <link rel="stylesheet" href="style_v2.css" />
 <style>
-    body {margin: 0; padding: 0; background-color:lemonchiffon;}
-    #main {width:75%; margin:2vw auto;}
-.cc {
-    font-family: "ipag", monospace;
-    transform:scale(1, 1.25);
-}
-#top_btn {
-    position: fixed;
-    bottom:0; left:0;
-    z-index: 1000;
-    margin:2.5vw;
-    font-size:2.5vw;
-}
-#top_btn a {
-    display: block;
-    text-align: center;
-    width: 5.5vw;
-    height: 4.5vw;
-    line-height: 4.5vw;
-    color: #000;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 1000ms ease;
-}
-#top_btn a:hover {
-    color: lightskyblue;
-    cursor: pointer;
-    transition: all 1000ms ease;
-}
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: lemonchiffon;
+            }
+            
+            #main {
+                width: 90%;
+                max-width: 750px;
+                margin: 1rem auto;
+            }
+            
+            #top_btn {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                z-index: 1000;
+                margin: 1rem;
+                font-size: 2rem;
+            }
+            
+            #top_btn a {
+                color: #000;
+                text-decoration: none;
+                transition: all 1000ms ease;
+            }
+            
+            #top_btn a:hover {
+                color: lightskyblue;
+                cursor: pointer;
+                transition: all 500ms ease;
+            }
     
 </style>
 </head>
@@ -96,7 +96,7 @@ fclose($fp);
 <li>
 <h2 class="relax">地図を作ろう<br/>
 <i class="goout">Digital Map</i></h2>
-<p class="relax"><b>Mapboxを使って、初めて訪れた場所・お気に入りの場所を集めたデジタル地図を作成します。</b></p>
+<p class="relax"><b>Mapboxを使って、デジタル地図を作成</b></p>
 </li>
 </ul>
 </div>
