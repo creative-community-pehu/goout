@@ -56,11 +56,31 @@
             padding: 0.5rem;
         }
         
+        #YouTube .random {
+            display: none;
+        }
+        
+        #YouTube img {
+            margin: auto;
+            text-align: center;
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            -webkit-transform: translateY(-50%) translateX(-50%);
+            width: auto;
+            min-width: 100%;
+            height: auto;
+            min-height: 100%;
+        }
+        
         @media screen and (max-width: 550px) {
             #YouTube iframe {
                 display: none;
             }
-            #YouTube .relax {
+            #YouTube .relax,
+            #YouTube .random {
                 display: block;
             }
         }
@@ -69,13 +89,44 @@
 
 <body>
 
-    <div id="YouTube" class="">
+    <div id="YouTube">
         <div class="relax">
             <span>Fancy and Relaxin'</span>
             <a href="https://youtube.com/playlist?list=PLNxErRQ8jPVauFoKkIC1eME0G7t-97RdK" target="_parent">Watch The Videos</a>
         </div>
+        <p class="random"></p>
         <iframe src="https://www.youtube.com/embed/videoseries?list=PLNxErRQ8jPVauFoKkIC1eME0G7t-97RdK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+
+    <script type="text/javascript ">
+        const random = [
+            "https://64.media.tumblr.com/a853778760ca277ea127808165db30a9/6644930848b4d16d-b9/s1280x1920/3b8450f151042d5342359c6cead1d20a534f5d71.pnj",
+            "https://64.media.tumblr.com/c90f9e13bc30f0af3896863b401a6d32/6644930848b4d16d-4d/s540x810/c11f93868a82279b37ed736cea64a5e8090247f7.pnj",
+            "https://64.media.tumblr.com/79b1cb13ebac370fd631e3e215d5787d/6644930848b4d16d-1c/s540x810/3010ec56a5f20dfa59f3dee3f4baf332f53f84d7.pnj",
+            "https://64.media.tumblr.com/d97e432a107994006e2542a8e52de2e6/6644930848b4d16d-da/s1280x1920/502199ad1aa549258ced89bfd52dec59d450b1d6.pnj",
+            "https://64.media.tumblr.com/7c217bda0edc756828dfe68f46475053/6644930848b4d16d-05/s540x810/c0042f120dea705c3490afbaf6ba2055d38eaf7a.pnj",
+            "https://64.media.tumblr.com/4b2fb91cff18026950a1c14916c9b128/6644930848b4d16d-eb/s1280x1920/ad5896f1ffdce4724ad49711d354784274890831.pnj",
+            "https://64.media.tumblr.com/88ec395b5c175f3e1e840b81839ff0ed/6644930848b4d16d-c4/s540x810/de99ff4793aa3cf37cc1c899ebd8424a03efb263.pnj",
+            "https://64.media.tumblr.com/7d48cb073fe9a139afac786ce5d91070/6644930848b4d16d-9e/s1280x1920/45f270c26e6a934e99162d831103bdf66b38e309.pnj",
+            "https://64.media.tumblr.com/f6934d994c4560beab2bb6f59e99e904/6644930848b4d16d-8d/s1280x1920/7f743875e59544016af6f2499635b34afff78a45.pnj",
+            "https://64.media.tumblr.com/6ce6ac9eb1e3856814b4222d599354a1/6644930848b4d16d-87/s1280x1920/3955acebe0fcd8134f63b5008c68127c3cb290a1.pnj"
+        ];
+
+        function randomImg(randomArray) {
+            var random =
+                randomArray[Math.floor(Math.random() * randomArray.length)];
+            console.log(random);
+            return random;
+        }
+
+        function imgGenerator() {
+            var img = `<img src="${randomImg(random)} ">`;
+            document.querySelector(".random ").innerHTML = img;
+        }
+        window.setInterval(function() {
+            imgGenerator();
+        }, 250);
+    </script>
 </body>
 
 </html>
