@@ -7,7 +7,7 @@ $status = (string)filter_input(INPUT_POST, 'status');
 $more = (string)filter_input(INPUT_POST, 'more');
 $link = (string)filter_input(INPUT_POST, 'link');
 
-$fp = fopen('log.csv', 'a+b');
+$fp = fopen('mapbox.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$title, $status, $more, $link]);
@@ -79,7 +79,7 @@ fclose($fp);
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <li class="goout">
-<h2><?=h($row[0])?><br/>
+<h2><u><?=h($row[0])?></u><br/>
 <i><?=h($row[1])?></i></h2>
 <p><b><?=h($row[2])?></b>
 <a href="<?=h($row[3])?>" target="_blank" rel=”noopener noreferrer”></a></p>
@@ -87,15 +87,16 @@ fclose($fp);
 <?php endforeach; ?>
 <?php else: ?>
 <li class="goout">
-<h2>タイトル<br/>
+<h2><u>タイトル</u><br/>
 <i>進行状況</i></h2>
 <p><b>説明</b>
 <a href="<?=h($row[3])?>" target="_blank" rel=”noopener noreferrer”></a></p>
 </li>
 <?php endif; ?>
 <li>
-<h2 class="relax">更新履歴<br/>
-<i class="goout">Update</i></h2>
+<h2 class="relax">地図を作ろう<br/>
+<i class="goout">Digital Map</i></h2>
+<p class="relax"><b>Mapboxを使って、初めて訪れた場所・お気に入りの場所を集めたデジタル地図を作成します。</b></p>
 </li>
 </ul>
 </div>
