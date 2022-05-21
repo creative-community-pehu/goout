@@ -10,7 +10,7 @@ const geojson = {
                 title: '温めましょうね',
                 date: '2021年11月15日 16:40',
                 address: '住之江区北加賀屋５丁目４−７０',
-                link: 'none',
+                link: '',
                 url: 'https://newlifecollection.com/ca100/317/p-r-s/'
             }
         },

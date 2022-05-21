@@ -26,7 +26,7 @@
 
     <link rel="icon" href="logo.png">
     <link rel="apple-touch-icon" href="logo.png">
-    <link href='../css/thingsiheard.css' rel='stylesheet' />
+    <link href='../things/heard.css' rel='stylesheet' />
     <link href='../css/fonts.css' rel='stylesheet' />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -149,9 +149,45 @@
             }
         }
         
+        .cc {
+            font-family: "ipag", monospace;
+            transform: scale(1, 1.25);
+        }
+        
+        #top_btn {
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            margin: 1.25rem 0.75rem;
+            font-size: 1.5rem;
+        }
+        
+        #top_btn a {
+            display: block;
+            text-align: center;
+            width: 2rem;
+            height: 1.5rem;
+            line-height: 1.5rem;
+            color: #CDCBCC;
+            border: solid 2px #fff;
+            border-radius: 50%;
+            background-color: #fff;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 1000ms ease;
+        }
+        
+        #top_btn a:hover {
+            color: #fff;
+            background-color: #CDCBCC;
+            border: solid 2px #fff;
+            cursor: pointer;
+        }
+        
         @media screen and (max-width: 550px) {
             #btn {
-                font-size: 5.5rem;
+                font-size: 4.5rem;
                 width: 90%;
             }
             #box h2 {
@@ -165,6 +201,7 @@
 </head>
 
 <body>
+    <p id="top_btn"><a class="cc" href="../things/">i</a></p>
     <div id="box">
         <h1 id="btn">things that i (we) heard</h1>
         <h2 class="goout">Members Only</h2>
