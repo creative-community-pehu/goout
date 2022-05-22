@@ -52,8 +52,8 @@ const geojson = {
                 title: '小泉さんにもろたマスクやろ？',
                 date: '2020年春',
                 address: '住之江区北加賀屋２丁目３−１５',
-                link: 'none',
-                url: ''
+                link: '',
+                url: 'https://newlifecollection.com/ca100/182/p-r-s/'
             }
         },
         {
