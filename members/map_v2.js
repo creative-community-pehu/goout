@@ -181,6 +181,34 @@ const geojson = {
                 link: 'none',
                 url: ''
             }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.48590991829985, 34.61701733866016]
+            },
+            properties: {
+                title: 'ヘイくっさマ〜ン',
+                date: '2022年3月16日 21:16',
+                address: '住之江区粉浜西３丁目１−６',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.48816560208678, 34.61181334220366]
+            },
+            properties: {
+                title: '「森のクマさんやんな」<br/>「そうそうそう」',
+                date: '2022年5月22日 17:40',
+                address: '住之江区粉浜西３丁目１−６',
+                link: '',
+                url: ''
+            }
         }
 
     ]

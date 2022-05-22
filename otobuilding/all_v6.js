@@ -886,12 +886,12 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
-                coordinates: [135.48590991829985, 34.61701733866016]
+                coordinates: [135.48555357409577, 34.61659452344216]
             },
             properties: {
-                title: 'ヘイくっさマ〜ン',
-                date: '2022年3月16日 21:16',
-                address: '住之江区粉浜西３丁目１−６',
+                title: 'すごいな私',
+                date: '2022年5月22日 18:18',
+                address: '住之江区粉浜西３丁目１−８',
                 link: 'none',
                 url: ''
             }
