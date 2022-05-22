@@ -290,8 +290,8 @@ const geojson = {
                 title: 'ゆずの匂いすごいやろ。ごめんな',
                 date: '2021年12月22日 23:30',
                 address: '西成区橘３丁目１２−２０',
-                link: 'none',
-                url: ''
+                link: '',
+                url: 'https://newlifecollection.com/ca100/319/p-r-s/'
             }
         },
         {
@@ -332,7 +332,7 @@ const geojson = {
                 title: '心清く。目上の人を敬う。',
                 date: '2022年2月6日 15:30頃',
                 address: '住吉区住吉２丁目９−８９',
-                link: 'link',
+                link: '',
                 url: 'https://newlifecollection.com/ca100/326/p-r-s/'
             }
         },
@@ -346,7 +346,7 @@ const geojson = {
                 title: 'ほっとしたわ〜',
                 date: '2022年2月25日 15:15',
                 address: '住之江区御崎3-1-17',
-                link: 'link',
+                link: '',
                 url: 'https://newlifecollection.com/ca98/1284/p-r-s/'
             }
         },
@@ -682,8 +682,8 @@ const geojson = {
                 title: 'この子はいつもここにいる',
                 date: '2022年5月11日 16:57',
                 address: '住之江区浜口東１丁目１',
-                link: 'none',
-                url: '関連記事'
+                link: '',
+                url: 'https://newlifecollection.com/ca100/327/p-r-s/'
             }
         },
         {
