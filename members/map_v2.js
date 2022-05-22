@@ -207,7 +207,7 @@ const geojson = {
                 date: '2022年5月22日 17:40',
                 address: '住之江区粉浜西３丁目１−６',
                 link: '',
-                url: ''
+                url: 'https://newlifecollection.com/ca100/197/p-r-s/'
             }
         }
 
