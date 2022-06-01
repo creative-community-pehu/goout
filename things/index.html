@@ -79,6 +79,22 @@
             color: #CDCBCC;
         }
         
+        ruby {
+            position: relative;
+            display: block;
+            line-height: 175%;
+            padding: 0.75rem 0;
+            ruby-align: distribute-letter;
+        }
+        
+        [data-ruby]::before {
+            content: attr(data-ruby);
+            position: absolute;
+            margin-top: -1rem;
+            font-size: 75%;
+            line-height: 245%;
+        }
+        
         details {
             transition: all 1000ms ease;
             letter-spacing: 0.25rem;
@@ -138,9 +154,20 @@
 <body>
     <main id="main">
         <h1>things that i (we) heard</h1>
-        <p>is a collaborative work by
-            <a href="http://www.marshallsarah.com/things-that-i-heard-in-new-york" target="_blank">Sarah Marshall</a> and
-            <a href="https://creative-community.space/map/" target="_blank">Go Out</a></p>
+        <hr/>
+        <ruby data-ruby="こんにちは！サラ・マーシャル">
+            Hello <a href="http://www.marshallsarah.com/things-that-i-heard-in-new-york" target="_blank">Sarah Marshall</a>,
+        </ruby>
+        <ruby data-ruby="私たちはコロナ禍から、あなたを真似て、私たちの周りで聞いた言葉を集めています。">
+            We started to pretend you and collect the things that we heard around us since covid pandemic. 
+        </ruby>
+        <ruby data-ruby="言葉を集め初めて、生活がより豊かになったように感じます。">
+            After collecting the things that we heard, We feel that my daily life has become richer.
+        </ruby>
+        <ruby data-ruby="これからも言葉集めを習慣付け、あなたの作品を真似た様々な地図を作れたらと思っています。">
+            We would like to continue to collect the things that we heard and creating a various maps that like a your work.
+        </ruby>
+        <p>Playful, Enjoyable, Humorous, Uniquely,</p>
         <hr/>
         <details open>
             <summary>
