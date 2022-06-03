@@ -4,9 +4,8 @@
 <meta name="viewport" content="width=device-width">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="ramdom.js"></script>
 <title>岡山県オススメ60スポット | イトウヒロキ</title>
-<link rel="stylesheet" type="text/css" href="/css/programs.css" />
+<link rel="stylesheet" type="text/css" href="programs.css" />
 <style type="text/css">
 .about_map #sub {color:orange;}
 .about_map u,
@@ -20,11 +19,6 @@
   text-stroke: 0.05rem orange;
 }
 </style>
-<script type="text/javascript">
-$(function(){
-$("#thankyou").load("/online/map/thankyou.php");
-})
-</script>
 </head>
 <body>
 <div id="header">
@@ -46,6 +40,5 @@ iPhoneやスマホを片手に、僕のオススメスポットを探す旅を�
 岡山県へ遊びに来た際は、是非活用してみて下さい！！</p>
 </div>
 </div>
-<div id="thankyou"></div>
 </body>
 </html>
