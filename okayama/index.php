@@ -36,7 +36,7 @@ fclose($fp);
 </head>
 <body>
 <div class="popup" id="about" style="display:none;">
-<p><iframe src="about.php"></iframe></p>
+<p><iframe src="about.html"></iframe></p>
 <span class="close" onclick="obj=document.getElementById('about').style; obj.display=(obj.display=='none')?'block':'none';">✕</span>
 </div>
 <div class="about">
