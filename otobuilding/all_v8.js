@@ -150,8 +150,8 @@ const geojson = {
                 title: 'やば、パジャマじゃ入れやんやん',
                 date: '2020年8月19日 13:00頃',
                 address: '住之江区北加賀屋２丁目５−３１',
-                link: 'none',
-                url: ''
+                link: '',
+                url: 'https://newlifecollection.com/ca100/189/p-r-s/'
             }
         },
         {
@@ -500,8 +500,8 @@ const geojson = {
                 title: 'バニラとチョコチップで ',
                 date: '2021年12月8日 19:00頃',
                 address: '住之江区北加賀屋３丁目１−２０',
-                link: 'none',
-                url: '関連記事'
+                link: '',
+                url: 'https://newlifecollection.com/ca100/189/p-r-s/'
             }
         },
         {
