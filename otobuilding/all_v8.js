@@ -668,8 +668,8 @@ const geojson = {
                 title: '偉かったね、もう終わったよ。よくがんばったね〜',
                 date: '2022年3月17日 16:50',
                 address: '住之江区新北島１丁目２−１',
-                link: 'none',
-                url: '関連記事'
+                link: '',
+                url: 'https://newlifecollection.com/ca100/196/p-r-s/'
             }
         },
         {
