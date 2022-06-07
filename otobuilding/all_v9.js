@@ -738,8 +738,8 @@ const geojson = {
                 title: '私、初恋時代は絶対忘れへん！一生！',
                 date: '2022年2月27日 21:30',
                 address: '住吉区清水丘１丁目３１−１５',
-                link: 'none',
-                url: '関連記事'
+                link: '',
+                url: 'https://newlifecollection.com/ca100/324/p-r100-s/'
             }
         },
         {
