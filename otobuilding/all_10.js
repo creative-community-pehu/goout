@@ -361,7 +361,7 @@ const geojson = {
                 date: '2022年4月13日 14:30頃',
                 address: '住之江区南港北１丁目１−１４−１６',
                 link: '',
-                url: 'https://newlifecollection.com/ca98/1282/p-r-s/'
+                url: 'https://newlifecollection.com/ca100/1303/p-r-s/'
             }
         },
         {
