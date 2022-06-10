@@ -1045,8 +1045,8 @@ const geojson = {
                 title: '鳩おりゃあごい',
                 date: '2022年5月3日 12:35',
                 address: '住之江区南港北１丁目３２',
-                link: 'none',
-                url: ''
+                link: '',
+                url: 'https://newlifecollection.com/ca100/1304/p-r-s/'
             }
         },
         {
