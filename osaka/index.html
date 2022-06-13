@@ -116,8 +116,8 @@
         
         .sidebar {
             position: absolute;
-            width: 100%;
-            height: 0;
+            width: 0%;
+            top: 0;
             left: 0;
             bottom: 3rem;
             z-index: 100;
@@ -132,11 +132,17 @@
             left: 0;
             top: 0;
             bottom: 3rem;
+            transition: all 1000ms ease;
         }
         
         .open .sidebar {
-            width: 100%;
-            height: 40vh;
+            width: 33.333%;
+            transition: all 500ms ease;
+        }
+        
+        .open .map {
+            width: 66.666%;
+            left: 33.333%;
             transition: all 500ms ease;
         }
         
@@ -172,6 +178,34 @@
             background-color: lightskyblue;
             border: solid 2px lemonchiffon;
             cursor: pointer;
+        }
+        
+        @media screen and (max-width: 550px) {
+            #menu {
+                display: none;
+            }
+            .sidebar {
+                position: absolute;
+                width: 100%;
+                height: 33.3333vh;
+                left: 0;
+                bottom: 0;
+                z-index: 100;
+                overflow: hidden;
+                transition: all 1000ms ease;
+            }
+            .map {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top: 0;
+                bottom: 33.3333vh;
+            }
+            .open .sidebar {
+                width: 100%;
+                height: 33.3333vh;
+                transition: all 500ms ease;
+            }
         }
     </style>
 </head>
