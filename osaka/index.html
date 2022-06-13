@@ -191,32 +191,24 @@
         
         @media screen and (max-width: 550px) {
             #menu {
-                pointer-events: none;
-                user-select: none;
+                display: none;
             }
-            .sidebar {
+            .sidebar,
+            .open .sidebar {
                 position: absolute;
                 width: 100%;
-                top: 66.6666vh;
-                height: 33.3333vh;
+                top: 66vh;
                 left: 0;
                 bottom: 0;
-                padding-bottom: 3rem;
                 z-index: 100;
                 transition: all 1000ms ease;
             }
             .map {
                 position: absolute;
                 width: 100%;
-                height: 66.6666vh;
+                height: 66vh;
                 top: 0;
-                bottom: 33.3333vh;
-            }
-            .open .sidebar {
-                width: 100%;
-                top: 66.6666vh;
-                height: 33.3333vh;
-                transition: all 500ms ease;
+                bottom: 33vh;
             }
         }
     </style>
