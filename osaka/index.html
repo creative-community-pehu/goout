@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Osaka Map | Go Out</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <style>
+        .goout {
+            font-family: "Kristina";
+        }
+        
+        @font-face {
+            font-family: "Kristina";
+            src: url("https://creative-community.space/coding/fontbook/family/Kristina.Bold.otf"), url("https://creative-community.space/coding/fontbook/family/Kristina.Fine.otf");
+        }
+        
+        .relax {
+            font-family: "DiaPro";
+        }
+        
+        @font-face {
+            font-family: "DiaPro";
+            src: url("https://creative-community.space/coding/fontbook/family/DiaPro/DiaPro-Regular.eot"), url("https://creative-community.space/coding/fontbook/family/DiaPro/DiaPro-Regular.otf"), url("https://creative-community.space/coding/fontbook/family/DiaPro/DiaPro-Regular.woff");
+        }
+        
+        body {
+            font-family: sans-serif;
+        }
+        
+        a {
+            color: #404040;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: #101010;
+        }
+        
+        .listings {
+            font-family: "DiaPro";
+            height: 100%;
+            overflow: auto;
+            background: lemonchiffon;
+        }
+        
+        .listings .item {
+            display: block;
+            background: #fff;
+            border-bottom: 1px solid lightskyblue;
+            padding: 10px;
+            text-decoration: none;
+        }
+        
+        .listings .item .title {
+            display: block;
+            color: lightskyblue;
+            font-weight: 700;
+        }
+        
+        .listings .item .title small {
+            font-weight: 400;
+        }
+        
+        .listings .item.active .title,
+        .listings .item .title:hover {
+            color: lemonchiffon;
+        }
+        
+        .listings .item.active {
+            background-color: #fff;
+        }
+        
+         ::-webkit-scrollbar {
+            width: 1rem;
+            height: 1rem;
+            border-left: 0;
+            background: lemonchiffon;
+        }
+        
+         ::-webkit-scrollbar-track {
+            background: none;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background: lightskyblue;
+            border-radius: 0;
+        }
+        
+        .marker {
+            border: none;
+            cursor: pointer;
+            height: 55px;
+            width: 55px;
+            background-size: 100%;
+            background-position: center;
+            background-image: url(../logo.png);
+            background-repeat: no-repeat;
+        }
+        
+        .mapboxgl-popup-content {
+            font-family: "Kristina";
+        }
+        
+        .mapboxgl-popup-content h3 {
+            background: lemonchiffon;
+            color: lightskyblue;
+        }
+        
+        .mapboxgl-popup-anchor-top>.mapboxgl-popup-tip {
+            border-bottom-color: lemonchiffon;
+        }
+        
+        .sidebar {
+            position: absolute;
+            width: 100%;
+            height: 0;
+            left: 0;
+            bottom: 3rem;
+            z-index: 100;
+            overflow: hidden;
+            border-right: 1px lightskyblue;
+            transition: all 1000ms ease;
+        }
+        
+        .map {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 3rem;
+        }
+        
+        .open .sidebar {
+            width: 100%;
+            height: 40vh;
+            transition: all 500ms ease;
+        }
+        
+        #menu {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            z-index: 1000;
+            font-size: 1.5rem;
+            padding: 0.5rem;
+            margin: 0;
+            width: 100%;
+            background: #fff;
+        }
+        
+        #btn {
+            display: block;
+            text-align: center;
+            height: 2rem;
+            line-height: 2rem;
+            font-family: "Kristina";
+            color: lightskyblue;
+            border: solid 2px lightskyblue;
+            border-radius: 50%;
+            background-color: lemonchiffon;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 1000ms ease;
+        }
+        
+        #btn:hover {
+            color: lemonchiffon;
+            background-color: lightskyblue;
+            border: solid 2px lemonchiffon;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<bodyv id="box">
+    <p id="menu"><a id="btn">Osaka Map</a></p>
+    <div class="sidebar">
+        <div id="listings" class="listings"></div>
+    </div>
+    <div id="map" class="map"></div>
+    <script>
+        let btn = document.querySelector('#btn');
+        let box = document.querySelector('#box');
+
+        let btnToggleclass = function(el) {
+            el.classList.toggle('open');
+        }
+
+        btn.addEventListener('click', function() {
+            btnToggleclass(box);
+        }, false);
+    </script>
+    <script src='v0.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoicGVodSIsImEiOiJja3R4Y3diNmIybTg5Mm9waWgwYTdsc3FyIn0.lVvnPZ3aa6332EaWJIxPaQ';
+
+        /**
+         * Add the map to the page
+         */
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/pehu/ckx1e2xhw13kw14s4rjhaiv17',
+            center: [135.50433479522678, 34.69699057458179],
+            zoom: 11.11,
+            scrollZoom: false
+        });
+
+        /**
+         * Assign a unique id to each store. You'll use this `id`
+         * later to associate each point on the map with a listing
+         * in the sidebar.
+         */
+        stores.features.forEach((store, i) => {
+            store.properties.id = i;
+        });
+
+        /**
+         * Wait until the map loads to make changes to the map.
+         */
+        map.on('load', () => {
+            /**
+             * This is where your '.addLayer()' used to be, instead
+             * add only the source without styling a layer
+             */
+            map.addSource('places', {
+                'type': 'geojson',
+                'data': stores
+            });
+
+            /**
+             * Add all the things to the page:
+             * - The location listings on the side of the page
+             * - The markers onto the map
+             */
+            buildLocationList(stores);
+            addMarkers();
+        });
+
+        /**
+         * Add a marker to the map for every store listing.
+         **/
+        function addMarkers() {
+            /* For each feature in the GeoJSON object above: */
+            for (const marker of stores.features) {
+                /* Create a div element for the marker. */
+                const el = document.createElement('div');
+                /* Assign a unique `id` to the marker. */
+                el.id = `marker-${marker.properties.id}`;
+                /* Assign the `marker` class to each marker for styling. */
+                el.className = 'marker';
+
+                /**
+                 * Create a marker using the div element
+                 * defined above and add it to the map.
+                 **/
+                new mapboxgl.Marker(el, {
+                        offset: [0, -23]
+                    })
+                    .setLngLat(marker.geometry.coordinates)
+                    .addTo(map);
+
+                /**
+                 * Listen to the element and when it is clicked, do three things:
+                 * 1. Fly to the point
+                 * 2. Close all other popups and display popup for clicked store
+                 * 3. Highlight listing in sidebar (and remove highlight for all other listings)
+                 **/
+                el.addEventListener('click', (e) => {
+                    /* Fly to the point */
+                    flyToStore(marker);
+                    /* Close all other popups and display popup for clicked store */
+                    createPopUp(marker);
+                    /* Highlight listing in sidebar */
+                    const activeItem = document.getElementsByClassName('active');
+                    e.stopPropagation();
+                    if (activeItem[0]) {
+                        activeItem[0].classList.remove('active');
+                    }
+                    const listing = document.getElementById(
+                        `listing-${marker.properties.id}`
+                    );
+                    listing.classList.add('active');
+                });
+            }
+        }
+
+        /**
+         * Add a listing for each store to the sidebar.
+         **/
+        function buildLocationList(stores) {
+            for (const store of stores.features) {
+                /* Add a new listing section to the sidebar. */
+                const listings = document.getElementById('listings');
+                const listing = listings.appendChild(document.createElement('div'));
+                /* Assign a unique `id` to the listing. */
+                listing.id = `listing-${store.properties.id}`;
+                /* Assign the `item` class to each listing for styling. */
+                listing.className = `item ${store.properties.tags}`;
+
+                /* Add the link to the individual listing created above. */
+                const link = listing.appendChild(document.createElement('a'));
+                link.href = '#';
+                link.className = 'title';
+                link.id = `link-${store.properties.id}`;
+                link.innerHTML = `${store.properties.title}`;
+
+                /* Add details to the individual listing. */
+                const details = listing.appendChild(document.createElement('div'));
+                details.innerHTML = `${store.properties.address}`;
+
+                /**
+                 * Listen to the element and when it is clicked, do four things:
+                 * 1. Update the `currentFeature` to the store associated with the clicked link
+                 * 2. Fly to the point
+                 * 3. Close all other popups and display popup for clicked store
+                 * 4. Highlight listing in sidebar (and remove highlight for all other listings)
+                 **/
+                link.addEventListener('click', function() {
+                    for (const feature of stores.features) {
+                        if (this.id === `link-${feature.properties.id}`) {
+                            flyToStore(feature);
+                            createPopUp(feature);
+                        }
+                    }
+                    const activeItem = document.getElementsByClassName('active');
+                    if (activeItem[0]) {
+                        activeItem[0].classList.remove('active');
+                    }
+                    this.parentNode.classList.add('active');
+                });
+            }
+        }
+
+        /**
+         * Use Mapbox GL JS's `flyTo` to move the camera smoothly
+         * a given center point.
+         **/
+        function flyToStore(currentFeature) {
+            map.flyTo({
+                center: currentFeature.geometry.coordinates,
+                zoom: 15
+            });
+        }
+
+        /**
+         * Create a Mapbox GL JS `Popup`.
+         **/
+        function createPopUp(currentFeature) {
+            const popUps = document.getElementsByClassName('mapboxgl-popup');
+            if (popUps[0]) popUps[0].remove();
+            const popup = new mapboxgl.Popup({
+                    closeOnClick: false
+                })
+                .setLngLat(currentFeature.geometry.coordinates)
+                .setHTML(
+                    `
+                    <a style="pointer-events:${currentFeature.properties.link};" href="${currentFeature.properties.url}" target="_blank">
+                    <h3>${currentFeature.properties.title}</h3>
+                    <img style="display:${currentFeature.properties.img};" src="${currentFeature.properties.src}" width="100%">
+                    <h4>${currentFeature.properties.date}</h4>
+                    </a>
+                    `
+                )
+                .addTo(map);
+        }
+
+        // Add zoom and rotation controls to the map.
+        map.addControl(new mapboxgl.NavigationControl());
+    </script>
+    </body>
+
+</html>
