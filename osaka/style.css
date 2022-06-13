@@ -26,7 +26,11 @@ h1 {
 }
 
 .mapboxgl-popup-close-button {
-    display: none;
+    display: block;
+    position: fixed;
+    top: -1rem;
+    right: -0.5rem;
+    font-size: 2rem;
 }
 
 .mapboxgl-popup-content {
@@ -56,4 +60,33 @@ h1 {
 
 .mapboxgl-popup-anchor-top>.mapboxgl-popup-content {
     margin-top: 15px;
+}
+
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.refine {
+    clear: both;
+    padding: 0 2.5%;
+}
+
+.refine input[type=radio] {
+    display: none;
+}
+
+.refine-btn {
+    display: inline-block;
+    margin: 0rem 0.5rem 0.25rem 0;
+    padding: 0.25rem;
+    cursor: pointer;
+}
+
+.refine input[type=radio]:checked+.refine-btn {
+    color: blue;
 }

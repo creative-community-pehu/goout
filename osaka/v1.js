@@ -95,7 +95,7 @@ const stores = {
                 'title': '住吉公園 心字池',
                 'address': '〒559-0002 大阪府大阪市住之江区浜口東１丁目１',
                 'date': '住吉公園の中に、草書体の「心」の形を模した「心字池」という日本庭園があります。',
-                'tags': 'relax',
+                'tags': 'nature',
                 'img': '',
                 'src': 'https://thumb.fc2.com/480x480/cache.cart-imgs/user_img/pehu/374f1a184b69d95ea0fd1a4d7c1b4122.png',
                 'link': '',
@@ -112,7 +112,7 @@ const stores = {
                 'title': '住吉公園 花と水の広場',
                 'address': '〒559-0002 大阪府大阪市住之江区浜口東１丁目１',
                 'date': '公園の東に位置する沈庄花壇。季節の花が流れに沿って咲いています。',
-                'tags': 'relax',
+                'tags': 'nature',
                 'img': '',
                 'src': 'https://thumb.fc2.com/480x480/cache.cart-imgs/user_img/pehu/40099f7a4dc68cf6139d75daa5477d5e.png',
                 'link': '',
@@ -143,7 +143,7 @@ const stores = {
                 'coordinates': [135.41497842130116, 34.63819701597478]
             },
             'properties': {
-                'title': '大阪府咲洲庁舎（さきしまコスモタワー）',
+                'title': 'コスモタワー',
                 'address': '〒559-0034 大阪府大阪市住之江区南港北１丁目１４−１６',
                 'date': '南港北（咲洲）にある高さ256.0m、地上55階・地下3階建ての超高層ビル',
                 'tags': 'relax',
@@ -160,7 +160,7 @@ const stores = {
                 'coordinates': [135.41478295447018, 34.64411832595768]
             },
             'properties': {
-                'title': 'シーサイドコスモ（コスモスクエア海浜緑地）',
+                'title': 'シーサイドコスモ',
                 'address': '〒559-0034 大阪府大阪市住之江区南港北１丁目３２',
                 'date': '大阪南港（咲洲）の玄関口、コスモスクエア駅のすぐ北側にある全長1.4kmにも及ぶ海辺',
                 'tags': 'relax',

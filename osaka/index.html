@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
     <title>Osaka Map | Go Out</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="http://creative-community.space/coding/js/org.js"></script>
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
     <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
@@ -40,15 +44,51 @@
             color: #101010;
         }
         
+        .sidebar {
+            position: absolute;
+            width: 0%;
+            top: 0;
+            left: 0;
+            bottom: 3rem;
+            z-index: 100;
+            overflow: auto;
+            border-right: 1px lightskyblue;
+            transition: all 1000ms ease;
+        }
+        
+        .map {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 3rem;
+            transition: all 1000ms ease;
+        }
+        
+        .open .sidebar {
+            width: 33.333%;
+            transition: all 500ms ease;
+        }
+        
+        .open .map {
+            width: 66.666%;
+            left: 33.333%;
+            transition: all 500ms ease;
+        }
+        
         .listings {
             font-family: "DiaPro";
-            height: 100%;
             overflow: auto;
             background: lemonchiffon;
         }
         
+        #refine-1:checked~.item:not(.nature),
+        #refine-2:checked~.item:not(.cafe),
+        #refine-3:checked~.item:not(.spa) {
+            display: none;
+        }
+        
         .listings .item {
-            display: block;
             background: #fff;
             border-bottom: 1px solid lightskyblue;
             padding: 10px;
@@ -102,7 +142,8 @@
         }
         
         .mapboxgl-popup-content {
-            font-family: "Kristina";
+            font-family: "Yu Gothic", "Gill Sans", sans-serif;
+            text-transform: uppercase;
         }
         
         .mapboxgl-popup-content h3 {
@@ -112,38 +153,6 @@
         
         .mapboxgl-popup-anchor-top>.mapboxgl-popup-tip {
             border-bottom-color: lemonchiffon;
-        }
-        
-        .sidebar {
-            position: absolute;
-            width: 0%;
-            top: 0;
-            left: 0;
-            bottom: 3rem;
-            z-index: 100;
-            overflow: hidden;
-            border-right: 1px lightskyblue;
-            transition: all 1000ms ease;
-        }
-        
-        .map {
-            position: absolute;
-            width: 100%;
-            left: 0;
-            top: 0;
-            bottom: 3rem;
-            transition: all 1000ms ease;
-        }
-        
-        .open .sidebar {
-            width: 33.333%;
-            transition: all 500ms ease;
-        }
-        
-        .open .map {
-            width: 66.666%;
-            left: 33.333%;
-            transition: all 500ms ease;
         }
         
         #menu {
@@ -194,7 +203,6 @@
                 bottom: 0;
                 padding-bottom: 3rem;
                 z-index: 100;
-                overflow: hidden;
                 transition: all 1000ms ease;
             }
             .map {
@@ -214,10 +222,22 @@
     </style>
 </head>
 
-<bodyv id="box">
+<body id="box">
     <p id="menu"><a id="btn">Osaka Map</a></p>
     <div class="sidebar">
-        <div id="listings" class="listings"></div>
+        <div class="refine">
+            <input id="refine-1" type="radio" name="refine-btn">
+            <label class="refine-btn nature" for="refine-1">公園・自然</label>
+            <input id="refine-2" type="radio" name="refine-btn">
+            <label class="refine-btn cafe" for="refine-2">喫茶</label>
+            <input id="refine-3" type="radio" name="refine-btn">
+            <label class="refine-btn spa" for="refine-3">銭湯・スパ</label>
+            <br/>
+            <input id="refine-0" type="radio" name="refine-btn" checked>
+            <label class="refine-btn all" for="refine-0">全部見る</label>
+            <hr/>
+            <ol id="listings" class="listings"></ol>
+        </div>
     </div>
     <div id="map" class="map"></div>
     <script>
@@ -333,7 +353,7 @@
             for (const store of stores.features) {
                 /* Add a new listing section to the sidebar. */
                 const listings = document.getElementById('listings');
-                const listing = listings.appendChild(document.createElement('div'));
+                const listing = listings.appendChild(document.createElement('li'));
                 /* Assign a unique `id` to the listing. */
                 listing.id = `listing-${store.properties.id}`;
                 /* Assign the `item` class to each listing for styling. */
@@ -396,8 +416,8 @@
                 .setLngLat(currentFeature.geometry.coordinates)
                 .setHTML(
                     `
-                    <a style="pointer-events:${currentFeature.properties.link};" href="${currentFeature.properties.url}" target="_blank">
                     <h3>${currentFeature.properties.title}</h3>
+                    <a style="pointer-events:${currentFeature.properties.link};" href="${currentFeature.properties.url}" target="_blank">
                     <img style="display:${currentFeature.properties.img};" src="${currentFeature.properties.src}" width="100%">
                     <h4>${currentFeature.properties.date}</h4>
                     </a>
@@ -409,6 +429,6 @@
         // Add zoom and rotation controls to the map.
         map.addControl(new mapboxgl.NavigationControl());
     </script>
-    </body>
+</body>
 
 </html>
