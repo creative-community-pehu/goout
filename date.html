@@ -75,6 +75,12 @@
             margin: 0 0;
         }
         
+        #about .goout {
+            color: lightskyblue;
+            background: lemonchiffon;
+            position: relative;
+        }
+        
         #about .heard {
             color: #fff;
             background: #CDCBCC;
@@ -95,6 +101,12 @@
             position: absolute;
         }
         
+        #about .goout::before,
+        #about .goout a {
+            font-size: 0.75rem;
+            line-height: 100%;
+        }
+        
         #about .heard::before,
         #about .heard a {
             font-size: 0.75rem;
@@ -107,6 +119,17 @@
         #about .relax a {
             font-size: 1rem;
             line-height: 100%;
+        }
+        
+        #about .goout::before {
+            content: '行ったことのない場所へ行く';
+            position: absolute;
+            top: 1rem;
+            left: 7.5%;
+            padding: 0.25rem 0.25rem 0.1rem;
+            color: lemonchiffon;
+            background: lightskyblue;
+            display: inline-block;
         }
         
         #about .heard::before {
@@ -213,6 +236,10 @@
         </p>
         <p><a href="https://creative-community.space/map/otobuilding/" target="_parent">もっと詳しく</a></p>
         <hr />
+        <h2 class="goout">
+            Osaka Map
+            <br/><a href="things/" target="left">View The Collection</a>
+        </h2>
         <h2 class="heard">
             things i (we) heard
             <br/><a href="things/" target="left">View The Collection</a>
