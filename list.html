@@ -81,6 +81,20 @@
             position: relative;
         }
         
+        #about .heard {
+            color: #fff;
+            background: #CDCBCC;
+            position: relative;
+            font-family: 'Libre Baskerville', serif;
+        }
+        
+        #about .relax {
+            line-height: 250%;
+            color: #ebd809;
+            background: #000;
+            position: relative;
+        }
+        
         #about .okayama {
             color: orange;
             background: #fff;
@@ -89,13 +103,6 @@
         
         #about .BnA {
             font-family: Helvetica, sans-serif;
-        }
-        
-        #about .relax {
-            line-height: 250%;
-            color: #ebd809;
-            background: #000;
-            position: relative;
         }
         
         #about h1 a,
@@ -111,18 +118,26 @@
             line-height: 100%;
         }
         
+        #about .relax::before,
+        #about .relax a {
+            font-size: 1rem;
+            line-height: 100%;
+        }
+        
+        #about .heard::before,
+        #about .heard a {
+            font-size: 0.75rem;
+            line-height: 100%;
+            color: #CDCBCC;
+            background: #fff;
+        }
+        
         #about .okayama::before,
         #about .okayama a {
             font-size: 0.75rem;
             line-height: 100%;
             color: #fff;
             background: orange;
-        }
-        
-        #about .relax::before,
-        #about .relax a {
-            font-size: 1rem;
-            line-height: 100%;
         }
         
         #about .goout::before {
@@ -136,17 +151,6 @@
             display: inline-block;
         }
         
-        #about .okayama::before {
-            content: 'イトウヒロキ監修';
-            position: absolute;
-            top: 1rem;
-            left: 7.5%;
-            padding: 0.25rem 0.25rem 0.1rem;
-            color: #fff;
-            background: orange;
-            display: inline-block;
-        }
-        
         #about .relax::before {
             content: '記録映像';
             position: absolute;
@@ -155,6 +159,28 @@
             padding: 0.25rem;
             color: #000;
             background: #ebd809;
+            display: inline-block;
+        }
+        
+        #about .heard::before {
+            content: '私（わたしたち）が聞いた言葉';
+            position: absolute;
+            top: 1rem;
+            left: 7.5%;
+            padding: 0.25rem 0.25rem 0.1rem;
+            color: #CDCBCC;
+            background: #fff;
+            display: inline-block;
+        }
+        
+        #about .okayama::before {
+            content: 'イトウヒロキ監修';
+            position: absolute;
+            top: 1rem;
+            left: 7.5%;
+            padding: 0.25rem 0.25rem 0.1rem;
+            color: #fff;
+            background: orange;
             display: inline-block;
         }
         
@@ -235,6 +261,10 @@
         <h2 class="goout">
             Osaka Map
             <br/><a href="osaka/" target="_parent">Under Construction</a>
+        </h2>
+        <h2 class="heard">
+            things that i (we) heard around OTO building
+            <br/><a href="otobuilding/" target="_parent">View The Collection</a>
         </h2>
         <h2 class="okayama">
             岡山県オススメ60スポット
