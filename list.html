@@ -80,11 +80,14 @@
             position: relative;
         }
         
-        #about .heard {
-            color: #fff;
-            background: #CDCBCC;
+        #about .okayama {
+            color: orange;
+            background: #fff;
             position: relative;
-            font-family: 'Libre Baskerville', serif;
+        }
+        
+        #about .BnA {
+            font-family: Helvetica, sans-serif;
         }
         
         #about .relax {
@@ -107,12 +110,12 @@
             line-height: 100%;
         }
         
-        #about .heard::before,
-        #about .heard a {
+        #about .okayama::before,
+        #about .okayama a {
             font-size: 0.75rem;
             line-height: 100%;
-            color: #CDCBCC;
-            background: #fff;
+            color: #fff;
+            background: orange;
         }
         
         #about .relax::before,
@@ -132,14 +135,14 @@
             display: inline-block;
         }
         
-        #about .heard::before {
-            content: '私（わたしたち）が聞いた言葉';
+        #about .okayama::before {
+            content: 'イトウヒロキ監修';
             position: absolute;
             top: 1rem;
             left: 7.5%;
             padding: 0.25rem 0.25rem 0.1rem;
-            color: #CDCBCC;
-            background: #fff;
+            color: #fff;
+            background: orange;
             display: inline-block;
         }
         
@@ -214,8 +217,8 @@
                 font-family: "ipaexg";
                 font-size: 0.75rem;
             }
-            #about .heard::before,
-            #about .heard a {
+            #about .okayama::before,
+            #about .okayama a {
                 font-size: 5.5vw;
             }
             #about .relax::before,
@@ -227,22 +230,23 @@
 </head>
 
 <body>
-    <p id="top_btn"><a class="cc" href="#" onClick="history.back(); return false;" target="_parent">↲</a></p>
     <div id="about">
-        <h1 style="margin-top: 7.5vw; margin-bottom: 15vw;"><span>知っていることの</span><br/><b>外へ</b><br/><span>わからないところまで</span><br/><b>出かける</b></h1>
-        <hr />
         <h2 class="goout">
-            地図を作ろう
-            <br/><a href="list.html" target="left">View The Collection</a>
+            Osaka Map
+            <br/><a href="osaka/" target="_parent">Under Construction</a>
         </h2>
-        <h2 class="heard">
-            things i (we) heard
-            <br/><a href="things/" target="left">View The Collection</a>
+        <h2 class="okayama">
+            岡山県オススメ60スポット
+            <br/><a href="okayama/" target="_parent">View The Collection</a>
         </h2>
-        <h1 class="relax">
-            Fancy and Relaxin'
-            <br/><a href="youtube.html" target="left">View The Collection</a>
-        </h1>
+        <h2 class="relax">
+            for BnA Alter Museum
+            <br/><a href="https://newlifecollection.com/ca99/440/p-r99-s/" target="_parent">View The Collection</a>
+        </h2>
+        <h2 class="goout">
+            Mapboxを使って、デジタル地図を作ろう
+            <br/><a href="update/mapbox.php" target="left">Work in Progress</a>
+        </h2>
     </div>
 </body>
 
