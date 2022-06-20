@@ -48,7 +48,7 @@
         
         #box {
             position: fixed;
-            z-index: 100;
+            z-index: 1;
             top: 0;
             right: 0;
             margin: 0;
@@ -57,18 +57,22 @@
         
         #btn {
             font-size: 1.25rem;
+            width: 2rem;
             font-family: 'Mochiy Pop One', sans-serif;
             text-align: center;
             margin: 0;
-            padding: 1rem 0.25rem;
-            letter-spacing: 0.25rem;
+            padding: 1rem 1.5rem;
+            line-height: 100%;
             color: #B1302B;
             background: #166BB6;
             border: 2px #eee solid;
             text-orientation: upright;
-            -ms-writing-mode: tb-rl;
-            writing-mode: vertical-rl;
             transition: all 1s ease-out;
+        }
+        
+        #btn i {
+            display: inline-block;
+            width: 100%;
         }
         
         .marker {
@@ -115,6 +119,18 @@
         <h1 id="btn">やるぞ<i>‼</i></h1>
     </div>
     <div id="map"></div>
+    <script>
+        let btn = document.querySelector('#btn');
+        let box = document.querySelector('#box');
+
+        let btnToggleclass = function(el) {
+            el.classList.toggle('open');
+        }
+
+        btn.addEventListener('click', function() {
+            btnToggleclass(box);
+        }, false);
+    </script>
     <script src='v4.js'></script>
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoicGVodSIsImEiOiJja3R4Y3diNmIybTg5Mm9waWgwYTdsc3FyIn0.lVvnPZ3aa6332EaWJIxPaQ';
