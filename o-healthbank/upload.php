@@ -1,5 +1,5 @@
 <?php
-$dsn = "mysql:host=localhost; dbname=xxx; charset=utf8";
+$dsn = "mysql:host=localhost; dbname=u836749795_; charset=utf8";
 $username = "sasajimakazuma";
 $password = "V3ry901$";
 try {
