@@ -1,0 +1,35 @@
+Go Out | 行ったことのない場所へ行く
+
+color: lightskyblue; (#87cefa) 
+background: lemonchiffon; (#fffacd)
+font-family: "Kristina";
+https://www.kristinabold.com/
+
+===================================
+
+Fancy and Relaxin'
+
+color: #ebd809; 
+background: #000;
+font-family: "DiaPro";
+https://but.tw/font/
+
+===================================
+
+SPORTS CLUB
+
+color: #333; 
+background: #DCF7EE;
+font-family: "Gill Sans";
+text-transform: uppercase;
+
+===================================
+
+things that i (we) heard
+
+color: #fff; 
+background: #CDCBCC;
+font-family: 'Libre Baskerville', serif;
+https://fonts.google.com/specimen/Libre+Baskerville
+
+

@@ -2,7 +2,7 @@
 <html lang="ja">
 
 <head>
-    <title>Go Out | 行ったことのない場所へ行く</title>
+    <title>Go Out | 地図を作ろう</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -20,84 +20,17 @@
             margin: 0;
         }
         
-        #top_btn {
-            position: fixed;
-            top: 0;
-            right: 0;
-            z-index: 1000;
-            margin: 1rem;
-            font-size: 2rem;
-        }
-        
-        #top_btn a {
-            color: #000;
-            text-decoration: none;
-            transition: all 1000ms ease;
-        }
-        
-        #top_btn a:hover {
-            color: lightskyblue;
-            cursor: pointer;
-            transition: all 500ms ease;
-        }
-        
         #about {
             position: relative;
             margin: 0;
             padding: 0;
         }
         
-        #about b {
-            font-family: "DiaPro";
-            font-weight: 500;
-        }
-        
-        #about b {
-            display: inline-block;
-        }
-        
-        #about h1 {
-            font-size: 8vw;
-            padding: 1.5rem 15%;
-            margin: 0;
-        }
-        
-        #about h1 span {
-            font-size: 45%;
-            line-height: 100%;
-        }
-        
         #about h2 {
             font-size: 5.5vw;
             line-height: 200%;
-            padding: 3.5rem 15% 2.5rem;
-            margin: 0 0;
+            margin: 0;
             font-weight: 500;
-        }
-        
-        #about .goout {
-            color: lightskyblue;
-            background: lemonchiffon;
-            position: relative;
-        }
-        
-        #about .heard {
-            color: #fff;
-            background: #CDCBCC;
-            position: relative;
-            font-family: 'Libre Baskerville', serif;
-        }
-        
-        #about .relax {
-            line-height: 250%;
-            color: #ebd809;
-            background: #000;
-            position: relative;
-        }
-        
-        #about .okayama {
-            color: orange;
-            background: #fff;
             position: relative;
         }
         
@@ -105,153 +38,65 @@
             font-family: Helvetica, sans-serif;
         }
         
-        #about h1 a,
-        #about h2 a {
-            bottom: 1rem;
-            right: 7.5%;
+        #about h2::before {
+            font-size: 0.75rem;
+            line-height: 100%;
             position: absolute;
-        }
-        
-        #about .goout::before,
-        #about .goout a {
-            font-size: 1rem;
-            line-height: 100%;
-        }
-        
-        #about .relax::before,
-        #about .relax a {
-            font-size: 1rem;
-            line-height: 100%;
-        }
-        
-        #about .heard::before,
-        #about .heard a {
-            font-size: 0.75rem;
-            line-height: 100%;
-            color: #CDCBCC;
-            background: #fff;
-        }
-        
-        #about .okayama::before,
-        #about .okayama a {
-            font-size: 0.75rem;
-            line-height: 100%;
-            color: #fff;
-            background: orange;
+            top: 1rem;
+            left: 7.5%;
         }
         
         #about .goout::before {
             content: 'Digital Map';
-            position: absolute;
-            top: 1rem;
-            left: 7.5%;
             padding: 0.25rem 0.25rem 0.1rem;
             color: lemonchiffon;
             background: lightskyblue;
-            display: inline-block;
         }
         
         #about .relax::before {
             content: '記録映像';
-            position: absolute;
-            top: 1rem;
-            left: 7.5%;
             padding: 0.25rem;
             color: #000;
             background: #ebd809;
             display: inline-block;
         }
         
+        #about .heard a {
+            color: #fff;
+            background: #CDCBCC;
+            font-family: 'Libre Baskerville', serif;
+        }
+        
         #about .heard::before {
             content: 'things that i (we) heard';
-            position: absolute;
-            top: 1rem;
-            left: 7.5%;
             padding: 0.25rem 0.25rem 0.1rem;
             color: #CDCBCC;
             background: #fff;
-            display: inline-block;
+            font-family: 'Libre Baskerville', serif;
+        }
+        
+        #about .okayama a {
+            color: #fff;
+            background: orange;
         }
         
         #about .okayama::before {
             content: 'イトウヒロキ監修';
-            position: absolute;
-            top: 1rem;
-            left: 7.5%;
-            padding: 0.25rem 0.25rem 0.1rem;
-            color: #fff;
-            background: orange;
-            display: inline-block;
+            padding: 0.25rem;
+            color: orange;
+            background: #fff;
         }
         
-        #about p {
-            font-family: "ipaexg";
-            font-size: 1rem;
-            padding: 0 5%;
-        }
-        
-        #about b {
-            font-size: 150%;
-            line-height: 200%;
-        }
-        
-        #about b {
-            color: lightskyblue;
-            background-color: lemonchiffon;
-            transition: all 500ms ease;
-        }
-        
-        #about a,
-        #about u {
-            color: lemonchiffon;
-            background-color: lightskyblue;
+        #about a {
+            display: block;
+            padding: 3.5rem 15% 2.5rem;
             text-decoration: none;
             transition: all 1000ms ease;
-        }
-        
-        #about u {
-            font-size: 75%;
-        }
-        
-        #about span {
-            color: #000;
-            text-decoration: lightskyblue wavy underline;
-        }
-        
-        #about a,
-        #about b,
-        #about u,
-        #about span {
-            display: inline;
-            padding: 0.25rem;
-            margin-right: 0.25rem;
         }
         
         hr {
             border: none;
             margin: 2rem;
-        }
-        
-        @media screen and (max-width: 350px) {
-            #about h1 {
-                font-size: 12.5vw;
-            }
-            #about h2 {
-                font-size: 7.5vw;
-                padding: 2.5rem 15% 2.5rem;
-            }
-            #about p {
-                font-family: "ipaexg";
-                font-size: 0.75rem;
-            }
-            #about .okayama::before,
-            #about .okayama a {
-                font-size: 5.5vw;
-            }
-            #about .relax::before,
-            #about .relax a {
-                font-size: 10vw;
-            }
         }
     </style>
 </head>
@@ -259,24 +104,19 @@
 <body>
     <div id="about">
         <h2 class="goout">
-            Osaka Map
-            <br/><a href="osaka/" target="_parent">Under Construction</a>
+            <a href="osaka/" target="_parent">Osaka Map</a>
         </h2>
         <h2 class="heard">
-            around OTO building
-            <br/><a href="otobuilding/" target="_parent">View The Collection</a>
+            <a href="otobuilding/" target="_parent">around OTO building</a>
         </h2>
         <h2 class="okayama">
-            岡山県オススメ60スポット
-            <br/><a href="okayama/" target="_parent">View The Collection</a>
+            <a href="okayama/" target="_parent">岡山県オススメ60スポット</a>
         </h2>
         <h2 class="relax">
-            for BnA Alter Museum
-            <br/><a href="https://newlifecollection.com/ca99/440/p-r99-s/" target="_parent">View The Collection</a>
+            <a href="https://newlifecollection.com/ca99/440/p-r99-s/" target="_parent">for BnA Alter Museum</a>
         </h2>
         <h2 class="goout">
-            Mapboxで地図を作ろう
-            <br/><a href="update/mapbox.php" target="left">Work in Progress</a>
+            <a href="update/mapbox.php" target="left">Mapboxで地図を作ろう</a>
         </h2>
     </div>
 </body>
