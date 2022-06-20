@@ -87,6 +87,13 @@
             font-family: 'Libre Baskerville', serif;
         }
         
+        #about .sports {
+            line-height: 250%;
+            color: #333;
+            background: #DCF7EE;
+            position: relative;
+        }
+        
         #about .relax {
             line-height: 250%;
             color: #ebd809;
@@ -101,31 +108,27 @@
             position: absolute;
         }
         
-        #about .goout::before,
-        #about .goout a {
-            font-size: 1rem;
+        #about h2::before,
+        #about h2 a {
+            font-size: 0.75rem;
             line-height: 100%;
+        }
+        
+        #about h2::before {
+            position: absolute;
+            top: 1rem;
+            left: 7.5%;
         }
         
         #about .heard::before,
         #about .heard a {
-            font-size: 0.75rem;
             line-height: 100%;
             color: #CDCBCC;
             background: #fff;
         }
         
-        #about .relax::before,
-        #about .relax a {
-            font-size: 1rem;
-            line-height: 100%;
-        }
-        
         #about .goout::before {
-            content: 'Digital Map';
-            position: absolute;
-            top: 1rem;
-            left: 7.5%;
+            content: '地図を作ろう';
             padding: 0.25rem 0.25rem 0.1rem;
             color: lemonchiffon;
             background: lightskyblue;
@@ -134,12 +137,17 @@
         
         #about .heard::before {
             content: '私（わたしたち）が聞いた言葉';
-            position: absolute;
-            top: 1rem;
-            left: 7.5%;
             padding: 0.25rem 0.25rem 0.1rem;
             color: #CDCBCC;
             background: #fff;
+            display: inline-block;
+        }
+        
+        #about .sports::before {
+            content: '運動する';
+            padding: 0.25rem 0.25rem 0.1rem;
+            color: #DCF7EE;
+            background: #333;
             display: inline-block;
         }
         
@@ -149,6 +157,8 @@
             top: 1rem;
             left: 7.5%;
             padding: 0.25rem;
+            font-size: 0.75rem;
+            line-height: 100%;
             color: #000;
             background: #ebd809;
             display: inline-block;
@@ -236,12 +246,16 @@
             <b>出かける</b>
         </h1>
         <h2 class="goout">
-            地図を作ろう
+            Go Out
             <br/><a href="list.html" target="left">View The Collection</a>
         </h2>
         <h2 class="heard">
             things i (we) heard
             <br/><a href="things/" target="left">View The Collection</a>
+        </h2>
+        <h2 class="sports">
+            SPORTS CLUB
+            <br/><a>under construction</a>
         </h2>
         <h1 class="relax">
             Fancy and Relaxin'
