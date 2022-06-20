@@ -46,6 +46,15 @@
             height: 100vh;
         }
         
+        #box {
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            margin: 0;
+            padding: 0;
+        }
+        
         .marker {
             width: 1.5rem;
             height: 1.75rem;
@@ -86,6 +95,9 @@
 </head>
 
 <body>
+    <div id="box">
+        <h1 id="btn">やるぞ<i>‼</i></h1>
+    </div>
     <div id="map"></div>
     <script>
         let btn = document.querySelector('#btn');
