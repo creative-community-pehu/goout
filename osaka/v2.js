@@ -203,6 +203,23 @@ const stores = {
                 'link': '',
                 'url': 'https://newlifecollection.com/ca98/1306/p-r98-s/'
             }
+        },
+        {
+            'type': 'Feature',
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [135.50183216544207, 34.61987240976515]
+            },
+            'properties': {
+                'title': '万代池公園',
+                'address': '〒558-0055 大阪府大阪市住吉区万代３丁目７',
+                'date': '大きな池の周りには遊歩道があり、みなさんがウォーキングしたり、ジョギングしたりしています。　公園もあり、ベンチもいっぱいあるのでみんなの憩いの場という雰囲気です。',
+                'tags': 'relax',
+                'img': '',
+                'src': 'https://thumb.fc2.com/480x480/cache.cart-imgs/user_img/pehu/be9348654fd1f30bbc6266c9a56b570f.png',
+                'link': '',
+                'url': 'https://newlifecollection.com/ca98/1311/p-r-s/'
+            }
         }
     ]
 };
