@@ -194,6 +194,20 @@ const geojson = {
                 link: 'none',
                 url: 'https://64.media.tumblr.com/2502a850b6985dafa13cc4bcca98347c/42cea0db8a304e0a-d5/s2048x3072/1278efa35db99460516456667242d81cee2b74f2.jpg'
             }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [135.4953517829611, 34.62702765533572]
+            },
+            properties: {
+                title: 'やるぞ ‼',
+                date: '2022年6月30日 19:55',
+                address: '西成区玉出東１丁目９−４',
+                link: 'none',
+                url: 'https://64.media.tumblr.com/4dccc0c3378bbf9ffddabc828bd2cfa1/5897311e4d7d4fd8-fa/s2048x3072/6cc96c6ed03afb631302801807b918ce5b96580c.jpg'
+            }
         }
 
     ]
