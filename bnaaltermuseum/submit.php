@@ -150,7 +150,7 @@ if( !empty($_POST['btn_confirm']) ) {
 
     <body>
         <div id="credit">
-          <a href="#" onClick="history.back(); return false;" target="_parent">🗺</a>
+          <a href="#" onClick="history.back(); return false;" target="_parent"></a>
           <a href="#" onClick="history.back(); return false;" target="_parent">↲</a>
         </div>
 
