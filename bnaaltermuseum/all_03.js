@@ -60,6 +60,20 @@ const geojson = {
             type: 'Feature',
             geometry: {
                 type: 'Point',
+                coordinates: [135.77087926820195, 34.997303330136546]
+            },
+            properties: {
+                title: '海苔じゃなくて苔なんです',
+                date: '2022-07-24  14:30頃',
+                address: 'Picaro Eis',
+                link: 'none',
+                url: ''
+            }
+        },
+        {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
                 coordinates: [135.7672035086636, 34.99773270800419]
             },
             properties: {
