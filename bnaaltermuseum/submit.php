@@ -48,7 +48,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	$header .= "Reply-To: creative-community.space <pehu@creative-community.space>\n";
 
 	// 件名を設定
-	$admin_reply_subject = 'Submit | things that i (we) heard';
+	$admin_reply_subject = 'Submit | things that i (we) heard around OTO building';
   
 	// 本文を設定
 	$admin_reply_text .= "\n" . $_POST['things'] . "\n";
@@ -211,7 +211,7 @@ if( !empty($_POST['btn_confirm']) ) {
             <footer>
               <hr/>
                 <p>令和四年版　夏の自由研究</p>
-                <h1><i>things that i (we) heard around BnA Alter Museum</i></h1>
+                <h1><i>things that i (we) heard<br/>around BnA Alter Museum</i></h1>
                 <p>あなたがビーエヌエーオルターミュージアムの周りで聞いた言葉を投稿する</p>
             </footer>
             <section id="main" class="form">
