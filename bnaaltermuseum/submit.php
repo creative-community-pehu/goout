@@ -212,7 +212,7 @@ if( !empty($_POST['btn_confirm']) ) {
               <hr/>
                 <p>令和四年版　夏の自由研究</p>
                 <h1><i>things that i (we) heard<br/>around BnA Alter Museum</i></h1>
-                <p>ビーエヌエーオルターミュージアムの周りで聞いた言葉を投稿する</p>
+                <p>ビーエヌエーオルターミュージアムの周りで聞いた言葉</p>
             </footer>
             <section id="main" class="form">
                 <form action="" method="post">
