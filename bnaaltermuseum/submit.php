@@ -78,7 +78,7 @@ if( !empty($_POST['btn_confirm']) ) {
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
-        <title>Submit | things that i (we) heard</title>
+        <title>Submit | things that i (we) heard around BnA Alter Museum</title>
         <style type="text/css">
             body {
                 background: #CDCBCC;
@@ -150,7 +150,7 @@ if( !empty($_POST['btn_confirm']) ) {
 
     <body>
         <div id="credit">
-          <a href="#" onClick="history.back(); return false;" target="_parent">私（わたしたち）が聞いた言葉</a>
+          <a href="#" onClick="history.back(); return false;" target="_parent">私（わたしたち）がビーエヌエーオルターミュージアムの周りで聞いた言葉</a>
           <a href="#" onClick="history.back(); return false;" target="_parent">↲</a>
         </div>
 
@@ -203,16 +203,16 @@ if( !empty($_POST['btn_confirm']) ) {
             <div class="thankyou">
                 <h1>ご投稿ありがとうございました。</h1>
                 <p>近日中に、あなたが投稿した言葉をデジタル地図に追加します。</p>
-                <h1><a href="/members/map/heard/">things that i (we) heard</a></h1>
+                <h1><a href="/map/bnaaltermuseum/">things that i (we) heard around BnA Alter Museum</a></h1>
             </div>
 
             <?php else: ?>
 
             <footer>
               <hr/>
-                <p>会員限定</p>
-                <h1><i>things that i (we) heard</i></h1>
-                <p>あなたがあなたの周りで聞いた言葉を投稿する</p>
+                <p>令和四年版　夏の自由研究</p>
+                <h1><i>things that i (we) heard around BnA Alter Museum</i></h1>
+                <p>あなたがビーエヌエーオルターミュージアムの周りで聞いた言葉を投稿する</p>
             </footer>
             <section id="main" class="form">
                 <form action="" method="post">
@@ -242,27 +242,8 @@ if( !empty($_POST['btn_confirm']) ) {
                     </div>
                 </form>
             </section>
-            <section id="content" style="padding-top: 0; border-bottom: 0; padding-bottom: 0;">
-                <details>
-                    <summary>
-                        <h2>特集</h2>
-                    </summary>
-                    <div class="content">
-                        <u>2020年春 - 2022年春</u>
-                        <h3>things that i (we) heard around OTO building</h3>
-                        <p><a href="https://creative-community.space/map/otobuilding/" target="_blank">私（わたしたち）が音ビルの周りで聞いた言葉</a></p>
-                <div id="membersonly"></div>
-                    </div>
-                </details>
-            </section>
             <?php endif; ?>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript">
-            $(function() {
-                $("#membersonly").load("/map/things/membersonly.html");
-            })
-        </script>
     </body>
 
     </html>
