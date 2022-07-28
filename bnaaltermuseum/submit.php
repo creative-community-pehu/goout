@@ -150,7 +150,6 @@ if( !empty($_POST['btn_confirm']) ) {
 
     <body>
         <div id="credit">
-          <a href="#" onClick="history.back(); return false;" target="_parent">私（わたしたち）がビーエヌエーオルターミュージアムの周りで聞いた言葉</a>
           <a href="#" onClick="history.back(); return false;" target="_parent">↲</a>
         </div>
 
